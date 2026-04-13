@@ -30,5 +30,12 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "components/ui/calendar.tsx",
+    "components/ui/chart.tsx",
+    "components/ui/resizable.tsx",
+    "components/ui/form.tsx",
+    "components/ui/sonner.tsx"
+  ]
 }

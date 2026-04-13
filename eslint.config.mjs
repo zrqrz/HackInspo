@@ -12,6 +12,13 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // shadcn/ui components with upstream version-compatibility issues
+    // (not used in MVP; revisit when upgrading their peer deps)
+    "components/ui/calendar.tsx",
+    "components/ui/chart.tsx",
+    "components/ui/resizable.tsx",
+    "components/ui/form.tsx",
+    "components/ui/sonner.tsx",
   ]),
 ]);
 
