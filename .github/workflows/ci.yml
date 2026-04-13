@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-typecheck:
+    name: Lint & Type Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Generate Prisma client so TypeScript can resolve @/app/generated/prisma/client
+      - name: Generate Prisma client
+        run: npx prisma generate
+        env:
+          # Prisma only needs the schema to generate — dummy URL is fine here
+          DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+
+      - name: TypeScript type check
+        run: npx tsc --noEmit
+
+      - name: ESLint
+        run: npm run lint
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: lint-typecheck
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Prisma client
+        run: npx prisma generate
+        env:
+          DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+
+      - name: Build Next.js app
+        run: npm run build
+        env:
+          # Build-time env — use a dummy URL so the build doesn't fail without a real DB.
+          # At runtime Vercel injects the real DATABASE_URL from project settings.
+          DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+          NEXT_TELEMETRY_DISABLED: 1

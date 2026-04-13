@@ -1,0 +1,30 @@
+name: Tests
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+# Placeholder — tests will be added in a future milestone.
+# Current status: no test suite yet.
+# TODO:
+#   - Unit tests: Vitest for lib/db query helpers
+#   - Integration tests: Prisma + test DB (postgres service container)
+#   - E2E tests: Playwright for critical user flows (search, project detail)
+
+jobs:
+  unit:
+    name: Unit Tests (placeholder)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run tests
+        # Replace with: npx vitest run  once tests are added
+        run: echo "No tests yet — skipping"
