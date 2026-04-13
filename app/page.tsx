@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Link from "next/link";
 import { Search, Brain, Coins, Heart, Leaf, Users, Terminal, ArrowRight } from "lucide-react";
 import { Header } from "@/components/header";

@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { Suspense } from "react";
 import { Header } from "@/components/header";
 import { ProjectCard } from "@/components/project-card";
