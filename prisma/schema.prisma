@@ -1,0 +1,165 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ── Enums ──────────────────────────────────────────────────────────────────
+
+enum TagCategory {
+  LANGUAGE
+  FRAMEWORK
+  API
+  SERVICE
+  OTHER
+}
+
+enum DifficultyLevel {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum AwardTier {
+  WINNER
+  RUNNER_UP
+  HONORABLE_MENTION
+  OTHER
+}
+
+// Tracks AI classification pipeline state for each project
+enum ClassificationStatus {
+  PENDING
+  PROCESSING
+  DONE
+  FAILED
+}
+
+// ── Core Models ─────────────────────────────────────────────────────────────
+
+model Hackathon {
+  id                 Int       @id @default(autoincrement())
+  devpostId          String    @unique  // Devpost numeric ID from API
+  title              String
+  devpostUrl         String    @unique
+  galleryUrl         String?
+  organization       String?
+  location           String?
+  submissionStart    DateTime?
+  submissionEnd      DateTime?
+  registrationsCount Int?
+  prizeAmount        Int?      // in USD
+  themes             String[]  // e.g. ["AI", "HealthTech"]  — from Devpost API
+  winnersAnnounced   Boolean   @default(false)
+  inviteOnly         Boolean   @default(false)
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  projects Project[]
+  awards   Award[]
+
+  @@index([submissionEnd])
+  @@index([winnersAnnounced])
+}
+
+model Project {
+  id                   Int                  @id @default(autoincrement())
+  devpostSoftwareId    String?              @unique  // data-software-id from gallery HTML
+  devpostUrl           String               @unique
+  title                String
+  tagline              String?
+  description          String?              @db.Text
+  demoUrl              String?
+  repoUrl              String?
+  otherLinks           String[]             // any additional links on the project page
+  teamMembers          String[]             // raw names from Devpost
+  teamSize             Int?                 // derived from teamMembers.length at ingestion
+  thumbnailUrl         String?
+
+  slug                 String?              @unique  // e.g. "drift-detect-42", generated at ingest
+
+  // AI classification fields (populated by Phase 1 pipeline)
+  difficulty           DifficultyLevel?
+  innovationSummary    String?              // one-sentence AI-generated highlight
+  classificationStatus ClassificationStatus @default(PENDING)
+  classifiedAt         DateTime?
+
+  hackathonId Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  hackathon Hackathon      @relation(fields: [hackathonId], references: [id])
+  tracks    ProjectTrack[]
+  tags      ProjectTag[]
+  awards    Award[]
+
+  @@index([hackathonId])
+  @@index([difficulty])
+  @@index([teamSize])
+  @@index([classificationStatus])
+}
+
+model Track {
+  id          Int    @id @default(autoincrement())
+  name        String @unique  // e.g. "AI / Machine Learning"
+  slug        String @unique  // e.g. "ai-ml"
+  description String?
+
+  projects ProjectTrack[]
+}
+
+model Tag {
+  id       Int         @id @default(autoincrement())
+  name     String      @unique  // normalized lowercase, e.g. "react", "tensorflow"
+  slug     String      @unique  // same as name for now
+  category TagCategory @default(OTHER)
+
+  projects ProjectTag[]
+
+  @@index([category])
+}
+
+model Award {
+  id          Int       @id @default(autoincrement())
+  name        String    // e.g. "Best AI Hack", "Grand Prize", "Winner"
+  tier        AwardTier @default(WINNER)
+  prizeValue  Int?      // in USD, if known
+
+  projectId   Int
+  hackathonId Int
+
+  project   Project   @relation(fields: [projectId], references: [id])
+  hackathon Hackathon @relation(fields: [hackathonId], references: [id])
+
+  @@index([projectId])
+  @@index([hackathonId])
+  @@index([tier])
+}
+
+// ── Junction Tables ─────────────────────────────────────────────────────────
+
+model ProjectTrack {
+  projectId Int
+  trackId   Int
+
+  project Project @relation(fields: [projectId], references: [id])
+  track   Track   @relation(fields: [trackId], references: [id])
+
+  @@id([projectId, trackId])
+}
+
+model ProjectTag {
+  projectId Int
+  tagId     Int
+
+  project Project @relation(fields: [projectId], references: [id])
+  tag     Tag     @relation(fields: [tagId], references: [id])
+
+  @@id([projectId, tagId])
+}

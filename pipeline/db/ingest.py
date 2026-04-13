@@ -37,6 +37,19 @@ PROJECTS_FILE = DATA_DIR / "projects.json"
 _SLUG_RE = re.compile(r"[^a-z0-9]+")
 
 
+_TITLE_SLUG_RE = re.compile(r"[^a-z0-9]+")
+
+
+def make_project_slug(title: str, project_id: int) -> str:
+    """
+    Generate SEO-friendly slug: 'drift-detect-42'
+    Title part is lowercased, non-alphanumeric chars → hyphens, max 60 chars.
+    ID suffix guarantees uniqueness even if titles collide.
+    """
+    title_part = _TITLE_SLUG_RE.sub("-", title.lower()).strip("-")[:60].rstrip("-")
+    return f"{title_part}-{project_id}"
+
+
 def normalize_tag_name(raw: str) -> str:
     """Lowercase and strip, preserving original casing in name but lowered."""
     return raw.strip().lower()
@@ -148,7 +161,21 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
             "hackathon_id":  hackathon_id,
         },
     )
-    return cur.fetchone()["id"]
+    project_id = cur.fetchone()["id"]
+
+    # Generate slug now that we have the id, update in place.
+    # ON CONFLICT upsert above doesn't set slug to avoid overwriting a
+    # manually curated slug — so we UPDATE separately only if null.
+    slug = make_project_slug(p.get("title", "untitled"), project_id)
+    cur.execute(
+        """
+        UPDATE "Project" SET "slug" = %(slug)s
+        WHERE "id" = %(id)s AND "slug" IS NULL
+        """,
+        {"slug": slug, "id": project_id},
+    )
+
+    return project_id
 
 
 def upsert_tags(cur, tag_names: list[str]) -> list[int]:
