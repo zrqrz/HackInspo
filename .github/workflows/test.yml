@@ -6,12 +6,8 @@ on:
   pull_request:
     branches: [main, develop]
 
-# Placeholder — tests will be added in a future milestone.
-# Current status: no test suite yet.
-# TODO:
-#   - Unit tests: Vitest for lib/db query helpers
-#   - Integration tests: Prisma + test DB (postgres service container)
-#   - E2E tests: Playwright for critical user flows (search, project detail)
+env:
+  DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
 
 jobs:
   unit:

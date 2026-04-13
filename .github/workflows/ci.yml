@@ -10,6 +10,11 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
+# Prisma generate (run via postinstall) only needs a syntactically valid URL —
+# it never connects to a database at generate time.
+env:
+  DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+
 jobs:
   lint-typecheck:
     name: Lint & Type Check
@@ -26,13 +31,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      # Generate Prisma client so TypeScript can resolve @/app/generated/prisma/client
-      - name: Generate Prisma client
-        run: npx prisma generate
-        env:
-          # Prisma only needs the schema to generate — dummy URL is fine here
-          DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
 
       - name: TypeScript type check
         run: npx tsc --noEmit
@@ -57,15 +55,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate Prisma client
-        run: npx prisma generate
-        env:
-          DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
-
       - name: Build Next.js app
         run: npm run build
         env:
-          # Build-time env — use a dummy URL so the build doesn't fail without a real DB.
-          # At runtime Vercel injects the real DATABASE_URL from project settings.
-          DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
           NEXT_TELEMETRY_DISABLED: 1
