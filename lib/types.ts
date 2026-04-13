@@ -7,7 +7,7 @@
  */
 
 // ── Enums (re-exported for convenience) ──────────────────────────────────────
-export type { DifficultyLevel, AwardTier, ClassificationStatus } from "@/app/generated/prisma";
+export type { DifficultyLevel, AwardTier, ClassificationStatus } from "@/app/generated/prisma/client";
 
 // ── Base shapes ───────────────────────────────────────────────────────────────
 

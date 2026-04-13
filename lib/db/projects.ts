@@ -151,9 +151,10 @@ export async function getProjectBySlug(slug: string): Promise<ProjectDetail | nu
   };
 }
 
-export async function getTopTags(limit = 30): Promise<{ name: string; slug: string; count: number }[]> {
+export async function getTopTags(limit = 30): Promise<{ id: number; name: string; slug: string; count: number }[]> {
   const tags = await prisma.tag.findMany({
     select: {
+      id: true,
       name: true,
       slug: true,
       _count: { select: { projects: true } },
@@ -161,5 +162,5 @@ export async function getTopTags(limit = 30): Promise<{ name: string; slug: stri
     orderBy: { projects: { _count: "desc" } },
     take: limit,
   });
-  return tags.map((t) => ({ name: t.name, slug: t.slug, count: t._count.projects }));
+  return tags.map((t) => ({ id: t.id, name: t.name, slug: t.slug, count: t._count.projects }));
 }
