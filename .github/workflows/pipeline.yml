@@ -1,0 +1,53 @@
+name: Data Pipeline
+
+on:
+  # Run daily at 03:00 UTC (scrape yesterday's Devpost results)
+  schedule:
+    - cron: "0 3 * * *"
+
+  # Allow triggering manually from the GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      from_stage:
+        description: "Start from stage (1–4)"
+        required: false
+        default: "1"
+      lookback_days:
+        description: "Lookback window in days"
+        required: false
+        default: "2"
+
+jobs:
+  run-pipeline:
+    name: Scrape & Ingest
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install Python dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Run pipeline
+        run: |
+          python pipeline/run_pipeline.py \
+            --from-stage ${{ github.event.inputs.from_stage || '1' }} \
+            --lookback-days ${{ github.event.inputs.lookback_days || '2' }}
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Upload pipeline data artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-data-${{ github.run_id }}
+          path: pipeline/data/
+          retention-days: 7

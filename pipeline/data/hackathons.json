@@ -1,0 +1,358 @@
+{
+  "scraped_at": "2026-04-11T23:06:29.537387",
+  "cutoff_date": "2026-01-11T23:06:25.299531",
+  "total_count": 17,
+  "with_winners_count": 3,
+  "hackathons": [
+    {
+      "devpost_id": 29473,
+      "title": "Build with GLM 5.1 Challenge by Z.AI",
+      "devpost_url": "https://build-with-glm-5-1-challenge.devpost.com",
+      "gallery_url": "https://build-with-glm-5-1-challenge.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-03-31T00:00:00",
+      "submission_end": "2026-04-07T00:00:00",
+      "registrations_count": 229,
+      "organization": "AI Valley",
+      "themes": [
+        "Machine Learning/AI",
+        "Open Ended",
+        "Productivity"
+      ],
+      "prize_amount": 5000,
+      "prize_cash_count": 1,
+      "prize_other_count": 2,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 27555,
+      "title": "Gemini 3 Hackathon",
+      "devpost_url": "https://gemini3.devpost.com",
+      "gallery_url": "https://gemini3.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2025-12-17T00:00:00",
+      "submission_end": "2026-02-09T00:00:00",
+      "registrations_count": 35616,
+      "organization": "Google",
+      "themes": [
+        "Machine Learning/AI",
+        "Open Ended",
+        "Social Good"
+      ],
+      "prize_amount": 100000,
+      "prize_cash_count": 4,
+      "prize_other_count": 0,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 28633,
+      "title": "Gemini Live Agent Challenge",
+      "devpost_url": "https://geminiliveagentchallenge.devpost.com",
+      "gallery_url": "https://geminiliveagentchallenge.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-02-16T00:00:00",
+      "submission_end": "2026-03-16T00:00:00",
+      "registrations_count": 11892,
+      "organization": "Google",
+      "themes": [
+        "Communication",
+        "Machine Learning/AI",
+        "Voice skills"
+      ],
+      "prize_amount": 80000,
+      "prize_cash_count": 8,
+      "prize_other_count": 0,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 28106,
+      "title": "GitLab AI Hackathon",
+      "devpost_url": "https://gitlab.devpost.com",
+      "gallery_url": "https://gitlab.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-02-09T00:00:00",
+      "submission_end": "2026-03-25T00:00:00",
+      "registrations_count": 6984,
+      "organization": "GitLab",
+      "themes": [
+        "Databases",
+        "Machine Learning/AI",
+        "Productivity"
+      ],
+      "prize_amount": 65000,
+      "prize_cash_count": 11,
+      "prize_other_count": 0,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 28368,
+      "title": "Authorized to Act: Auth0 for AI Agents",
+      "devpost_url": "https://authorizedtoact.devpost.com",
+      "gallery_url": "https://authorizedtoact.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-03-02T00:00:00",
+      "submission_end": "2026-04-07T00:00:00",
+      "registrations_count": 2896,
+      "organization": "Okta",
+      "themes": [
+        "Machine Learning/AI",
+        "Open Ended",
+        "Beginner Friendly"
+      ],
+      "prize_amount": 10000,
+      "prize_cash_count": 5,
+      "prize_other_count": 0,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 27807,
+      "title": "Airia AI Agents Hackathon",
+      "devpost_url": "https://airia-hackathon.devpost.com",
+      "gallery_url": "https://airia-hackathon.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-02-16T00:00:00",
+      "submission_end": "2026-03-19T00:00:00",
+      "registrations_count": 1497,
+      "organization": "airia",
+      "themes": [
+        "Machine Learning/AI",
+        "Beginner Friendly",
+        "Enterprise"
+      ],
+      "prize_amount": 7000,
+      "prize_cash_count": 6,
+      "prize_other_count": 0,
+      "winners_announced": true,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 27872,
+      "title": "DevStudio 2026 by Logitech",
+      "devpost_url": "https://devstudiologitech2026.devpost.com",
+      "gallery_url": "https://devstudiologitech2026.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-01-21T00:00:00",
+      "submission_end": "2026-02-25T00:00:00",
+      "registrations_count": 1324,
+      "organization": "Logitech",
+      "themes": [
+        "AR/VR",
+        "Open Ended",
+        "Productivity"
+      ],
+      "prize_amount": 20000,
+      "prize_cash_count": 1,
+      "prize_other_count": 2,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 25957,
+      "title": "Hackonomics 2026",
+      "devpost_url": "https://hackonomics26.devpost.com",
+      "gallery_url": "https://hackonomics26.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-01-23T00:00:00",
+      "submission_end": "2026-03-30T00:00:00",
+      "registrations_count": 1481,
+      "organization": "hackonomics",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Open Ended"
+      ],
+      "prize_amount": 0,
+      "prize_cash_count": 0,
+      "prize_other_count": 5,
+      "winners_announced": true,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 28283,
+      "title": "Dev Season of Code",
+      "devpost_url": "https://dev-season-of-code.devpost.com",
+      "gallery_url": "https://dev-season-of-code.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-01-26T00:00:00",
+      "submission_end": "2026-03-18T00:00:00",
+      "registrations_count": 1015,
+      "organization": "DSOC Official",
+      "themes": [
+        "Machine Learning/AI",
+        "Enterprise",
+        "Fintech"
+      ],
+      "prize_amount": 5450,
+      "prize_cash_count": 4,
+      "prize_other_count": 2,
+      "winners_announced": false,
+      "invite_only": true
+    },
+    {
+      "devpost_id": 27350,
+      "title": "Africa Digital ID Hackathon 2026",
+      "devpost_url": "https://africadigitalidhackathon2026.devpost.com",
+      "gallery_url": "https://africadigitalidhackathon2026.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2025-11-18T00:00:00",
+      "submission_end": "2026-02-22T00:00:00",
+      "registrations_count": 962,
+      "organization": "Carnegie Mellon University Africa",
+      "themes": [
+        "Beginner Friendly",
+        "Social Good"
+      ],
+      "prize_amount": 0,
+      "prize_cash_count": 0,
+      "prize_other_count": 1,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 29031,
+      "title": "UNIHACK 2026, funded by the European Union",
+      "devpost_url": "https://unihack2026.devpost.com",
+      "gallery_url": "https://unihack2026.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": null,
+      "submission_end": null,
+      "registrations_count": 887,
+      "organization": "UNIHACK",
+      "themes": [
+        "Open Ended"
+      ],
+      "prize_amount": 7000,
+      "prize_cash_count": 2,
+      "prize_other_count": 11,
+      "winners_announced": true,
+      "invite_only": true
+    },
+    {
+      "devpost_id": 28554,
+      "title": "HackEurope",
+      "devpost_url": "https://hackeurope.devpost.com",
+      "gallery_url": "https://hackeurope.devpost.com/project-gallery",
+      "location": "Dublin, Paris, Stockholm",
+      "submission_start": null,
+      "submission_end": null,
+      "registrations_count": 760,
+      "organization": "HackEurope",
+      "themes": [
+        "Cybersecurity",
+        "Fintech",
+        "Machine Learning/AI"
+      ],
+      "prize_amount": 50500,
+      "prize_cash_count": 16,
+      "prize_other_count": 11,
+      "winners_announced": false,
+      "invite_only": true
+    },
+    {
+      "devpost_id": 26536,
+      "title": "TecStorm'26",
+      "devpost_url": "https://tecstorm26.devpost.com",
+      "gallery_url": "https://tecstorm26.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2025-12-05T00:00:00",
+      "submission_end": "2026-01-26T00:00:00",
+      "registrations_count": 672,
+      "organization": "JUNITEC",
+      "themes": [
+        "Beginner Friendly"
+      ],
+      "prize_amount": 16000,
+      "prize_cash_count": 2,
+      "prize_other_count": 2,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 27990,
+      "title": "LotusHacks x HackHarvard x GenAI Fund Vietnam Hackathon",
+      "devpost_url": "https://lotushacks2026.devpost.com",
+      "gallery_url": "https://lotushacks2026.devpost.com/project-gallery",
+      "location": " VNG Group JSC",
+      "submission_start": null,
+      "submission_end": null,
+      "registrations_count": 650,
+      "organization": "Lotushacks",
+      "themes": [
+        "Beginner Friendly"
+      ],
+      "prize_amount": 9670,
+      "prize_cash_count": 7,
+      "prize_other_count": 15,
+      "winners_announced": false,
+      "invite_only": true
+    },
+    {
+      "devpost_id": 28643,
+      "title": "INNOSpark Pitch Competition",
+      "devpost_url": "https://innospark-competition.devpost.com",
+      "gallery_url": "https://innospark-competition.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-03-01T00:00:00",
+      "submission_end": "2026-04-04T00:00:00",
+      "registrations_count": 625,
+      "organization": "INNOSpark",
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Social Good"
+      ],
+      "prize_amount": 3000,
+      "prize_cash_count": 4,
+      "prize_other_count": 1,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 28114,
+      "title": "GenAI Dev Hackathon",
+      "devpost_url": "https://genaidevhackathon.devpost.com",
+      "gallery_url": "https://genaidevhackathon.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2026-02-24T00:00:00",
+      "submission_end": "2026-03-24T00:00:00",
+      "registrations_count": 543,
+      "organization": "GenAI Devs",
+      "themes": [
+        "Beginner Friendly",
+        "Low/No Code",
+        "Social Good"
+      ],
+      "prize_amount": 0,
+      "prize_cash_count": 0,
+      "prize_other_count": 8,
+      "winners_announced": false,
+      "invite_only": false
+    },
+    {
+      "devpost_id": 27274,
+      "title": "NeoGenesis Hackathon",
+      "devpost_url": "https://neogenesis-hackathon.devpost.com",
+      "gallery_url": "https://neogenesis-hackathon.devpost.com/project-gallery",
+      "location": "Online",
+      "submission_start": "2025-11-20T00:00:00",
+      "submission_end": "2026-01-31T00:00:00",
+      "registrations_count": 522,
+      "organization": "MyPath",
+      "themes": [
+        "AR/VR",
+        "Blockchain",
+        "Fintech"
+      ],
+      "prize_amount": 33000,
+      "prize_cash_count": 3,
+      "prize_other_count": 0,
+      "winners_announced": false,
+      "invite_only": false
+    }
+  ]
+}

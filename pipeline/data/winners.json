@@ -1,0 +1,241 @@
+{
+  "scraped_at": "2026-04-11T23:39:11.934442",
+  "hackathons_processed": 17,
+  "total_winners": 26,
+  "winners": [
+    {
+      "devpost_software_id": "1218074",
+      "title": "Argus- It never forgets",
+      "tagline": "Data is gold, but stays passive in chats. Argus is a proactive Gemini 3 agent that connects past WhatsApp chats to present browsing, injecting context when you need it. Argus: It never forgets",
+      "project_url": "https://devpost.com/software/argus-it-never-forgets-59fuin",
+      "hackathon_title": "Airia AI Agents Hackathon",
+      "hackathon_url": "https://airia-hackathon.devpost.com",
+      "hackathon_devpost_id": 27807
+    },
+    {
+      "devpost_software_id": "1212309",
+      "title": "Drift Detect",
+      "tagline": "Catch scope creep before it costs you.",
+      "project_url": "https://devpost.com/software/drift-detect",
+      "hackathon_title": "Airia AI Agents Hackathon",
+      "hackathon_url": "https://airia-hackathon.devpost.com",
+      "hackathon_devpost_id": 27807
+    },
+    {
+      "devpost_software_id": "1213039",
+      "title": "Knight AI",
+      "tagline": "See something suspicious? Knight AI instantly analyses websites, emails, and social media for phishing and scams, flags the threat, explains why it's dangerous, and tells you exactly what to do.",
+      "project_url": "https://devpost.com/software/knight-ai",
+      "hackathon_title": "Airia AI Agents Hackathon",
+      "hackathon_url": "https://airia-hackathon.devpost.com",
+      "hackathon_devpost_id": 27807
+    },
+    {
+      "devpost_software_id": "1228047",
+      "title": "Guardian — AI-Governed Incident Response",
+      "tagline": "5-node autonomous pipeline: triages P1 alerts, fetches runbooks, gets HITL approval, spins up war rooms, and auto-generates DORA/SOX post-mortems — all in under 12 seconds.",
+      "project_url": "https://devpost.com/software/guardian-ai-governed-incident-response",
+      "hackathon_title": "Airia AI Agents Hackathon",
+      "hackathon_url": "https://airia-hackathon.devpost.com",
+      "hackathon_devpost_id": 27807
+    },
+    {
+      "devpost_software_id": "1218874",
+      "title": "FlightGuard: AI Mission Planner",
+      "tagline": "Enterprise AI orchestrator for drone missions. Uses Airia MCPs for live weather & airspace intel, enforcing Human-in-the-Loop (HITL) Commander approval for secure, compliant flight deployments.",
+      "project_url": "https://devpost.com/software/flightguard-ai-mission-planner",
+      "hackathon_title": "Airia AI Agents Hackathon",
+      "hackathon_url": "https://airia-hackathon.devpost.com",
+      "hackathon_devpost_id": 27807
+    },
+    {
+      "devpost_software_id": "1228360",
+      "title": "ComplianceGuard",
+      "tagline": "Autonomous AI compliance monitoring — detect GDPR, HIPAA, SOC2 & EU AI Act violations in 60 seconds",
+      "project_url": "https://devpost.com/software/complianceguard",
+      "hackathon_title": "Airia AI Agents Hackathon",
+      "hackathon_url": "https://airia-hackathon.devpost.com",
+      "hackathon_devpost_id": 27807
+    },
+    {
+      "devpost_software_id": "1198542",
+      "title": "SEND (Strategic Economic Node Development)",
+      "tagline": "SEND (Strategic Economic Node Development) is a visual, node-based platform that teaches users how trading strategies actually work through drag-and-drop nodes.",
+      "project_url": "https://devpost.com/software/send-3k8o9w",
+      "hackathon_title": "Hackonomics 2026",
+      "hackathon_url": "https://hackonomics26.devpost.com",
+      "hackathon_devpost_id": 25957
+    },
+    {
+      "devpost_software_id": "1236856",
+      "title": "My ET - Economic Times Reimagined",
+      "tagline": "AI-powered financial news assistant that translates complex articles into any language, verifies facts to stop fake news. Making financial knowledge accessible to everyone",
+      "project_url": "https://devpost.com/software/my-et-economic-times-reimagined",
+      "hackathon_title": "Hackonomics 2026",
+      "hackathon_url": "https://hackonomics26.devpost.com",
+      "hackathon_devpost_id": 25957
+    },
+    {
+      "devpost_software_id": "1106943",
+      "title": "Koda Finance",
+      "tagline": "An agentic AI cross-platform finance app that helps users track spending and set goals with smart account types for teens, adults, and parents.",
+      "project_url": "https://devpost.com/software/kodafinance",
+      "hackathon_title": "Hackonomics 2026",
+      "hackathon_url": "https://hackonomics26.devpost.com",
+      "hackathon_devpost_id": 25957
+    },
+    {
+      "devpost_software_id": "1236880",
+      "title": "BLK Exchange (BLKx)",
+      "tagline": "Trade 36 Black-economy companies. Real cultural news moves the market. AI teaches 23 investing concepts through gameplay. Free. Built in one week with Claude Code by a Howard grad who can't code.",
+      "project_url": "https://devpost.com/software/blk-exchange-blkx",
+      "hackathon_title": "Hackonomics 2026",
+      "hackathon_url": "https://hackonomics26.devpost.com",
+      "hackathon_devpost_id": 25957
+    },
+    {
+      "devpost_software_id": "1236823",
+      "title": "Rent vs. Buy Simulator",
+      "tagline": "A fully accessible financial simulation. This app helps users determine the true opportunity cost of renting versus buying a home by calculating compound interest etc... over a customizable timeline.",
+      "project_url": "https://devpost.com/software/rent-vs-buy-simulator",
+      "hackathon_title": "Hackonomics 2026",
+      "hackathon_url": "https://hackonomics26.devpost.com",
+      "hackathon_devpost_id": 25957
+    },
+    {
+      "devpost_software_id": "1228264",
+      "title": "EconoQuest",
+      "tagline": "Govern a nation. Live with the consequences.",
+      "project_url": "https://devpost.com/software/econoquest-y205ab",
+      "hackathon_title": "Hackonomics 2026",
+      "hackathon_url": "https://hackonomics26.devpost.com",
+      "hackathon_devpost_id": 25957
+    },
+    {
+      "devpost_software_id": "1179987",
+      "title": "Apex Terminal",
+      "tagline": "A deterministic trading terminal where Autopilot, Backtesting, Workflows, and Global Search are fully auditable and replayable, with proof-pack test evidence and offline verifiable exports.",
+      "project_url": "https://devpost.com/software/tradepilot-charting-ui-options-autopilot",
+      "hackathon_title": "Hackonomics 2026",
+      "hackathon_url": "https://hackonomics26.devpost.com",
+      "hackathon_devpost_id": 25957
+    },
+    {
+      "devpost_software_id": "1221911",
+      "title": "Antrum MK 1",
+      "tagline": "Lost underground? No GPS, no signal. Our handheld devices track each other using motion sensors and radio; giving cavers a live compass pointing straight to their partner. No infrastructure needed.",
+      "project_url": "https://devpost.com/software/antrum-mk-1",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1223454",
+      "title": "Sentinel AI",
+      "tagline": "Autonomous Drones that you can control with Natural Language.",
+      "project_url": "https://devpost.com/software/sentinel-ai-rzp29l",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1223507",
+      "title": "Cowdar",
+      "tagline": "A free, open-source iOS application that uses LiDAR technology to provide small scale farmers with accessible and accurate cow weight estimations.",
+      "project_url": "https://devpost.com/software/cowdar",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1221135",
+      "title": "Anchor",
+      "tagline": "What Anchor does essentially is we aim to create an app which alerts users of emergencies in their area, but also to explain why taking action is necessary to the user and assist them in taking action",
+      "project_url": "https://devpost.com/software/fire-tracker-d9uokc",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1223517",
+      "title": "StepFlow",
+      "tagline": "StepFlow is a step forward in study. Focused on your rhythm, not your results.",
+      "project_url": "https://devpost.com/software/stepflow",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1223719",
+      "title": "Hooked",
+      "tagline": "An AI-powered FishDex that transforms fishing into conservation. Gamify your catches, get hyper local insights, and track invasive species to protect our waterways.",
+      "project_url": "https://devpost.com/software/hooked-47pm25",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1223364",
+      "title": "Safe Trace",
+      "tagline": "Analyse your trace for a safer workplace.",
+      "project_url": "https://devpost.com/software/safe-trace",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1221126",
+      "title": "Echo",
+      "tagline": "I often feel overwhelmed by life's changes, but this app reminds me: You're not alone, proven with data, private by design. It's safe to share today!",
+      "project_url": "https://devpost.com/software/echo-107u6c",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1223087",
+      "title": "Tracksync",
+      "tagline": "The github for music.",
+      "project_url": "https://devpost.com/software/tracksync",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1221095",
+      "title": "MeshMap",
+      "tagline": "network to relay messages and crisis alerting without wifi through BLE",
+      "project_url": "https://devpost.com/software/meshnet",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1223318",
+      "title": "Peersuade",
+      "tagline": "A real-time 1v1 debate game where two players compete to win a fictional Australian election by out-arguing each other in front of AI-simulated voters.",
+      "project_url": "https://devpost.com/software/peersuade",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1221962",
+      "title": "ToiletGO",
+      "tagline": "When nature calls, 4.2 stars isn't enough. Give yourself the relief you deserve - ToiletGO",
+      "project_url": "https://devpost.com/software/orion-15qdnf",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1221058",
+      "title": "UniAid",
+      "tagline": "Real student insights for better University choices",
+      "project_url": "https://devpost.com/software/uniaid-tvojlk",
+      "hackathon_title": "UNIHACK 2026, funded by the European Union",
+      "hackathon_url": "https://unihack2026.devpost.com",
+      "hackathon_devpost_id": 29031
+    }
+  ]
+}
