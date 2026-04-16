@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "type-check": "tsc --noEmit",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate --generator client",
+    "db:erd": "prisma generate --generator erd"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.7.0",
@@ -68,6 +69,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "prisma-erd-generator": "^2.4.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

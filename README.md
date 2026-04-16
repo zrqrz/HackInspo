@@ -37,6 +37,7 @@ When `prisma/schema.prisma` changes:
 ```bash
 npx prisma migrate dev --name <description>
 npx prisma generate
+npm run db:erd
 ```
 
 ## Pre-push Checklist
