@@ -9,7 +9,6 @@ Use environment variables only. Do not commit real connection strings.
 Required:
 
 - `DATABASE_URL`
-- `DIRECT_URL` (recommended for Vercel migration; use direct Postgres host, not pooler)
 
 Recommended setup:
 

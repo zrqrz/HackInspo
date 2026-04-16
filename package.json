@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "type-check": "tsc --noEmit",
-    "postinstall": "prisma generate",
-    "vercel-build": "test -n \"$DIRECT_URL\" || (echo \"DIRECT_URL is required for vercel-build\" && exit 1); DATABASE_URL=\"$DIRECT_URL\" prisma migrate deploy && next build"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.7.0",
