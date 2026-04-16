@@ -6,6 +6,12 @@ generator client {
   output   = "../app/generated/prisma"
 }
 
+generator erd {
+  provider     = "prisma-erd-generator"
+  output       = "./ERD.svg"
+  disableEmoji = true
+}
+
 datasource db {
   provider = "postgresql"
 }
