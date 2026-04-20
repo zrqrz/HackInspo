@@ -11,6 +11,7 @@ import json
 import time
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -30,6 +31,145 @@ HEADERS = {
 
 
 # ── Scraping ─────────────────────────────────────────────────────────────────
+
+VIDEO_IFRAME_SELECTORS = [
+    "#gallery iframe.video-embed",
+    "#gallery iframe[src*='youtube']",
+    "#gallery iframe[src*='vimeo']",
+]
+
+THUMBNAIL_META_SELECTORS = [
+    "meta[property='og:image']",
+    "meta[name='twitter:image']",
+    "meta[itemprop='image']",
+    "meta[itemprop='screenshot']",
+]
+
+
+def normalize_url(raw: str | None, base_url: str) -> str | None:
+    """Normalize a URL value to absolute https URL when possible."""
+    if not raw:
+        return None
+    url = raw.strip()
+    if not url:
+        return None
+    if url.startswith("//"):
+        return f"https:{url}"
+    if url.startswith("http://") or url.startswith("https://"):
+        return url
+    if url.startswith("/"):
+        return urljoin(base_url, url)
+    return None
+
+
+def dedupe_non_empty(items: list[str]) -> list[str]:
+    """Keep first occurrence order, dropping empty values."""
+    seen: set[str] = set()
+    out: list[str] = []
+    for item in items:
+        value = item.strip()
+        if not value or value in seen:
+            continue
+        seen.add(value)
+        out.append(value)
+    return out
+
+
+def normalize_award_tier(label: str) -> str:
+    """
+    Normalize free-form award label to internal tier.
+    Mirrors Prisma AwardTier enum values.
+    """
+    text = label.lower().strip()
+    if not text:
+        return "OTHER"
+    if any(k in text for k in ("winner", "grand prize", "1st place", "first place", "champion")):
+        return "WINNER"
+    if any(k in text for k in ("runner-up", "runner up", "2nd place", "second place")):
+        return "RUNNER_UP"
+    if any(k in text for k in ("honorable mention", "honourable mention", "finalist", "top ")):
+        return "HONORABLE_MENTION"
+    return "OTHER"
+
+
+def extract_thumbnail_url(soup: BeautifulSoup, screenshot_urls: list[str], base_url: str) -> str | None:
+    """Extract thumbnail URL with fallback strategy."""
+    for selector in THUMBNAIL_META_SELECTORS:
+        node = soup.select_one(selector)
+        thumb = normalize_url(node.get("content") if node else None, base_url)
+        if thumb:
+            return thumb
+    return screenshot_urls[0] if screenshot_urls else None
+
+
+def extract_video_url(soup: BeautifulSoup, base_url: str) -> str | None:
+    """Extract primary demo video URL from gallery iframe."""
+    for selector in VIDEO_IFRAME_SELECTORS:
+        iframe = soup.select_one(selector)
+        video_url = normalize_url(iframe.get("src") if iframe else None, base_url)
+        if video_url:
+            return video_url
+    return None
+
+
+def extract_screenshots(soup: BeautifulSoup, base_url: str) -> tuple[list[str], list[str]]:
+    """
+    Extract screenshot URLs and captions from gallery.
+    Captions are index-aligned with urls.
+    """
+    urls: list[str] = []
+    captions: list[str] = []
+    for li in soup.select("#gallery li"):
+        anchor = li.select_one("a[data-lightbox]")
+        image = li.select_one("img.software_photo_image")
+
+        raw_url = anchor.get("href") if anchor else None
+        if not raw_url and image:
+            raw_url = image.get("src")
+
+        image_url = normalize_url(raw_url, base_url)
+        if not image_url:
+            continue
+
+        # Caption sits under each gallery image block, often wrapped in <p><i>...</i></p>.
+        cap_node = li.select_one("p i, p")
+        caption = cap_node.get_text(strip=True) if cap_node else ""
+
+        urls.append(image_url)
+        captions.append(caption)
+
+    # Fallback if gallery structure differs
+    if not urls:
+        fallback_imgs = soup.select("#gallery img.software_photo_image")
+        for img in fallback_imgs:
+            image_url = normalize_url(img.get("src"), base_url)
+            if image_url:
+                urls.append(image_url)
+                captions.append("")
+
+    # De-duplicate while keeping aligned captions
+    dedup_urls: list[str] = []
+    dedup_captions: list[str] = []
+    seen: set[str] = set()
+    for i, url in enumerate(urls):
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        dedup_urls.append(url)
+        dedup_captions.append(captions[i] if i < len(captions) else "")
+
+    return dedup_urls, dedup_captions
+
+
+def extract_awards(soup: BeautifulSoup) -> tuple[list[str], list[str]]:
+    """
+    Extract raw award labels and normalized tiers from submissions sidebar.
+    """
+    raw_labels = dedupe_non_empty(
+        [li.get_text(" ", strip=True) for li in soup.select("#submissions .software-list-content ul li")]
+    )
+    normalized = [normalize_award_tier(label) for label in raw_labels]
+    return raw_labels, normalized
 
 def scrape_project_detail(url: str) -> dict | None:
     """Scrape a single project detail page. Returns None on failure."""
@@ -60,6 +200,11 @@ def scrape_project_detail(url: str) -> dict | None:
     built_with_els = soup.select(".built-with a, #built-with span.cp-tag, a.cp-tag")
     built_with = [b.get_text(strip=True) for b in built_with_els]
 
+    # Media (thumbnail/video/screenshots)
+    screenshot_urls, screenshot_captions = extract_screenshots(soup, url)
+    video_url = extract_video_url(soup, url)
+    thumbnail_url = extract_thumbnail_url(soup, screenshot_urls, url)
+
     # Links
     link_els = soup.select("#app-links a, .app-links a, nav.app-links a")
     demo_url = None
@@ -67,7 +212,7 @@ def scrape_project_detail(url: str) -> dict | None:
     other_links: list[str] = []
 
     for a in link_els:
-        href = a.get("href", "")
+        href = normalize_url(a.get("href", ""), url) or ""
         if not href or href == "#":
             continue
         if "github.com" in href or "gitlab.com" in href:
@@ -85,15 +230,23 @@ def scrape_project_detail(url: str) -> dict | None:
         member_links = soup.select(".members a.member-link, .software-team a")
         team_members = [m.get_text(strip=True) for m in member_links if m.get_text(strip=True)]
 
+    award_labels_raw, award_tiers_normalized = extract_awards(soup)
+
     return {
         "title": title,
         "tagline": tagline,
         "full_desc": full_desc,
         "built_with": built_with,
+        "thumbnail_url": thumbnail_url,
+        "video_url": video_url,
+        "screenshot_urls": screenshot_urls,
+        "screenshot_captions": screenshot_captions,
         "demo_url": demo_url,
         "repo_url": repo_url,
         "other_links": other_links,
         "team_members": team_members,
+        "award_labels_raw": award_labels_raw,
+        "award_tiers_normalized": award_tiers_normalized,
     }
 
 
