@@ -87,6 +87,9 @@ model Project {
   teamMembers          String[]             // raw names from Devpost
   teamSize             Int?                 // derived from teamMembers.length at ingestion
   thumbnailUrl         String?
+  videoUrl             String?
+  screenshotUrls       String[]             @default([])
+  screenshotCaptions   String[]             @default([])
 
   slug                 String?              @unique  // e.g. "drift-detect-42", generated at ingest
 

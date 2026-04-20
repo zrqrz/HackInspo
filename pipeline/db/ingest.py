@@ -125,13 +125,15 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
         INSERT INTO "Project" (
             "devpostSoftwareId", "devpostUrl", "title", "tagline",
             "description", "demoUrl", "repoUrl",
-            "otherLinks", "teamMembers", "teamSize", "thumbnailUrl",
+            "otherLinks", "teamMembers", "teamSize",
+            "thumbnailUrl", "videoUrl", "screenshotUrls", "screenshotCaptions",
             "classificationStatus", "hackathonId",
             "updatedAt"
         ) VALUES (
             %(software_id)s, %(devpost_url)s, %(title)s, %(tagline)s,
             %(description)s, %(demo_url)s, %(repo_url)s,
-            %(other_links)s, %(team_members)s, %(team_size)s, %(thumbnail_url)s,
+            %(other_links)s, %(team_members)s, %(team_size)s,
+            %(thumbnail_url)s, %(video_url)s, %(screenshot_urls)s, %(screenshot_captions)s,
             'PENDING', %(hackathon_id)s,
             NOW()
         )
@@ -145,6 +147,9 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
             "teamMembers" = EXCLUDED."teamMembers",
             "teamSize"    = EXCLUDED."teamSize",
             "thumbnailUrl"= EXCLUDED."thumbnailUrl",
+            "videoUrl"    = EXCLUDED."videoUrl",
+            "screenshotUrls" = EXCLUDED."screenshotUrls",
+            "screenshotCaptions" = EXCLUDED."screenshotCaptions",
             "updatedAt"   = NOW()
         RETURNING "id"
         """,
@@ -160,6 +165,9 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
             "team_members":  team_members,
             "team_size":     team_size,
             "thumbnail_url": p.get("thumbnail_url") or None,
+            "video_url":     p.get("video_url") or None,
+            "screenshot_urls": p.get("screenshot_urls", []),
+            "screenshot_captions": p.get("screenshot_captions", []),
             "hackathon_id":  hackathon_id,
         },
     )
