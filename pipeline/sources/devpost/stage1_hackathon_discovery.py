@@ -3,7 +3,8 @@ Stage 1: Hackathon Discovery
 Scrape Devpost API for all hackathons that ended in the past N days
 and have announced winners.
 
-API endpoint: GET https://devpost.com/hackathons?status[]=ended&page=N
+API endpoint: GET https://devpost.com/api/hackathons?status[]=ended&page=N
+(The /hackathons URL without /api returns 406 for Accept: application/json — use /api/hackathons.)
 Returns JSON with 9 hackathons per page.
 
 Output: pipeline/data/hackathons.json
@@ -23,7 +24,7 @@ import requests
 DATA_DIR = Path(__file__).parent.parent.parent / "data"
 OUTPUT_FILE = DATA_DIR / "hackathons.json"
 
-API_URL = "https://devpost.com/hackathons"
+API_URL = "https://devpost.com/api/hackathons"
 PER_PAGE = 9
 DELAY = 1.5  # seconds between requests
 

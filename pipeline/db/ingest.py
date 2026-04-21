@@ -126,12 +126,14 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
             "devpostSoftwareId", "devpostUrl", "title", "tagline",
             "description", "demoUrl", "repoUrl",
             "otherLinks", "teamMembers", "teamSize",
+            "thumbnailUrl", "videoUrl", "screenshotUrls", "screenshotCaptions",
             "classificationStatus", "hackathonId",
             "updatedAt"
         ) VALUES (
             %(software_id)s, %(devpost_url)s, %(title)s, %(tagline)s,
             %(description)s, %(demo_url)s, %(repo_url)s,
             %(other_links)s, %(team_members)s, %(team_size)s,
+            %(thumbnail_url)s, %(video_url)s, %(screenshot_urls)s, %(screenshot_captions)s,
             'PENDING', %(hackathon_id)s,
             NOW()
         )
@@ -144,6 +146,10 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
             "otherLinks"  = EXCLUDED."otherLinks",
             "teamMembers" = EXCLUDED."teamMembers",
             "teamSize"    = EXCLUDED."teamSize",
+            "thumbnailUrl"= EXCLUDED."thumbnailUrl",
+            "videoUrl"    = EXCLUDED."videoUrl",
+            "screenshotUrls" = EXCLUDED."screenshotUrls",
+            "screenshotCaptions" = EXCLUDED."screenshotCaptions",
             "updatedAt"   = NOW()
         RETURNING "id"
         """,
@@ -158,6 +164,10 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
             "other_links":   p.get("other_links", []),
             "team_members":  team_members,
             "team_size":     team_size,
+            "thumbnail_url": p.get("thumbnail_url") or None,
+            "video_url":     p.get("video_url") or None,
+            "screenshot_urls": p.get("screenshot_urls", []),
+            "screenshot_captions": p.get("screenshot_captions", []),
             "hackathon_id":  hackathon_id,
         },
     )
@@ -227,19 +237,60 @@ def link_project_tags(cur, project_id: int, tag_ids: list[int]) -> None:
         )
 
 
-def upsert_award(cur, project_id: int, hackathon_id: int) -> None:
+def _normalize_award_tier(raw: str) -> str:
+    """Normalize free-form award text to Prisma AwardTier enum value."""
+    text = (raw or "").lower().strip()
+    if not text:
+        return "OTHER"
+    if any(k in text for k in ("winner", "grand prize", "1st place", "first place", "champion")):
+        return "WINNER"
+    if any(k in text for k in ("runner-up", "runner up", "2nd place", "second place")):
+        return "RUNNER_UP"
+    if any(k in text for k in ("honorable mention", "honourable mention", "finalist", "top ")):
+        return "HONORABLE_MENTION"
+    return "OTHER"
+
+
+def upsert_awards(cur, project: dict, project_id: int, hackathon_id: int) -> None:
     """
-    Insert a basic 'Winner' award for the project if one doesn't exist yet.
-    We only know tier=WINNER from the gallery badge; name/prizeValue are unknown.
+    Insert award rows from Stage 3 raw labels when present.
+    Falls back to a generic Winner award if no labels available.
+    Uses WHERE NOT EXISTS for idempotency.
     """
-    cur.execute(
-        """
-        INSERT INTO "Award" ("name", "tier", "projectId", "hackathonId")
-        VALUES ('Winner', 'WINNER', %(project_id)s, %(hackathon_id)s)
-        ON CONFLICT DO NOTHING
-        """,
-        {"project_id": project_id, "hackathon_id": hackathon_id},
-    )
+    labels: list[str] = [str(x).strip() for x in project.get("award_labels_raw", []) if str(x).strip()]
+    tiers_raw: list[str] = [str(x).strip().upper() for x in project.get("award_tiers_normalized", []) if str(x).strip()]
+
+    rows: list[tuple[str, str]] = []
+    allowed_tiers = {"WINNER", "RUNNER_UP", "HONORABLE_MENTION", "OTHER"}
+
+    if labels:
+        for idx, label in enumerate(labels):
+            candidate = tiers_raw[idx] if idx < len(tiers_raw) else ""
+            tier = candidate if candidate in allowed_tiers else _normalize_award_tier(label)
+            rows.append((label, tier))
+    else:
+        rows.append(("Winner", "WINNER"))
+
+    for name, tier in rows:
+        cur.execute(
+            """
+            INSERT INTO "Award" ("name", "tier", "projectId", "hackathonId")
+            SELECT %(name)s, %(tier)s::"AwardTier", %(project_id)s, %(hackathon_id)s
+            WHERE NOT EXISTS (
+                SELECT 1 FROM "Award"
+                WHERE "projectId" = %(project_id)s
+                  AND "hackathonId" = %(hackathon_id)s
+                  AND "name" = %(name)s
+                  AND "tier" = %(tier)s::"AwardTier"
+            )
+            """,
+            {
+                "name": name,
+                "tier": tier,
+                "project_id": project_id,
+                "hackathon_id": hackathon_id,
+            },
+        )
 
 
 # ── Index builder ─────────────────────────────────────────────────────────────
@@ -319,7 +370,7 @@ def run(
                     link_project_tags(cur, project_db_id, tag_ids)
 
                 # ── Award ──────────────────────────────────────────────────
-                upsert_award(cur, project_db_id, hackathon_db_id)
+                upsert_awards(cur, project, project_db_id, hackathon_db_id)
 
                 inserted += 1
                 title_display = (project.get("title") or "?")[:50]
