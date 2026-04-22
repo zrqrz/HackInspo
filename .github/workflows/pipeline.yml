@@ -36,9 +36,6 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r pipeline/requirements.txt
 
-      # DATABASE_URL: Use Supabase Transaction pooler (port 6543, pgbouncer) if the job
-      # fails with "Network is unreachable" to *.supabase.co:5432 — GitHub runners may not
-      # reach the direct DB host over IPv6.
       - name: Run pipeline
         run: |
           python pipeline/run_pipeline.py \
