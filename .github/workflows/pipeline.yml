@@ -36,13 +36,62 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r pipeline/requirements.txt
 
-      # DATABASE_URL: Use Supabase Transaction pooler (port 6543, pgbouncer) if the job
-      # fails with "Network is unreachable" to *.supabase.co:5432 — GitHub runners may not
-      # reach the direct DB host over IPv6.
-      - name: Run pipeline
+      # Daily path:
+      # 1) Run Stage 1-2 only (no DB writes)
+      # 2) Detect whether Stage 2 produced new project URLs
+      # 3) Run Stage 3-4 only when new projects exist
+      - name: Run Stage 1-2 (checkpoint refresh only)
+        id: stage12
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.from_stage == '1' || github.event.inputs.from_stage == '' }}
         run: |
           python pipeline/run_pipeline.py \
-            --from-stage ${{ github.event.inputs.from_stage || '1' }} \
+            --from-stage 1 \
+            --skip-db \
+            --lookback-days ${{ github.event.inputs.lookback_days || '2' }}
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Detect new projects after Stage 2
+        id: detect
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.from_stage == '1' || github.event.inputs.from_stage == '' }}
+        run: python -m pipeline.db.detect_new_projects
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Publish detection summary
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.from_stage == '1' || github.event.inputs.from_stage == '' }}
+        run: |
+          {
+            echo "## Pipeline detection result"
+            echo ""
+            echo "- winners_checked: ${{ steps.detect.outputs.winners_count }}"
+            echo "- new_projects: ${{ steps.detect.outputs.new_projects_count }}"
+            echo "- has_new_projects: ${{ steps.detect.outputs.has_new_projects }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Run Stage 3-4 (only when new projects exist)
+        if: ${{ (github.event_name == 'schedule' || github.event.inputs.from_stage == '1' || github.event.inputs.from_stage == '') && steps.detect.outputs.has_new_projects == 'true' }}
+        run: |
+          python pipeline/run_pipeline.py \
+            --from-stage 3 \
+            --lookback-days ${{ github.event.inputs.lookback_days || '2' }}
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Skip Stage 3-4 (no new projects)
+        if: ${{ (github.event_name == 'schedule' || github.event.inputs.from_stage == '1' || github.event.inputs.from_stage == '') && steps.detect.outputs.has_new_projects != 'true' }}
+        run: |
+          echo "No new projects detected."
+          echo "winners_checked=${{ steps.detect.outputs.winners_count }}"
+          echo "new_projects=${{ steps.detect.outputs.new_projects_count }}"
+
+      # Manual non-default path keeps original behavior.
+      # Useful for explicit backfills or targeted reruns from stage 2/3/4.
+      - name: Run pipeline (manual non-default from_stage)
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.from_stage != '' && github.event.inputs.from_stage != '1' }}
+        run: |
+          python pipeline/run_pipeline.py \
+            --from-stage ${{ github.event.inputs.from_stage }} \
             --lookback-days ${{ github.event.inputs.lookback_days || '2' }}
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}

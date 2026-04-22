@@ -1,125 +1,7 @@
 {
-  "scraped_at": "2026-04-11T23:39:11.934442",
-  "hackathons_processed": 17,
-  "total_winners": 26,
+  "scraped_at": "2026-04-21T20:36:13.022907",
+  "total_winners": 333,
   "winners": [
-    {
-      "devpost_software_id": "1218074",
-      "title": "Argus- It never forgets",
-      "tagline": "Data is gold, but stays passive in chats. Argus is a proactive Gemini 3 agent that connects past WhatsApp chats to present browsing, injecting context when you need it. Argus: It never forgets",
-      "project_url": "https://devpost.com/software/argus-it-never-forgets-59fuin",
-      "hackathon_title": "Airia AI Agents Hackathon",
-      "hackathon_url": "https://airia-hackathon.devpost.com",
-      "hackathon_devpost_id": 27807
-    },
-    {
-      "devpost_software_id": "1212309",
-      "title": "Drift Detect",
-      "tagline": "Catch scope creep before it costs you.",
-      "project_url": "https://devpost.com/software/drift-detect",
-      "hackathon_title": "Airia AI Agents Hackathon",
-      "hackathon_url": "https://airia-hackathon.devpost.com",
-      "hackathon_devpost_id": 27807
-    },
-    {
-      "devpost_software_id": "1213039",
-      "title": "Knight AI",
-      "tagline": "See something suspicious? Knight AI instantly analyses websites, emails, and social media for phishing and scams, flags the threat, explains why it's dangerous, and tells you exactly what to do.",
-      "project_url": "https://devpost.com/software/knight-ai",
-      "hackathon_title": "Airia AI Agents Hackathon",
-      "hackathon_url": "https://airia-hackathon.devpost.com",
-      "hackathon_devpost_id": 27807
-    },
-    {
-      "devpost_software_id": "1228047",
-      "title": "Guardian — AI-Governed Incident Response",
-      "tagline": "5-node autonomous pipeline: triages P1 alerts, fetches runbooks, gets HITL approval, spins up war rooms, and auto-generates DORA/SOX post-mortems — all in under 12 seconds.",
-      "project_url": "https://devpost.com/software/guardian-ai-governed-incident-response",
-      "hackathon_title": "Airia AI Agents Hackathon",
-      "hackathon_url": "https://airia-hackathon.devpost.com",
-      "hackathon_devpost_id": 27807
-    },
-    {
-      "devpost_software_id": "1218874",
-      "title": "FlightGuard: AI Mission Planner",
-      "tagline": "Enterprise AI orchestrator for drone missions. Uses Airia MCPs for live weather & airspace intel, enforcing Human-in-the-Loop (HITL) Commander approval for secure, compliant flight deployments.",
-      "project_url": "https://devpost.com/software/flightguard-ai-mission-planner",
-      "hackathon_title": "Airia AI Agents Hackathon",
-      "hackathon_url": "https://airia-hackathon.devpost.com",
-      "hackathon_devpost_id": 27807
-    },
-    {
-      "devpost_software_id": "1228360",
-      "title": "ComplianceGuard",
-      "tagline": "Autonomous AI compliance monitoring — detect GDPR, HIPAA, SOC2 & EU AI Act violations in 60 seconds",
-      "project_url": "https://devpost.com/software/complianceguard",
-      "hackathon_title": "Airia AI Agents Hackathon",
-      "hackathon_url": "https://airia-hackathon.devpost.com",
-      "hackathon_devpost_id": 27807
-    },
-    {
-      "devpost_software_id": "1198542",
-      "title": "SEND (Strategic Economic Node Development)",
-      "tagline": "SEND (Strategic Economic Node Development) is a visual, node-based platform that teaches users how trading strategies actually work through drag-and-drop nodes.",
-      "project_url": "https://devpost.com/software/send-3k8o9w",
-      "hackathon_title": "Hackonomics 2026",
-      "hackathon_url": "https://hackonomics26.devpost.com",
-      "hackathon_devpost_id": 25957
-    },
-    {
-      "devpost_software_id": "1236856",
-      "title": "My ET - Economic Times Reimagined",
-      "tagline": "AI-powered financial news assistant that translates complex articles into any language, verifies facts to stop fake news. Making financial knowledge accessible to everyone",
-      "project_url": "https://devpost.com/software/my-et-economic-times-reimagined",
-      "hackathon_title": "Hackonomics 2026",
-      "hackathon_url": "https://hackonomics26.devpost.com",
-      "hackathon_devpost_id": 25957
-    },
-    {
-      "devpost_software_id": "1106943",
-      "title": "Koda Finance",
-      "tagline": "An agentic AI cross-platform finance app that helps users track spending and set goals with smart account types for teens, adults, and parents.",
-      "project_url": "https://devpost.com/software/kodafinance",
-      "hackathon_title": "Hackonomics 2026",
-      "hackathon_url": "https://hackonomics26.devpost.com",
-      "hackathon_devpost_id": 25957
-    },
-    {
-      "devpost_software_id": "1236880",
-      "title": "BLK Exchange (BLKx)",
-      "tagline": "Trade 36 Black-economy companies. Real cultural news moves the market. AI teaches 23 investing concepts through gameplay. Free. Built in one week with Claude Code by a Howard grad who can't code.",
-      "project_url": "https://devpost.com/software/blk-exchange-blkx",
-      "hackathon_title": "Hackonomics 2026",
-      "hackathon_url": "https://hackonomics26.devpost.com",
-      "hackathon_devpost_id": 25957
-    },
-    {
-      "devpost_software_id": "1236823",
-      "title": "Rent vs. Buy Simulator",
-      "tagline": "A fully accessible financial simulation. This app helps users determine the true opportunity cost of renting versus buying a home by calculating compound interest etc... over a customizable timeline.",
-      "project_url": "https://devpost.com/software/rent-vs-buy-simulator",
-      "hackathon_title": "Hackonomics 2026",
-      "hackathon_url": "https://hackonomics26.devpost.com",
-      "hackathon_devpost_id": 25957
-    },
-    {
-      "devpost_software_id": "1228264",
-      "title": "EconoQuest",
-      "tagline": "Govern a nation. Live with the consequences.",
-      "project_url": "https://devpost.com/software/econoquest-y205ab",
-      "hackathon_title": "Hackonomics 2026",
-      "hackathon_url": "https://hackonomics26.devpost.com",
-      "hackathon_devpost_id": 25957
-    },
-    {
-      "devpost_software_id": "1179987",
-      "title": "Apex Terminal",
-      "tagline": "A deterministic trading terminal where Autopilot, Backtesting, Workflows, and Global Search are fully auditable and replayable, with proof-pack test evidence and offline verifiable exports.",
-      "project_url": "https://devpost.com/software/tradepilot-charting-ui-options-autopilot",
-      "hackathon_title": "Hackonomics 2026",
-      "hackathon_url": "https://hackonomics26.devpost.com",
-      "hackathon_devpost_id": 25957
-    },
     {
       "devpost_software_id": "1221911",
       "title": "Antrum MK 1",
@@ -236,6 +118,2886 @@
       "hackathon_title": "UNIHACK 2026, funded by the European Union",
       "hackathon_url": "https://unihack2026.devpost.com",
       "hackathon_devpost_id": 29031
+    },
+    {
+      "devpost_software_id": "1187253",
+      "title": "Engagemint",
+      "tagline": "Teachers can't monitor every student constantly. Engagemint's non-intrusive system captures the engagement trends educators miss, offering real-time insights and immediate feedback to boost learning.",
+      "project_url": "https://devpost.com/software/engagemint",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1187108",
+      "title": "SafePulse",
+      "tagline": "Empowering communities to fix their cities faster through smart voice reporting and live updates.",
+      "project_url": "https://devpost.com/software/safepulse-2t3941",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1186335",
+      "title": "Clear Code",
+      "tagline": "Clear Code is a VS Code extension that streams students’ live coding progress to instructors, giving real time insight into how assignments are completed.",
+      "project_url": "https://devpost.com/software/clear-code",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1187066",
+      "title": "6ixth Sense",
+      "tagline": "City Planning Made Easy",
+      "project_url": "https://devpost.com/software/urbaninsights-vwfeth",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1186826",
+      "title": "UnClutter",
+      "tagline": "The average Gmail Inbox is messy and un organized. Un-Clutter solves that problem for you by sorting your inbox through AI.",
+      "project_url": "https://devpost.com/software/unclutter-ljtwq4",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1187922",
+      "title": "Fare Play",
+      "tagline": "Prediction markets for the ttc",
+      "project_url": "https://devpost.com/software/fare-play",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1186985",
+      "title": "AgentsArena",
+      "tagline": "Minecraft stress-tests for LLMs. Adversarial agents, real-time metrics, full observability. Know how your AI breaks before customers do.",
+      "project_url": "https://devpost.com/software/agentarena-y4snd2",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1187911",
+      "title": "BlindSpot",
+      "tagline": "A navigation app that helps visually impaired individuals with real-time voice guidance using an AI Agent, providing directions through their phone’s camera to navigate surroundings with confidence.",
+      "project_url": "https://devpost.com/software/blindspot-zs7dwq",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1188153",
+      "title": "CodeTurret",
+      "tagline": "turn your vibe-coded slop into production-level code",
+      "project_url": "https://devpost.com/software/codebouncer",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1188079",
+      "title": "TrueBalance",
+      "tagline": "The ultimate budgeting app",
+      "project_url": "https://devpost.com/software/truebalance",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1188130",
+      "title": "Tuva- Multimodal Feynman AI",
+      "tagline": "\"Tuva: Stop faking it. Start teaching it.\" Why it works: It challenges the \"Illusion of Competence\" directly.",
+      "project_url": "https://devpost.com/software/tuva-multimodal-feynman-ai",
+      "hackathon_title": "GDG McMaster Mac-a-Thon 2026",
+      "hackathon_url": "https://mac-a-thon-2026.devpost.com",
+      "hackathon_devpost_id": 26019
+    },
+    {
+      "devpost_software_id": "1210649",
+      "title": "ViperProtection",
+      "tagline": "Invisible adversarial poisoning for digital art. Protect your images from AI training.",
+      "project_url": "https://devpost.com/software/viperprotection",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210789",
+      "title": "Car Reader",
+      "tagline": "To feel like driving a car while reading.",
+      "project_url": "https://devpost.com/software/car-reader",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210633",
+      "title": "Seido",
+      "tagline": "Seido is an AI physiotherapy coach that bridges the crucial at-home gap between clinic visits via real-time webcam form analysis and voice guidance. It makes rehab structured, measurable and private.",
+      "project_url": "https://devpost.com/software/recova",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210754",
+      "title": "Sisyphus",
+      "tagline": "To change the world, one must start with himself. Self determination and motivation to visualized to push people to be their best selves.",
+      "project_url": "https://devpost.com/software/sis-1s9ona",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210782",
+      "title": "TypeSplit",
+      "tagline": "A typing test with a twist!",
+      "project_url": "https://devpost.com/software/typesplit",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210724",
+      "title": "The Good, The Bad, and The... That's it",
+      "tagline": "Have you ever found yourself abusing AI for interview prep? Try The Good, The Bad, and The... That's it.",
+      "project_url": "https://devpost.com/software/the-good-the-bad-and-the-that-s-it",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210707",
+      "title": "Spendy",
+      "tagline": "An AI-powered banking app that transforms passive expense tracking into active financial coaching",
+      "project_url": "https://devpost.com/software/futurespend-sgj7v4",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210661",
+      "title": "Dragon Vault",
+      "tagline": "A tomagatchi, a calendar, and an AI agent walk into a bar...",
+      "project_url": "https://devpost.com/software/dragon-vault",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210711",
+      "title": "FindMyFauna",
+      "tagline": "FindMyFauna is a tool for researchers and natures enjoyers to better understand the biosphere around them. AI image recognition identifies photographed species and saves it location on a map.",
+      "project_url": "https://devpost.com/software/findmyfauna",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210651",
+      "title": "ForeSee",
+      "tagline": "Predict the tab. Protect the vibe.",
+      "project_url": "https://devpost.com/software/forsee",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210532",
+      "title": "secure-shuttle",
+      "tagline": "SecureShuttle is on-chain escrow for peer-to-peer deals on Solana, protecting buyers and\r\n  sellers with transparent holds, live dispute chat, and fast trusted settlement.",
+      "project_url": "https://devpost.com/software/secure-shuttle",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1210610",
+      "title": "ClearDebt",
+      "tagline": "Pay off debt smarter — AI that knows your calendar, your spending, and your next paycheck.",
+      "project_url": "https://devpost.com/software/cleardebt",
+      "hackathon_title": "Mountain Madness 2026",
+      "hackathon_url": "https://csss-mountain-madness-2026.devpost.com",
+      "hackathon_devpost_id": 28937
+    },
+    {
+      "devpost_software_id": "1240239",
+      "title": "ChainViz",
+      "tagline": "3D visualization of npm's single points of failure — with autonomous Jac agents that investigate any package's blast radius in real time.",
+      "project_url": "https://devpost.com/software/npm-supply-chain-risk-analyzer",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239324",
+      "title": "GraphClaw",
+      "tagline": "Graphclaw is a multi-agent AI platform where memory lives in a property graph, agents are graph walkers, and skills can be installed from the internet at runtime — all written in Python & Jac.",
+      "project_url": "https://devpost.com/software/project-e54qlw07j9i1",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239666",
+      "title": "GhostWatch",
+      "tagline": "GhostWatch: Jac-powered graph over your repo spots risky dependency changes, captures sandbox IOCs, optional auto-fix PRs, Discord alerts, post-merge contributor gaps.",
+      "project_url": "https://devpost.com/software/ghostwatch",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239404",
+      "title": "PolyWatch",
+      "tagline": "AI powered insider trading detection for prediction markets using Tree of Thought reasoning to investigate manipulation, coordinated wallets, and suspicious trading patterns autonomously.",
+      "project_url": "https://devpost.com/software/polywatch",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239523",
+      "title": "SybilScope",
+      "tagline": "SybilScope detects fake wallet clusters in crypto airdrops using JAC's native graph Walker and AI reasoning, allowing teams to protect millions in token distributions before they're stolen.",
+      "project_url": "https://devpost.com/software/sybilscope",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239428",
+      "title": "Hijac",
+      "tagline": "hijacks your routine",
+      "project_url": "https://devpost.com/software/hijac",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239317",
+      "title": "Jac in the Block",
+      "tagline": "We built an accessible learning toolkit for Jac that combines a block-based visual interface, real-time graph visualization, and a VS Code Extension Suite with linting and debugging support.",
+      "project_url": "https://devpost.com/software/jac-in-the-block",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239139",
+      "title": "6th Sense",
+      "tagline": "6th Sense is a real-time AI assistant that listens, reads social cues, and suggests what to say instantly. Built for speed and accessibility, it helps users communicate with confidence",
+      "project_url": "https://devpost.com/software/6th-sense-5cfry8",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239392",
+      "title": "Corpus",
+      "tagline": "Your codebase has an immune system!\r\nCorpus watches your AI-generated code, catches breakage before it lands, and self-heals your project.",
+      "project_url": "https://devpost.com/software/corpus-43v970",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1239668",
+      "title": "Inocula - Weaponize the Trust Graph. Then inoculate it.",
+      "tagline": "Expose the infection. Build the immunity. Inocula attacks and defends the Bluetooth trust layer.",
+      "project_url": "https://devpost.com/software/inocula-weaponize-the-trust-graph-then-inoculate-it",
+      "hackathon_title": "JacHacks",
+      "hackathon_url": "https://jachacks-2026.devpost.com",
+      "hackathon_devpost_id": 29225
+    },
+    {
+      "devpost_software_id": "1201851",
+      "title": "Nurture Nest",
+      "tagline": "Its not just your pregnancy journey its ours!!",
+      "project_url": "https://devpost.com/software/nurture-nest",
+      "hackathon_title": "BisonHacks 2026: Presented by Ticketmaster",
+      "hackathon_url": "https://bisonhacks-2026.devpost.com",
+      "hackathon_devpost_id": 26582
+    },
+    {
+      "devpost_software_id": "1201291",
+      "title": "TrueSign.AI",
+      "tagline": "Breaking Communication Barriers Through AI",
+      "project_url": "https://devpost.com/software/signai-s8zdlj",
+      "hackathon_title": "BisonHacks 2026: Presented by Ticketmaster",
+      "hackathon_url": "https://bisonhacks-2026.devpost.com",
+      "hackathon_devpost_id": 26582
+    },
+    {
+      "devpost_software_id": "1203335",
+      "title": "BeneFind",
+      "tagline": "AI assistant for SNAP & food support: checks eligibility, answers questions, guides applications, finds local food banks—accessible via chat, voice, or phone.",
+      "project_url": "https://devpost.com/software/benefind",
+      "hackathon_title": "BisonHacks 2026: Presented by Ticketmaster",
+      "hackathon_url": "https://bisonhacks-2026.devpost.com",
+      "hackathon_devpost_id": 26582
+    },
+    {
+      "devpost_software_id": "1203227",
+      "title": "KineticAuth",
+      "tagline": "A risk-adaptive, motion-driven verification system that escalates only when needed, protecting fairness without adding friction.",
+      "project_url": "https://devpost.com/software/kineticauth",
+      "hackathon_title": "BisonHacks 2026: Presented by Ticketmaster",
+      "hackathon_url": "https://bisonhacks-2026.devpost.com",
+      "hackathon_devpost_id": 26582
+    },
+    {
+      "devpost_software_id": "1201343",
+      "title": "Prompt Firewall",
+      "tagline": "Prompt Firewall is MFA + invisible CAPTCHA for AI prompts. It intercepts “Send” on ChatGPT/Gemini, auto-redacts PII/secrets, triggers rotating step-up checks, and logs metadata-only.",
+      "project_url": "https://devpost.com/software/prompt-firewall",
+      "hackathon_title": "BisonHacks 2026: Presented by Ticketmaster",
+      "hackathon_url": "https://bisonhacks-2026.devpost.com",
+      "hackathon_devpost_id": 26582
+    },
+    {
+      "devpost_software_id": "1224248",
+      "title": "Urban Lens",
+      "tagline": "We help building owners find hidden moisture before it becomes visible damage, using drones that combine thermal, mmWave, and microwave sensing.",
+      "project_url": "https://devpost.com/software/chameaux",
+      "hackathon_title": "McGill AeroHacks",
+      "hackathon_url": "https://mcgillaerohacks.devpost.com",
+      "hackathon_devpost_id": 27251
+    },
+    {
+      "devpost_software_id": "1221768",
+      "title": "The Ganders",
+      "tagline": "WE BRING PEACE",
+      "project_url": "https://devpost.com/software/the-ganders",
+      "hackathon_title": "McGill AeroHacks",
+      "hackathon_url": "https://mcgillaerohacks.devpost.com",
+      "hackathon_devpost_id": 27251
+    },
+    {
+      "devpost_software_id": "1221958",
+      "title": "SkyKid Aerospace",
+      "tagline": "AeroGuard adds an aerial verification layer to home security when sensors detect unusual activity, a drone launches and uses AI to verify the event, and alerts homeowners only when it’s a real threat.",
+      "project_url": "https://devpost.com/software/skykid",
+      "hackathon_title": "McGill AeroHacks",
+      "hackathon_url": "https://mcgillaerohacks.devpost.com",
+      "hackathon_devpost_id": 27251
+    },
+    {
+      "devpost_software_id": "1223270",
+      "title": "GuardianAngel",
+      "tagline": "A software that uses drones to aid blind people! GuardianAngel is their eye in the sky!",
+      "project_url": "https://devpost.com/software/guardianangel-bya6mk",
+      "hackathon_title": "McGill AeroHacks",
+      "hackathon_url": "https://mcgillaerohacks.devpost.com",
+      "hackathon_devpost_id": 27251
+    },
+    {
+      "devpost_software_id": "1223397",
+      "title": "Velocity",
+      "tagline": "a decentralized, tamper-proof registry of no-fly zones on Solana.Publish airspace restrictions on-chain, and any drone, pilot, or app can read them in real-time. Drones publish their current location.",
+      "project_url": "https://devpost.com/software/velocity-ybzrtf",
+      "hackathon_title": "McGill AeroHacks",
+      "hackathon_url": "https://mcgillaerohacks.devpost.com",
+      "hackathon_devpost_id": 27251
+    },
+    {
+      "devpost_software_id": "1221808",
+      "title": "Aero'ed",
+      "tagline": "AI-powered drone relay corridors delivering life-saving medicine to remote Indigenous communities across Northern Canada.",
+      "project_url": "https://devpost.com/software/aero-ed",
+      "hackathon_title": "McGill AeroHacks",
+      "hackathon_url": "https://mcgillaerohacks.devpost.com",
+      "hackathon_devpost_id": 27251
+    },
+    {
+      "devpost_software_id": "1224276",
+      "title": "OOPS (Overhead Obstacle Penetration System)",
+      "tagline": "Map threats. Predict risk. Guide every mission.",
+      "project_url": "https://devpost.com/software/skygrid",
+      "hackathon_title": "McGill AeroHacks",
+      "hackathon_url": "https://mcgillaerohacks.devpost.com",
+      "hackathon_devpost_id": 27251
+    },
+    {
+      "devpost_software_id": "1223746",
+      "title": "Guess The Imposter",
+      "tagline": "AeroPitch, Agridrone- A solution that incorporates the use of drones to detect pests in large-scale fields and alerts farmers.",
+      "project_url": "https://devpost.com/software/agridrone",
+      "hackathon_title": "McGill AeroHacks",
+      "hackathon_url": "https://mcgillaerohacks.devpost.com",
+      "hackathon_devpost_id": 27251
+    },
+    {
+      "devpost_software_id": "1250677",
+      "title": "food-bridge-SkyHigh",
+      "tagline": "\"Eat well, spend smart — personalized nutrition for every community.\"",
+      "project_url": "https://devpost.com/software/food-bridge-isqzu0",
+      "hackathon_title": "George Hacks x United Nations \"Reboot the Earth\" Hackathon",
+      "hackathon_url": "https://george-hacks-united-nations.devpost.com",
+      "hackathon_devpost_id": 29678
+    },
+    {
+      "devpost_software_id": "1250217",
+      "title": "ReliefLink by Moonshot",
+      "tagline": "A blockchain-powered chain of custody system on Solana that ensures food aid is transparently tracked, while verifying quality of shipments at every step to guarantee it reaches the right communities.",
+      "project_url": "https://devpost.com/software/relieflink-s649tp",
+      "hackathon_title": "George Hacks x United Nations \"Reboot the Earth\" Hackathon",
+      "hackathon_url": "https://george-hacks-united-nations.devpost.com",
+      "hackathon_devpost_id": 29678
+    },
+    {
+      "devpost_software_id": "1250714",
+      "title": "LSSD - ThriftCycle",
+      "tagline": "Giving every donation a smarter second life.",
+      "project_url": "https://devpost.com/software/lssd-thriftcycle",
+      "hackathon_title": "George Hacks x United Nations \"Reboot the Earth\" Hackathon",
+      "hackathon_url": "https://george-hacks-united-nations.devpost.com",
+      "hackathon_devpost_id": 29678
+    },
+    {
+      "devpost_software_id": "1250484",
+      "title": "SNAPback",
+      "tagline": "Turn every grocery receipt into real cashback for SNAP/WIC families, when they actually shop healthier.",
+      "project_url": "https://devpost.com/software/snapback-2s1lb7",
+      "hackathon_title": "George Hacks x United Nations \"Reboot the Earth\" Hackathon",
+      "hackathon_url": "https://george-hacks-united-nations.devpost.com",
+      "hackathon_devpost_id": 29678
+    },
+    {
+      "devpost_software_id": "1239416",
+      "title": "A.R.I.A Automated Responsive Intelligent Assistent",
+      "tagline": "Beyond chat. Into action.",
+      "project_url": "https://devpost.com/software/a-r-i-a-automated-responsive-intelligent-assistent",
+      "hackathon_title": "Predict4Good Hackathon",
+      "hackathon_url": "https://predict4good-hackathon.devpost.com",
+      "hackathon_devpost_id": 29358
+    },
+    {
+      "devpost_software_id": "1231395",
+      "title": "Hungerless",
+      "tagline": "An AI-powered anticipatory action engine that predicts crop deficits and optimizes relief logistics to stop famine before it starts.",
+      "project_url": "https://devpost.com/software/hungerless-xncugv",
+      "hackathon_title": "Predict4Good Hackathon",
+      "hackathon_url": "https://predict4good-hackathon.devpost.com",
+      "hackathon_devpost_id": 29358
+    },
+    {
+      "devpost_software_id": "1236540",
+      "title": "SeismoArch IoT Model",
+      "tagline": "Predictive Earthquake Early Warning System for Social Good",
+      "project_url": "https://devpost.com/software/seismoarch-iot-model-8iu5rt",
+      "hackathon_title": "Predict4Good Hackathon",
+      "hackathon_url": "https://predict4good-hackathon.devpost.com",
+      "hackathon_devpost_id": 29358
+    },
+    {
+      "devpost_software_id": "1237653",
+      "title": "xPrime",
+      "tagline": "Prime Brokerage for Onchain EquitiesUnlock yield, leverage, and liquidity from your stock portfolio.Earn, borrow, trade, spend on your xStocks.",
+      "project_url": "https://devpost.com/software/xprime-sebo8i",
+      "hackathon_title": "xStocks Hackathon EthCC: Market Open",
+      "hackathon_url": "https://xstocks-market-open.devpost.com",
+      "hackathon_devpost_id": 28778
+    },
+    {
+      "devpost_software_id": "1237036",
+      "title": "Stretch by Spreads Finance",
+      "tagline": "Stretch your yield with an ecosystem of products around $STRC covering leveraged yield, trading tools and a savings app.",
+      "project_url": "https://devpost.com/software/stretch-it-by-spreads-finance",
+      "hackathon_title": "xStocks Hackathon EthCC: Market Open",
+      "hackathon_url": "https://xstocks-market-open.devpost.com",
+      "hackathon_devpost_id": 28778
+    },
+    {
+      "devpost_software_id": "1237713",
+      "title": "xStream",
+      "tagline": "xStream is a permissionless protocol that splits tokenized stocks into dividend and price tokens, enabling separate trading of income and exposure.",
+      "project_url": "https://devpost.com/software/xstreme",
+      "hackathon_title": "xStocks Hackathon EthCC: Market Open",
+      "hackathon_url": "https://xstocks-market-open.devpost.com",
+      "hackathon_devpost_id": 28778
+    },
+    {
+      "devpost_software_id": "1237684",
+      "title": "RWAct",
+      "tagline": "RWAct babysits your xStocks positions, alerts you when something matters, and helps you react instantly through a secure ERC-4337 smart account.",
+      "project_url": "https://devpost.com/software/rwact",
+      "hackathon_title": "xStocks Hackathon EthCC: Market Open",
+      "hackathon_url": "https://xstocks-market-open.devpost.com",
+      "hackathon_devpost_id": 28778
+    },
+    {
+      "devpost_software_id": "1237070",
+      "title": "Paragon",
+      "tagline": "Liquidation-free leverage for your xStock assets.",
+      "project_url": "https://devpost.com/software/paragon-h8isc4",
+      "hackathon_title": "xStocks Hackathon EthCC: Market Open",
+      "hackathon_url": "https://xstocks-market-open.devpost.com",
+      "hackathon_devpost_id": 28778
+    },
+    {
+      "devpost_software_id": "1237668",
+      "title": "Aura",
+      "tagline": "Aura is the universal gateway to the xStocks ecosystem - spend, earn stock cashback, earn yield and access shareholder perks - all without giving up ownership.",
+      "project_url": "https://devpost.com/software/aura-i69vut",
+      "hackathon_title": "xStocks Hackathon EthCC: Market Open",
+      "hackathon_url": "https://xstocks-market-open.devpost.com",
+      "hackathon_devpost_id": 28778
+    },
+    {
+      "devpost_software_id": "1201722",
+      "title": "Respondr",
+      "tagline": "Respondr is an emergency response platform that connects patients to verified doctors and nearby volunteers in seconds, sharing live wearable data to guide care until help arrives faster and safer.",
+      "project_url": "https://devpost.com/software/respondr-zqegfs",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1201767",
+      "title": "FishNet",
+      "tagline": "An AI-Native seafood price forecasting platform solving the issue of revenue volatility due to climate change by mapping daily historic weather conditions to species price movements across New England",
+      "project_url": "https://devpost.com/software/fishnet-5gq8jt",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1202914",
+      "title": "Pockitt",
+      "tagline": "A simple, fun, creative app to chat locally with the community around you",
+      "project_url": "https://devpost.com/software/pockitt",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1202905",
+      "title": "Polarity",
+      "tagline": "5 AI agents. One bias score. Polarity analyzes any news article through far-left, left, center, right, and far-right perspectives then tells you exactly where it stands.",
+      "project_url": "https://devpost.com/software/polarity-2ncyf7",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1201470",
+      "title": "Phogent",
+      "tagline": "Phogent (Phone Agent) is an AI communication bridge from phone to text.",
+      "project_url": "https://devpost.com/software/phone-agent",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1202714",
+      "title": "Navi Grid",
+      "tagline": "Your Floor Plan is the Map. Your Camera is the GPS.Saving you time for your indoor navigation no hardware, no setup, just a photo.",
+      "project_url": "https://devpost.com/software/navi-grid",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1201671",
+      "title": "ZeroWall",
+      "tagline": "ZeroWall is a generative AI firewall on NVIDIA DGX Spark that mutates code, replays exploits, verifies safe behavior, and redeploys hardened variants in real time, beyond laptop-class hardware.",
+      "project_url": "https://devpost.com/software/zerowall",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1201525",
+      "title": "Super Simple Stocks",
+      "tagline": "Super Simple Stocks allows for beginners and advanced investors alike to get readable stock advice from in depth multi agent AI research.",
+      "project_url": "https://devpost.com/software/super-simple-stocks",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1201133",
+      "title": "KineticK9",
+      "tagline": "KineticK9: An intuitive multimodal interface for the next generation of robotic companions.",
+      "project_url": "https://devpost.com/software/dgxdawgs",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1201585",
+      "title": "HiveMind",
+      "tagline": "Convenient project manager powered by Gemini, integrated with GitHub. It lets teams of developers and engineers easily assign, keep track of, and manage tasks from one convenient and easy-to-use app.",
+      "project_url": "https://devpost.com/software/hivemind-wbir1t",
+      "hackathon_title": "Hack@URI 2026",
+      "hackathon_url": "https://hack-uri-2026.devpost.com",
+      "hackathon_devpost_id": 28802
+    },
+    {
+      "devpost_software_id": "1244188",
+      "title": "Chance AI - UIUX Track",
+      "tagline": "Our UI redesign wraps Chance AI in a warm aesthetic inspired by Hockney's palette and minimalist glass morphism, welcoming users into their personal collection of memories as they navigate the app.",
+      "project_url": "https://devpost.com/software/chance-ai-uiux-track",
+      "hackathon_title": "Designathon Spring 2026",
+      "hackathon_url": "https://design-competition-2026.devpost.com",
+      "hackathon_devpost_id": 29309
+    },
+    {
+      "devpost_software_id": "1245641",
+      "title": "ITPTeam_Branding_OnAltrovia",
+      "tagline": "Altrovia: Where mil-gov rigor meets AI logic. We distilled clinical complexity into a symbol of \"Rational Courage\" that transforms data into precise, with full Branding V.I. and website reversion.",
+      "project_url": "https://devpost.com/software/itpteamonaltrovia",
+      "hackathon_title": "Designathon Spring 2026",
+      "hackathon_url": "https://design-competition-2026.devpost.com",
+      "hackathon_devpost_id": 29309
+    },
+    {
+      "devpost_software_id": "1242446",
+      "title": "Chance AI: Seeing the Unseen",
+      "tagline": "Redesigning Chance AI's profile page memory, loading UX, and share flow to transform casual snaps into an engaging, visually rich experience worth sharing.",
+      "project_url": "https://devpost.com/software/chance-ai-seeing-the-unseen",
+      "hackathon_title": "Designathon Spring 2026",
+      "hackathon_url": "https://design-competition-2026.devpost.com",
+      "hackathon_devpost_id": 29309
+    },
+    {
+      "devpost_software_id": "1250937",
+      "title": "Nucleus",
+      "tagline": "Nucleus acts as the brain of a hospital, taking care of the busywork and allowing healthcare staff to focus on giving patients the best, most personalized treatment possible.",
+      "project_url": "https://devpost.com/software/nucleus-3lgfki",
+      "hackathon_title": "SoCal Claude Builder Club Hackathon",
+      "hackathon_url": "https://socal-cbc-hackathon.devpost.com",
+      "hackathon_devpost_id": 29337
+    },
+    {
+      "devpost_software_id": "1251173",
+      "title": "Vero",
+      "tagline": "Multi-agent physical therapy, democratizing care with Claude",
+      "project_url": "https://devpost.com/software/vero-rwq85c",
+      "hackathon_title": "SoCal Claude Builder Club Hackathon",
+      "hackathon_url": "https://socal-cbc-hackathon.devpost.com",
+      "hackathon_devpost_id": 29337
+    },
+    {
+      "devpost_software_id": "1250988",
+      "title": "Agentic Automation on iOS",
+      "tagline": "Speak any task; Claude sees your iPhone, controls any app, and narrates every step, giving blind and low-vision users full, eyes-free control of iOS.",
+      "project_url": "https://devpost.com/software/agentic-automation-on-ios",
+      "hackathon_title": "SoCal Claude Builder Club Hackathon",
+      "hackathon_url": "https://socal-cbc-hackathon.devpost.com",
+      "hackathon_devpost_id": 29337
+    },
+    {
+      "devpost_software_id": "1251273",
+      "title": "Guardian",
+      "tagline": "Guardian watches every page your grandparent visits, speaks up about scams, and walks them through tasks one step at a time - no typing required.",
+      "project_url": "https://devpost.com/software/guardian-17bxqe",
+      "hackathon_title": "SoCal Claude Builder Club Hackathon",
+      "hackathon_url": "https://socal-cbc-hackathon.devpost.com",
+      "hackathon_devpost_id": 29337
+    },
+    {
+      "devpost_software_id": "1251209",
+      "title": "Meridian",
+      "tagline": "Meridian is a shared clinical record with two authors — therapist and patient. Claude does the remembering so clinicians can be present, and patients co-author their own care in real time.",
+      "project_url": "https://devpost.com/software/meridian-tjxf9d",
+      "hackathon_title": "SoCal Claude Builder Club Hackathon",
+      "hackathon_url": "https://socal-cbc-hackathon.devpost.com",
+      "hackathon_devpost_id": 29337
+    },
+    {
+      "devpost_software_id": "1201917",
+      "title": "NeuroCore",
+      "tagline": "NeuroCore is a low-power implant chip that tracks how tissue alters TMS signals. It auto-adjusts the TMS frequency to keep therapy precise and safe.",
+      "project_url": "https://devpost.com/software/neurocore",
+      "hackathon_title": "UofT ASIC Team - IC Hackathon",
+      "hackathon_url": "https://uoft-ic-hackathon.devpost.com",
+      "hackathon_devpost_id": 28559
+    },
+    {
+      "devpost_software_id": "1202222",
+      "title": "An RTL Accelerator for Grid-Based Physics Simulations",
+      "tagline": "Grid-based simulations are crucial in many areas of Physics. Despite their high degree of parallelism, even GPUs encounter problems in such simulations. We aim to address these issues in our project.",
+      "project_url": "https://devpost.com/software/an-rtl-accelerator-for-grid-based-physics-simulations",
+      "hackathon_title": "UofT ASIC Team - IC Hackathon",
+      "hackathon_url": "https://uoft-ic-hackathon.devpost.com",
+      "hackathon_devpost_id": 28559
+    },
+    {
+      "devpost_software_id": "1202111",
+      "title": "NanoTrade",
+      "tagline": "The 2010 Flash Crash cost $1 trillion in 36 minutes. NanoTrade detects the same crash signature in 80 nanoseconds — on a chip smaller than a fingernail. Built on TinyTapeout SKY130.",
+      "project_url": "https://devpost.com/software/nanotrade",
+      "hackathon_title": "UofT ASIC Team - IC Hackathon",
+      "hackathon_url": "https://uoft-ic-hackathon.devpost.com",
+      "hackathon_devpost_id": 28559
+    },
+    {
+      "devpost_software_id": "1201900",
+      "title": "FPGAudio",
+      "tagline": "A real-time audio effects processor. Includes mute, distortion, reverb, pitch shifting, and a white noise / crackling effect generator.",
+      "project_url": "https://devpost.com/software/fpgaudio",
+      "hackathon_title": "UofT ASIC Team - IC Hackathon",
+      "hackathon_url": "https://uoft-ic-hackathon.devpost.com",
+      "hackathon_devpost_id": 28559
+    },
+    {
+      "devpost_software_id": "1201150",
+      "title": "Platformer FPGA Game",
+      "tagline": "Using Verilog and System Verilog, our group created an FPGA platformer. In the game, the player can collect coins and jump onto elevated platforms. They have to avoid hazards (red obstacles) to win.",
+      "project_url": "https://devpost.com/software/platformer-fpga-game",
+      "hackathon_title": "UofT ASIC Team - IC Hackathon",
+      "hackathon_url": "https://uoft-ic-hackathon.devpost.com",
+      "hackathon_devpost_id": 28559
+    },
+    {
+      "devpost_software_id": "1201906",
+      "title": "ASIC-RayForge",
+      "tagline": "ASIC-RayForge is a fully hardware ray tracing pipeline in Verilog, built for Tiny Tapeout, rendering multi-bounce reflections, shadows, and colored lights on a dynamic number of sphere objects.",
+      "project_url": "https://devpost.com/software/asic-rayforge",
+      "hackathon_title": "UofT ASIC Team - IC Hackathon",
+      "hackathon_url": "https://uoft-ic-hackathon.devpost.com",
+      "hackathon_devpost_id": 28559
+    },
+    {
+      "devpost_software_id": "1198692",
+      "title": "AI Agents in Production: MCP to Market Playbook",
+      "tagline": "An investor-grade presentation built entirely through prompt engineering with the PresentMe API, covering AI agents from MCP architecture to responsible deployment.",
+      "project_url": "https://devpost.com/software/ai-agents-in-production-mcp-to-market-playbook",
+      "hackathon_title": "Presentation Api Agent",
+      "hackathon_url": "https://presentation-api-agent.devpost.com",
+      "hackathon_devpost_id": 28121
+    },
+    {
+      "devpost_software_id": "1196163",
+      "title": "AI Pitch Deck Generator with PresentMe API",
+      "tagline": "Early-stage founders spend weeks building investor pitch decks by refining messaging, structuring slides, formatting layout and rewriting content. This project eliminates manual slide design entirely.",
+      "project_url": "https://devpost.com/software/ai-pitch-deck-generator-with-presentme-api",
+      "hackathon_title": "Presentation Api Agent",
+      "hackathon_url": "https://presentation-api-agent.devpost.com",
+      "hackathon_devpost_id": 28121
+    },
+    {
+      "devpost_software_id": "1191355",
+      "title": "Accenture Presentation -- PRESENTME",
+      "tagline": "A meta-prompting experiment I performed in this hackathon.",
+      "project_url": "https://devpost.com/software/accenture-presentation-presentme",
+      "hackathon_title": "Presentation Api Agent",
+      "hackathon_url": "https://presentation-api-agent.devpost.com",
+      "hackathon_devpost_id": 28121
+    },
+    {
+      "devpost_software_id": "1188250",
+      "title": "The AI Economy",
+      "tagline": "AI-powered investor presentation generator: Built a 15-slide AI Economy investment thesis deck using PresentMe API through natural language prompts—no manual coding required.",
+      "project_url": "https://devpost.com/software/the-ai-economy",
+      "hackathon_title": "Presentation Api Agent",
+      "hackathon_url": "https://presentation-api-agent.devpost.com",
+      "hackathon_devpost_id": 28121
+    },
+    {
+      "devpost_software_id": "1173799",
+      "title": "Roblox Studio Builder API Agent",
+      "tagline": "An API agent that transforms natural-language prompts into structured game-building instructions for a Roblox Studio plugin, enabling prompt-based creation of game mechanics without manual scripting.",
+      "project_url": "https://devpost.com/software/roblox-studio-builder-api-agent",
+      "hackathon_title": "Presentation Api Agent",
+      "hackathon_url": "https://presentation-api-agent.devpost.com",
+      "hackathon_devpost_id": 28121
+    },
+    {
+      "devpost_software_id": "1183411",
+      "title": "EcoPulse : Analyse de Performance  Décarbonation 2026",
+      "tagline": "Un rapport trimestriel complexe destiné à des fonds d'investissement à impact.",
+      "project_url": "https://devpost.com/software/ecopulse-analyse-de-performance-decarbonation-2026",
+      "hackathon_title": "Presentation Api Agent",
+      "hackathon_url": "https://presentation-api-agent.devpost.com",
+      "hackathon_devpost_id": 28121
+    },
+    {
+      "devpost_software_id": "1183297",
+      "title": "Prompt-Driven AI Presentation Builder",
+      "tagline": "Built a complete professional presentation using only natural language prompts via the PresentMe API Agent, showcasing prompt engineering, automation, and AI-driven content generation.",
+      "project_url": "https://devpost.com/software/prompt-driven-ai-presentation-builder",
+      "hackathon_title": "Presentation Api Agent",
+      "hackathon_url": "https://presentation-api-agent.devpost.com",
+      "hackathon_devpost_id": 28121
+    },
+    {
+      "devpost_software_id": "1180038",
+      "title": "PreziBot",
+      "tagline": "Simplifiez vos idées, présentez-les avec style.",
+      "project_url": "https://devpost.com/software/prezibot",
+      "hackathon_title": "Presentation Api Agent",
+      "hackathon_url": "https://presentation-api-agent.devpost.com",
+      "hackathon_devpost_id": 28121
+    },
+    {
+      "devpost_software_id": "1249830",
+      "title": "Focus Guard",
+      "tagline": "This is Focus Guard. It is a working extension which blocks sites which distract you and decrease productivity",
+      "project_url": "https://devpost.com/software/focus-guard-gd8ax2",
+      "hackathon_title": "PantherHack 2026",
+      "hackathon_url": "https://pantherhack-2026.devpost.com",
+      "hackathon_devpost_id": 28955
+    },
+    {
+      "devpost_software_id": "1248745",
+      "title": "BONDTRAKR",
+      "tagline": "BONDTRAKR: Know Your Worth, Bond by Bond",
+      "project_url": "https://devpost.com/software/bondtrakr",
+      "hackathon_title": "PantherHack 2026",
+      "hackathon_url": "https://pantherhack-2026.devpost.com",
+      "hackathon_devpost_id": 28955
+    },
+    {
+      "devpost_software_id": "1248297",
+      "title": "Commit",
+      "tagline": "Small commits. Real momentum",
+      "project_url": "https://devpost.com/software/commit-va7exu",
+      "hackathon_title": "PantherHack 2026",
+      "hackathon_url": "https://pantherhack-2026.devpost.com",
+      "hackathon_devpost_id": 28955
+    },
+    {
+      "devpost_software_id": "1249768",
+      "title": "Catching Cats",
+      "tagline": "helping cats who are falling from the sky and dropping to the ground",
+      "project_url": "https://devpost.com/software/catching-cats",
+      "hackathon_title": "PantherHack 2026",
+      "hackathon_url": "https://pantherhack-2026.devpost.com",
+      "hackathon_devpost_id": 28955
+    },
+    {
+      "devpost_software_id": "1248388",
+      "title": "MiniAssit",
+      "tagline": "The cheap, reliable home assistant",
+      "project_url": "https://devpost.com/software/miniassit",
+      "hackathon_title": "PantherHack 2026",
+      "hackathon_url": "https://pantherhack-2026.devpost.com",
+      "hackathon_devpost_id": 28955
+    },
+    {
+      "devpost_software_id": "1249564",
+      "title": "TurtleSim: Dynamic Systems Engine",
+      "tagline": "TurtleSim demonstrates three systems that explore how simple rules can generate complex yet fascinating patterns and behaviors in evolving and structured systems.",
+      "project_url": "https://devpost.com/software/turtlesim-dynamic-systems-engine",
+      "hackathon_title": "PantherHack 2026",
+      "hackathon_url": "https://pantherhack-2026.devpost.com",
+      "hackathon_devpost_id": 28955
+    },
+    {
+      "devpost_software_id": "1249734",
+      "title": "Chemistry Resources Site",
+      "tagline": "This website has many resources for studying chemistry, including a periodic table with data on the elements and a built in calculator.",
+      "project_url": "https://devpost.com/software/chemistry-resources-site",
+      "hackathon_title": "PantherHack 2026",
+      "hackathon_url": "https://pantherhack-2026.devpost.com",
+      "hackathon_devpost_id": 28955
+    },
+    {
+      "devpost_software_id": "1249527",
+      "title": "Mower Roguelite",
+      "tagline": "A lawnmower roguelite where you must strategically manage your fuel while dodging rocks and mowing all the grass.",
+      "project_url": "https://devpost.com/software/mower-roguelite",
+      "hackathon_title": "PantherHack 2026",
+      "hackathon_url": "https://pantherhack-2026.devpost.com",
+      "hackathon_devpost_id": 28955
+    },
+    {
+      "devpost_software_id": "1234016",
+      "title": "safespace_ug",
+      "tagline": "SafeSpace UG: Anonymous AI mental health support for UG students. Mood tracking, journaling & peer groups — no signup, no names, no stigma.",
+      "project_url": "https://devpost.com/software/safespace_ug",
+      "hackathon_title": "Claude Builder Hackathon, UG",
+      "hackathon_url": "https://claude-builder-hackathon-ug.devpost.com",
+      "hackathon_devpost_id": 29436
+    },
+    {
+      "devpost_software_id": "1234187",
+      "title": "LandMate",
+      "tagline": "LandMate is an AI co-pilot that explains land documents, detects fraud risks, and provides step-by-step registration guidance . Powered by Claude and other models",
+      "project_url": "https://devpost.com/software/landmate",
+      "hackathon_title": "Claude Builder Hackathon, UG",
+      "hackathon_url": "https://claude-builder-hackathon-ug.devpost.com",
+      "hackathon_devpost_id": 29436
+    },
+    {
+      "devpost_software_id": "1234132",
+      "title": "BioBrief",
+      "tagline": "BioBrief turns confusing medical lab results into clear, plain-language explanations — in English or Twi — so every patient can understand their health, not just their doctor.",
+      "project_url": "https://devpost.com/software/biobrief",
+      "hackathon_title": "Claude Builder Hackathon, UG",
+      "hackathon_url": "https://claude-builder-hackathon-ug.devpost.com",
+      "hackathon_devpost_id": 29436
+    },
+    {
+      "devpost_software_id": "1244750",
+      "title": "Tether",
+      "tagline": "A tether to your financial goals",
+      "project_url": "https://devpost.com/software/tether-nw1i2x",
+      "hackathon_title": "WayneHacks 4",
+      "hackathon_url": "https://waynehacks-4.devpost.com",
+      "hackathon_devpost_id": 27930
+    },
+    {
+      "devpost_software_id": "1244201",
+      "title": "GreenUpDoe!",
+      "tagline": "Explore Detroit. Connecting Neighborhoods.",
+      "project_url": "https://devpost.com/software/greenupdoe",
+      "hackathon_title": "WayneHacks 4",
+      "hackathon_url": "https://waynehacks-4.devpost.com",
+      "hackathon_devpost_id": 27930
+    },
+    {
+      "devpost_software_id": "1243543",
+      "title": "GuardWave",
+      "tagline": "WiFi signals already fill every room. GuardWave turns them into an invisible safety net — detecting falls right on the momment, alerting caregivers instantly, no invasive compromise, just physics!",
+      "project_url": "https://devpost.com/software/guardwave",
+      "hackathon_title": "WayneHacks 4",
+      "hackathon_url": "https://waynehacks-4.devpost.com",
+      "hackathon_devpost_id": 27930
+    },
+    {
+      "devpost_software_id": "1245166",
+      "title": "UniGuide",
+      "tagline": "Your campus companion",
+      "project_url": "https://devpost.com/software/uniguide-wevnca",
+      "hackathon_title": "WayneHacks 4",
+      "hackathon_url": "https://waynehacks-4.devpost.com",
+      "hackathon_devpost_id": 27930
+    },
+    {
+      "devpost_software_id": "1239459",
+      "title": "hana",
+      "tagline": "Hana is a tool that lets you record a conversation with a loved one and turns it into a beautiful, shareable digital experience in their words and in their language.",
+      "project_url": "https://devpost.com/software/hana-3g8fwk",
+      "hackathon_title": "BagelHacks II",
+      "hackathon_url": "https://bagelhacks-ii.devpost.com",
+      "hackathon_devpost_id": 29552
+    },
+    {
+      "devpost_software_id": "1239419",
+      "title": "Revly",
+      "tagline": "Revly gives streamers a new way to own their monetization not instead of relying on platform ads, they can turn any object in their stream into a live ad, keeping the revenue for themselves.",
+      "project_url": "https://devpost.com/software/revly",
+      "hackathon_title": "BagelHacks II",
+      "hackathon_url": "https://bagelhacks-ii.devpost.com",
+      "hackathon_devpost_id": 29552
+    },
+    {
+      "devpost_software_id": "1239384",
+      "title": "SourceProof",
+      "tagline": "Digital product passport to combat the urgent demand of EU's ERPS new regulation for the retail industry",
+      "project_url": "https://devpost.com/software/sourceproof",
+      "hackathon_title": "BagelHacks II",
+      "hackathon_url": "https://bagelhacks-ii.devpost.com",
+      "hackathon_devpost_id": 29552
+    },
+    {
+      "devpost_software_id": "1239401",
+      "title": "Ledge",
+      "tagline": "Your company's spending, finally answerable.",
+      "project_url": "https://devpost.com/software/ledge-62f4cb",
+      "hackathon_title": "BagelHacks II",
+      "hackathon_url": "https://bagelhacks-ii.devpost.com",
+      "hackathon_devpost_id": 29552
+    },
+    {
+      "devpost_software_id": "1239391",
+      "title": "Swoin",
+      "tagline": "Swoin elevates cross-border transfers. Move funds in seconds for near-zero fees, not days and high costs.",
+      "project_url": "https://devpost.com/software/swoin",
+      "hackathon_title": "BagelHacks II",
+      "hackathon_url": "https://bagelhacks-ii.devpost.com",
+      "hackathon_devpost_id": 29552
+    },
+    {
+      "devpost_software_id": "1208462",
+      "title": "AudioAid",
+      "tagline": "AudioAid: restoring the music hearing loss takes away",
+      "project_url": "https://devpost.com/software/audioaid-o39kcz",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1208434",
+      "title": "Twotabs",
+      "tagline": "Music production that's easy, cost free and beginner friendly, in two tabs.",
+      "project_url": "https://devpost.com/software/twotabs",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1208379",
+      "title": "Flow",
+      "tagline": "AI-powered ad insertion that blends promotional content into songs without breaking the listening experience.",
+      "project_url": "https://devpost.com/software/ad-injector",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1208437",
+      "title": "EchoGuessr",
+      "tagline": "EchoGuessr is an audio guessing game where you guess ambient sounds, regional music, and spoken phrases in a mystery location. Listen to the clues, drop your pin, and guess where you are in the world.",
+      "project_url": "https://devpost.com/software/echoguessr",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1208138",
+      "title": "Adify",
+      "tagline": "An personalized ad generator for products on Shopify stores",
+      "project_url": "https://devpost.com/software/adify",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1207973",
+      "title": "Sonify",
+      "tagline": "Talk to your data as a merchant.",
+      "project_url": "https://devpost.com/software/audify-b3q2sr",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1208412",
+      "title": "Steerio",
+      "tagline": "Steerio is a real-time safety layer for AI voice agents in regulated industries. An LLM judge checks each response against compliance rules before it’s spoken, blocking unsafe content instantly.",
+      "project_url": "https://devpost.com/software/steerio",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1208419",
+      "title": "Hum AI",
+      "tagline": "Hum Producer turns a hum into a full song: analyze melody, auto‑generate layers, mix with real controls, add beats by text, and export fast. Music making for anyone.",
+      "project_url": "https://devpost.com/software/hum-ai",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1208386",
+      "title": "MemoMuse",
+      "tagline": "Hum it. Produce it. Sell it. Voice memo → AI-generated full track with vocals & instruments in under a minute. List as vinyl on Shopify — with live support every step of the way.",
+      "project_url": "https://devpost.com/software/memomuse",
+      "hackathon_title": "ListenHacks",
+      "hackathon_url": "https://lihacks-2026.devpost.com",
+      "hackathon_devpost_id": 28602
+    },
+    {
+      "devpost_software_id": "1118682",
+      "title": "StudyGenie",
+      "tagline": "StudyGenie transforms any notes into summaries, quizzes, flashcards, and simple ELI5 explanations—helping students learn faster and understand tough topics with ease.",
+      "project_url": "https://devpost.com/software/studygenie-f6octg",
+      "hackathon_title": "Hack Day @ GDG Gombe — Build the Future with Gemini",
+      "hackathon_url": "https://hackdaygombe.devpost.com",
+      "hackathon_devpost_id": 27156
+    },
+    {
+      "devpost_software_id": "1115686",
+      "title": "Climaura",
+      "tagline": "I wanted to create a platform that bridges the gap between scientific climate data and public understanding.",
+      "project_url": "https://devpost.com/software/climaura",
+      "hackathon_title": "Hack Day @ GDG Gombe — Build the Future with Gemini",
+      "hackathon_url": "https://hackdaygombe.devpost.com",
+      "hackathon_devpost_id": 27156
+    },
+    {
+      "devpost_software_id": "1199114",
+      "title": "DroneMission",
+      "tagline": "#UAVMission #CubSatMission #DroneMission #FixedWingMision #PlaneMission #Python #PythonDevelopment",
+      "project_url": "https://devpost.com/software/dronemission",
+      "hackathon_title": "AeroHack",
+      "hackathon_url": "https://aerohack.devpost.com",
+      "hackathon_devpost_id": 28412
+    },
+    {
+      "devpost_software_id": "1193660",
+      "title": "ORBITAL",
+      "tagline": "ORBITAL — A Unified Planning Kernel for Aerospace Operations",
+      "project_url": "https://devpost.com/software/orbital-ql7k4v",
+      "hackathon_title": "AeroHack",
+      "hackathon_url": "https://aerohack.devpost.com",
+      "hackathon_devpost_id": 28412
+    },
+    {
+      "devpost_software_id": "1193184",
+      "title": "ORBIT-X: Unified Aerospace Mission Intelligence Platform",
+      "tagline": "Production-grade mission planner that optimizes aircraft patrols and spacecraft \r\noperations using a unified constraint-satisfaction framework with real-time \r\nreplanning and Monte Carlo validation.",
+      "project_url": "https://devpost.com/software/orbit-x-unified-aerospace-mission-intelligence-platform",
+      "hackathon_title": "AeroHack",
+      "hackathon_url": "https://aerohack.devpost.com",
+      "hackathon_devpost_id": 28412
+    },
+    {
+      "devpost_software_id": "1191862",
+      "title": "AeroUnity",
+      "tagline": "\"One Framework, Two Worlds: Unified Mission Planning for Air and Space\"",
+      "project_url": "https://devpost.com/software/aerounity",
+      "hackathon_title": "AeroHack",
+      "hackathon_url": "https://aerohack.devpost.com",
+      "hackathon_devpost_id": 28412
+    },
+    {
+      "devpost_software_id": "1208122",
+      "title": "AutoTinder",
+      "tagline": "Saving time swiping, messaging, and scheduling on dating apps with this simple solution that took me 15 hours to code.",
+      "project_url": "https://devpost.com/software/autotinder",
+      "hackathon_title": "hackTAMS 2026",
+      "hackathon_url": "https://hacktams-2026.devpost.com",
+      "hackathon_devpost_id": 28276
+    },
+    {
+      "devpost_software_id": "1210563",
+      "title": "FridgeLuck",
+      "tagline": "Snap your fridge. AI identifies ingredients, suggests recipes for your dietary goals, and tracks nutrition fully offline. FridgeLuck turns any fridge into a smart fridge and every meal healthier.",
+      "project_url": "https://devpost.com/software/fridgeluck",
+      "hackathon_title": "hackTAMS 2026",
+      "hackathon_url": "https://hacktams-2026.devpost.com",
+      "hackathon_devpost_id": 28276
+    },
+    {
+      "devpost_software_id": "1210677",
+      "title": "ForgeFlow",
+      "tagline": "A new innovative program that takes in a jira ticket and generates code for you",
+      "project_url": "https://devpost.com/software/forgeflow-42h9z7",
+      "hackathon_title": "hackTAMS 2026",
+      "hackathon_url": "https://hacktams-2026.devpost.com",
+      "hackathon_devpost_id": 28276
+    },
+    {
+      "devpost_software_id": "1210671",
+      "title": "TeamFlow",
+      "tagline": "It's an all in 1 team/project management web/app made for teachers, students, and parents for middle, high school, etc. Solves group work/projects being disorganized, unfair, and hard to manage.",
+      "project_url": "https://devpost.com/software/teamflow-l9cbv0",
+      "hackathon_title": "hackTAMS 2026",
+      "hackathon_url": "https://hacktams-2026.devpost.com",
+      "hackathon_devpost_id": 28276
+    },
+    {
+      "devpost_software_id": "1210590",
+      "title": "RoboPoker",
+      "tagline": "A vision-based robot that analyzes and plays poker in real time.",
+      "project_url": "https://devpost.com/software/robopoker",
+      "hackathon_title": "hackTAMS 2026",
+      "hackathon_url": "https://hacktams-2026.devpost.com",
+      "hackathon_devpost_id": 28276
+    },
+    {
+      "devpost_software_id": "1171589",
+      "title": "Who's The Spy",
+      "tagline": "A single-player deduction game where four AIs speak, and only one is lying",
+      "project_url": "https://devpost.com/software/who-s-the-spy",
+      "hackathon_title": "MCIT Hackathon 2026",
+      "hackathon_url": "https://mcithackathon2026.devpost.com",
+      "hackathon_devpost_id": 28249
+    },
+    {
+      "devpost_software_id": "1170587",
+      "title": "Let’s settle this",
+      "tagline": "Pick a topic. Pick characters. We turn internet chaos into a podcast. Your favorite icons roasting, ranting, and debating like a comment thread you actually want to hear.",
+      "project_url": "https://devpost.com/software/let-s-settle-this",
+      "hackathon_title": "MCIT Hackathon 2026",
+      "hackathon_url": "https://mcithackathon2026.devpost.com",
+      "hackathon_devpost_id": 28249
+    },
+    {
+      "devpost_software_id": "1169732",
+      "title": "Ping",
+      "tagline": "Ping is a real-time, location-based platform that helps verified students find nearby people to study, eat, work out, or hang out with—right when they’re available.",
+      "project_url": "https://devpost.com/software/ping-odv52w",
+      "hackathon_title": "MCIT Hackathon 2026",
+      "hackathon_url": "https://mcithackathon2026.devpost.com",
+      "hackathon_devpost_id": 28249
+    },
+    {
+      "devpost_software_id": "1171633",
+      "title": "MCIT Freshman Adventure",
+      "tagline": "A fun interactive web game to help familiarize students with the program and parts of campus before there first year!",
+      "project_url": "https://devpost.com/software/mcit-freshman-adventure",
+      "hackathon_title": "MCIT Hackathon 2026",
+      "hackathon_url": "https://mcithackathon2026.devpost.com",
+      "hackathon_devpost_id": 28249
+    },
+    {
+      "devpost_software_id": "1171764",
+      "title": "Cat Box Battle",
+      "tagline": "Cat Box Battle is a small web game where players place cats on a 4×4 grid, lock in their lineup, and run a battle simulation against the computer.",
+      "project_url": "https://devpost.com/software/cat-box-battle",
+      "hackathon_title": "MCIT Hackathon 2026",
+      "hackathon_url": "https://mcithackathon2026.devpost.com",
+      "hackathon_devpost_id": 28249
+    },
+    {
+      "devpost_software_id": "1170246",
+      "title": "What's the True Scoop?",
+      "tagline": "How can we make a fun game while getting to know our classmates better?",
+      "project_url": "https://devpost.com/software/what-s-the-true-scoop",
+      "hackathon_title": "MCIT Hackathon 2026",
+      "hackathon_url": "https://mcithackathon2026.devpost.com",
+      "hackathon_devpost_id": 28249
+    },
+    {
+      "devpost_software_id": "1171614",
+      "title": "Code & Crush",
+      "tagline": "Your Virtual Companion That Makes Studying CS Feel Like a Date!",
+      "project_url": "https://devpost.com/software/code-crush",
+      "hackathon_title": "MCIT Hackathon 2026",
+      "hackathon_url": "https://mcithackathon2026.devpost.com",
+      "hackathon_devpost_id": 28249
+    },
+    {
+      "devpost_software_id": "1171420",
+      "title": "MCIT Student Simulator",
+      "tagline": "Experience MCIT Students' Wonderful Life!!!",
+      "project_url": "https://devpost.com/software/mcit-student-simulator",
+      "hackathon_title": "MCIT Hackathon 2026",
+      "hackathon_url": "https://mcithackathon2026.devpost.com",
+      "hackathon_devpost_id": 28249
+    },
+    {
+      "devpost_software_id": "1216991",
+      "title": "Poseidon",
+      "tagline": "SUPER DOPE SNAKE THATLL WIN EVERYTHING - LETS GOOOOOOOOOOOOOOOOOO",
+      "project_url": "https://devpost.com/software/poseidon-wmzuoa",
+      "hackathon_title": "BattleSnake 2026",
+      "hackathon_url": "https://battlesnake-2026.devpost.com",
+      "hackathon_devpost_id": 29006
+    },
+    {
+      "devpost_software_id": "1217010",
+      "title": "CyberSnake",
+      "tagline": "Bigger snake = head-on wins + more board control. Grow by prioritizing food, then hunt opponents using size advantage. Safety checks, board awareness, and MCTS help guide smarter moves and avoid traps",
+      "project_url": "https://devpost.com/software/cybersnake",
+      "hackathon_title": "BattleSnake 2026",
+      "hackathon_url": "https://battlesnake-2026.devpost.com",
+      "hackathon_devpost_id": 29006
+    },
+    {
+      "devpost_software_id": "1215599",
+      "title": "Ourobouros",
+      "tagline": "best snake ever!",
+      "project_url": "https://devpost.com/software/ourobouros",
+      "hackathon_title": "BattleSnake 2026",
+      "hackathon_url": "https://battlesnake-2026.devpost.com",
+      "hackathon_devpost_id": 29006
+    },
+    {
+      "devpost_software_id": "1217107",
+      "title": "convLSTM",
+      "tagline": "convLSTM-battlesnake is a deep reinforcement learning Battlesnake AI designed for the 2026 NJIT Battlesnakes Tournament. It features a custom neural architecture trained using PPO.",
+      "project_url": "https://devpost.com/software/convlstm",
+      "hackathon_title": "BattleSnake 2026",
+      "hackathon_url": "https://battlesnake-2026.devpost.com",
+      "hackathon_devpost_id": 29006
+    },
+    {
+      "devpost_software_id": "1248696",
+      "title": "ELI5 AI Tutor (Explain Like I'm 5)",
+      "tagline": "\"From confusion to clarity!!!\"",
+      "project_url": "https://devpost.com/software/eli5-ai-tutor-explain-like-i-m-5",
+      "hackathon_title": "Gemini Hack Days Minna",
+      "hackathon_url": "https://gemini-hack-days-minna.devpost.com",
+      "hackathon_devpost_id": 29773
+    },
+    {
+      "devpost_software_id": "1248685",
+      "title": "KampuzRide",
+      "tagline": "A fast, student-powered ride network that connects campus commuters in seconds — cheaper, safer, and built for everyday movement within and around school.",
+      "project_url": "https://devpost.com/software/kampuzride",
+      "hackathon_title": "Gemini Hack Days Minna",
+      "hackathon_url": "https://gemini-hack-days-minna.devpost.com",
+      "hackathon_devpost_id": 29773
+    },
+    {
+      "devpost_software_id": "1248663",
+      "title": "ArtiLink",
+      "tagline": "A digital platform that connects local African artisans to nearby customers, making skilled services easy to find, trust, and book - while helping artisans earn more and grow their visibility.",
+      "project_url": "https://devpost.com/software/artilink",
+      "hackathon_title": "Gemini Hack Days Minna",
+      "hackathon_url": "https://gemini-hack-days-minna.devpost.com",
+      "hackathon_devpost_id": 29773
+    },
+    {
+      "devpost_software_id": "1230292",
+      "title": "Aitnemed.AI",
+      "tagline": "AitneMed.ai: An autonomous vocal anchor that uses ElevenLabs voice cloning to restore identity and comfort to those lost in the silence of dementia.",
+      "project_url": "https://devpost.com/software/aitnemed-ai",
+      "hackathon_title": "LancerHacks IX",
+      "hackathon_url": "https://lh-ix.devpost.com",
+      "hackathon_devpost_id": 28784
+    },
+    {
+      "devpost_software_id": "1230383",
+      "title": "Mythous",
+      "tagline": "A game about traveling through time fighting mythological creatures",
+      "project_url": "https://devpost.com/software/mythous-jm29bv",
+      "hackathon_title": "LancerHacks IX",
+      "hackathon_url": "https://lh-ix.devpost.com",
+      "hackathon_devpost_id": 28784
+    },
+    {
+      "devpost_software_id": "1230374",
+      "title": "APOLLO",
+      "tagline": "Predicts the future from the past, specifically in geopolitics, using a custom machine learning architecture.",
+      "project_url": "https://devpost.com/software/apollo-tfa3ev",
+      "hackathon_title": "LancerHacks IX",
+      "hackathon_url": "https://lh-ix.devpost.com",
+      "hackathon_devpost_id": 28784
+    },
+    {
+      "devpost_software_id": "1230361",
+      "title": "Echoes",
+      "tagline": "Narrate, explore, and preserve history - one document at a time.",
+      "project_url": "https://devpost.com/software/echoes-6mo7fk",
+      "hackathon_title": "LancerHacks IX",
+      "hackathon_url": "https://lh-ix.devpost.com",
+      "hackathon_devpost_id": 28784
+    },
+    {
+      "devpost_software_id": "1230349",
+      "title": "Global Bridge Connect",
+      "tagline": "GlobalBridge Connect turns resource deserts into maps of opportunity for disadvantaged communities. By aggregating essential services, we improve HDI, boost GDP, and fight the cycle of poverty.",
+      "project_url": "https://devpost.com/software/global-bridge-connect",
+      "hackathon_title": "LancerHacks IX",
+      "hackathon_url": "https://lh-ix.devpost.com",
+      "hackathon_devpost_id": 28784
+    },
+    {
+      "devpost_software_id": "1230300",
+      "title": "Minotaur's Labyrinth",
+      "tagline": "You immerse yourself in a first person view of a giant labyrinth inspired by the myth of Minotaur; try to survive and get to the center without him getting you!",
+      "project_url": "https://devpost.com/software/minotaur-s-labyrinth",
+      "hackathon_title": "LancerHacks IX",
+      "hackathon_url": "https://lh-ix.devpost.com",
+      "hackathon_devpost_id": 28784
+    },
+    {
+      "devpost_software_id": "1230282",
+      "title": "The Archive",
+      "tagline": "Every object has a story. Preserve yours.",
+      "project_url": "https://devpost.com/software/the-archive-0rcp4f",
+      "hackathon_title": "LancerHacks IX",
+      "hackathon_url": "https://lh-ix.devpost.com",
+      "hackathon_devpost_id": 28784
+    },
+    {
+      "devpost_software_id": "1230064",
+      "title": "MythosAI",
+      "tagline": "What if you could just… talk to a god? MythosAI lets you chat with mythological figures from history — Athena, Odin, Isis, and more. Pick a character, learn their story, ask them anything.",
+      "project_url": "https://devpost.com/software/mythosai",
+      "hackathon_title": "LancerHacks IX",
+      "hackathon_url": "https://lh-ix.devpost.com",
+      "hackathon_devpost_id": 28784
+    },
+    {
+      "devpost_software_id": "1250459",
+      "title": "Doctor Grandma Guide",
+      "tagline": "Doctor Grandma Apothecary is a modern AI‑powered web app with a traditional apothecary aesthetic. It provides instant, personalized wellness insights.",
+      "project_url": "https://devpost.com/software/doctor-grandma-guide",
+      "hackathon_title": "Hack Days in Bhopal 2.0",
+      "hackathon_url": "https://hackdaybhopal2.devpost.com",
+      "hackathon_devpost_id": 29148
+    },
+    {
+      "devpost_software_id": "1250383",
+      "title": "SecondBrain",
+      "tagline": "SecondBrain is an AI-powered study assistant that converts content into summaries, quizzes, and personalized learning insights using Gemini AI.",
+      "project_url": "https://devpost.com/software/secondbrain-kgiv54",
+      "hackathon_title": "Hack Days in Bhopal 2.0",
+      "hackathon_url": "https://hackdaybhopal2.devpost.com",
+      "hackathon_devpost_id": 29148
+    },
+    {
+      "devpost_software_id": "1250438",
+      "title": "Proximity: Intelligent Agents",
+      "tagline": "The modern customer success layer for the web. Proximity instantly converts your company's knowledge base into a fully embeddable, real-time AI assistant capable of answering user queries perfectly",
+      "project_url": "https://devpost.com/software/proximity-intelligent-agents",
+      "hackathon_title": "Hack Days in Bhopal 2.0",
+      "hackathon_url": "https://hackdaybhopal2.devpost.com",
+      "hackathon_devpost_id": 29148
+    },
+    {
+      "devpost_software_id": "1249094",
+      "title": "Walk Safe",
+      "tagline": "An add on device to walkers to prevent falls",
+      "project_url": "https://devpost.com/software/walk-safe-8ug0sk",
+      "hackathon_title": "reNOVAte Create-a-thon",
+      "hackathon_url": "https://renovate.devpost.com",
+      "hackathon_devpost_id": 28891
+    },
+    {
+      "devpost_software_id": "1249201",
+      "title": "EcoRN",
+      "tagline": "We are letting you choose sustainability right now.",
+      "project_url": "https://devpost.com/software/ecorn",
+      "hackathon_title": "reNOVAte Create-a-thon",
+      "hackathon_url": "https://renovate.devpost.com",
+      "hackathon_devpost_id": 28891
+    },
+    {
+      "devpost_software_id": "1249179",
+      "title": "Binary",
+      "tagline": "With modern energy being integrated, solar power has gotten a lot more popular. Thus, a way to directly follow the sun's direction is important to get the most efficient energy possible.",
+      "project_url": "https://devpost.com/software/binry",
+      "hackathon_title": "reNOVAte Create-a-thon",
+      "hackathon_url": "https://renovate.devpost.com",
+      "hackathon_devpost_id": 28891
+    },
+    {
+      "devpost_software_id": "1249202",
+      "title": "\"Come on Human....\" -by Team Starting From Scratch",
+      "tagline": "An alien visits Earth and judges your recycling habits. Make choices, hear its reactions, and maybe don’t embarrass humanity. Turn sound on.",
+      "project_url": "https://devpost.com/software/come-on-human-by-team-starting-from-scratch",
+      "hackathon_title": "reNOVAte Create-a-thon",
+      "hackathon_url": "https://renovate.devpost.com",
+      "hackathon_devpost_id": 28891
+    },
+    {
+      "devpost_software_id": "1210524",
+      "title": "InterviewIq",
+      "tagline": "AI-powered interview simulator that generates role-based questions and delivers instant performance feedback.",
+      "project_url": "https://devpost.com/software/interviewiq-iqrlam",
+      "hackathon_title": "PIXEL.GEMINI",
+      "hackathon_url": "https://pixel-gemini.devpost.com",
+      "hackathon_devpost_id": 28951
+    },
+    {
+      "devpost_software_id": "1210619",
+      "title": "Lumina-AI powered Educator",
+      "tagline": "Master any YouTube lecture instantly. Lumina generates structured courses from video content.",
+      "project_url": "https://devpost.com/software/lumina-ai-powered-educator",
+      "hackathon_title": "PIXEL.GEMINI",
+      "hackathon_url": "https://pixel-gemini.devpost.com",
+      "hackathon_devpost_id": 28951
+    },
+    {
+      "devpost_software_id": "1210752",
+      "title": "Fluxboard.AI",
+      "tagline": "Generative AI meets real-time physics: The future of breadboarding",
+      "project_url": "https://devpost.com/software/fluxboard-ai",
+      "hackathon_title": "PIXEL.GEMINI",
+      "hackathon_url": "https://pixel-gemini.devpost.com",
+      "hackathon_devpost_id": 28951
+    },
+    {
+      "devpost_software_id": "1243387",
+      "title": "Maximin",
+      "tagline": "Send more 💰 home for less with AI ❇️",
+      "project_url": "https://devpost.com/software/maximin",
+      "hackathon_title": "Berea College Hackathon",
+      "hackathon_url": "https://berea-college-hackathon.devpost.com",
+      "hackathon_devpost_id": 29660
+    },
+    {
+      "devpost_software_id": "1243397",
+      "title": "BreadIt",
+      "tagline": "BreadIt; an anonymous academic forum where students can request feedback, share a community, and be themselves authentically no matter what.",
+      "project_url": "https://devpost.com/software/breadit",
+      "hackathon_title": "Berea College Hackathon",
+      "hackathon_url": "https://berea-college-hackathon.devpost.com",
+      "hackathon_devpost_id": 29660
+    },
+    {
+      "devpost_software_id": "1244041",
+      "title": "Prerequisite visualization project (registration)",
+      "tagline": "Recall the trouble behind building your class schedule. This website is a complementary class-registration tool that helps you visualize prerequisites and classes needed to graduate.",
+      "project_url": "https://devpost.com/software/prerequisite-visualization-project-registration",
+      "hackathon_title": "Berea College Hackathon",
+      "hackathon_url": "https://berea-college-hackathon.devpost.com",
+      "hackathon_devpost_id": 29660
+    },
+    {
+      "devpost_software_id": "1230117",
+      "title": "IT Budgeting and Forecasting",
+      "tagline": "AI-powered IT budget planning and forecasting platform with intelligent analytics, multi-variable scenario modeling, and seamless Excel integration.",
+      "project_url": "https://devpost.com/software/it-budgeting-and-forecasting",
+      "hackathon_title": "Southwest MN Hacks",
+      "hackathon_url": "https://southwestmn-hacks.devpost.com",
+      "hackathon_devpost_id": 28167
+    },
+    {
+      "devpost_software_id": "1230100",
+      "title": "Horizon",
+      "tagline": "Predicting the future.",
+      "project_url": "https://devpost.com/software/horizon-8i3u2h",
+      "hackathon_title": "Southwest MN Hacks",
+      "hackathon_url": "https://southwestmn-hacks.devpost.com",
+      "hackathon_devpost_id": 28167
+    },
+    {
+      "devpost_software_id": "1230056",
+      "title": "KnowledgeFlow",
+      "tagline": "Admins assign roles and manage access, teachers share knowledge, and learners receive structured training with summaries, quizzes, and a teach-back feature to ensure real understanding.",
+      "project_url": "https://devpost.com/software/knowledgeflow",
+      "hackathon_title": "Southwest MN Hacks",
+      "hackathon_url": "https://southwestmn-hacks.devpost.com",
+      "hackathon_devpost_id": 28167
+    },
+    {
+      "devpost_software_id": "1230119",
+      "title": "IT Budgeting and Forecasting Software",
+      "tagline": "This project is an AI-powered IT budgeting platform that helps organizations plan, track, and forecast their technology expenses while making the process easy to understand.",
+      "project_url": "https://devpost.com/software/it-budgeting-and-forecasting-software-6qvnm8",
+      "hackathon_title": "Southwest MN Hacks",
+      "hackathon_url": "https://southwestmn-hacks.devpost.com",
+      "hackathon_devpost_id": 28167
+    },
+    {
+      "devpost_software_id": "1230104",
+      "title": "SplendIT",
+      "tagline": "IT Finance Tracker that allows for manual data input or taking input from a excel file. Shows the forecast for the next 5 years based on previous spending.",
+      "project_url": "https://devpost.com/software/splendit",
+      "hackathon_title": "Southwest MN Hacks",
+      "hackathon_url": "https://southwestmn-hacks.devpost.com",
+      "hackathon_devpost_id": 28167
+    },
+    {
+      "devpost_software_id": "1177655",
+      "title": "Athletica",
+      "tagline": "Sports Injury Prevention Platform",
+      "project_url": "https://devpost.com/software/athletica",
+      "hackathon_title": "Sport Injury Prevention",
+      "hackathon_url": "https://sport-injury-prevention.devpost.com",
+      "hackathon_devpost_id": 28207
+    },
+    {
+      "devpost_software_id": "1177658",
+      "title": "BioGuard AI",
+      "tagline": "BioGuard AI  is an AI-powered mobile solution that uses real-time throwing positions to identify high-risk biomechanical flaws in a football player's form before they lead to serious injury.",
+      "project_url": "https://devpost.com/software/biometricqb",
+      "hackathon_title": "Sport Injury Prevention",
+      "hackathon_url": "https://sport-injury-prevention.devpost.com",
+      "hackathon_devpost_id": 28207
+    },
+    {
+      "devpost_software_id": "1168040",
+      "title": "PlayFit-AI",
+      "tagline": "PlayFit AI turns video games into workouts by using AI pose tracking to map real body movement into gameplay, making exercise engaging, accessible, and fun.",
+      "project_url": "https://devpost.com/software/playfit-ai-ba5r8x",
+      "hackathon_title": "Sport Injury Prevention",
+      "hackathon_url": "https://sport-injury-prevention.devpost.com",
+      "hackathon_devpost_id": 28207
+    },
+    {
+      "devpost_software_id": "1224463",
+      "title": "My AU Path",
+      "tagline": "measuring students’ interests and mapping them to university courses/career paths.",
+      "project_url": "https://devpost.com/software/my-au-path",
+      "hackathon_title": "ThunderHacks",
+      "hackathon_url": "https://thunder-hacks-au.devpost.com",
+      "hackathon_devpost_id": 29173
+    },
+    {
+      "devpost_software_id": "1223832",
+      "title": "Project M.E.G.A.N",
+      "tagline": "An MR AI mentor that lives in your real room, walks to you, visualizes concepts in 3D, and proactively supports students through academics, finances, and wellbeing.",
+      "project_url": "https://devpost.com/software/project-m-e-g-a-n",
+      "hackathon_title": "ThunderHacks",
+      "hackathon_url": "https://thunder-hacks-au.devpost.com",
+      "hackathon_devpost_id": 29173
+    },
+    {
+      "devpost_software_id": "1224488",
+      "title": "CampusIQ",
+      "tagline": "Student portal but actually useful.",
+      "project_url": "https://devpost.com/software/campusiq",
+      "hackathon_title": "ThunderHacks",
+      "hackathon_url": "https://thunder-hacks-au.devpost.com",
+      "hackathon_devpost_id": 29173
+    },
+    {
+      "devpost_software_id": "1226963",
+      "title": "AI-Surveillance-System",
+      "tagline": "Keep a log of how AI-Surveillance-System has evolved. Post about new features, app store releases, screenshots, or even code snippets. Your followers will see your updates in their feeds.",
+      "project_url": "https://devpost.com/software/ai-surveillance-system-ndgrkb",
+      "hackathon_title": "Code Gemini",
+      "hackathon_url": "https://code-gemini.devpost.com",
+      "hackathon_devpost_id": 28543
+    },
+    {
+      "devpost_software_id": "1226952",
+      "title": "Pharma Track System",
+      "tagline": "PharmaTrack System is a revolutionary blockchain-based pharmaceutical supply chain tracking solution. The system prevents counterfeit drugs from entering the market and ensures patient safety.",
+      "project_url": "https://devpost.com/software/pharma-track-system",
+      "hackathon_title": "Code Gemini",
+      "hackathon_url": "https://code-gemini.devpost.com",
+      "hackathon_devpost_id": 28543
+    },
+    {
+      "devpost_software_id": "1248257",
+      "title": "Smart Food Redistribution System",
+      "tagline": "FoodBridge uses geolocation to connect restaurants and stores with excess food directly to nearby shelters and food banks - turning today's waste into tomorrow's meal, one match at a time.",
+      "project_url": "https://devpost.com/software/smart-food-redistribution-system-4fhn5t",
+      "hackathon_title": "JPS Girls Who Code 2026",
+      "hackathon_url": "https://jpstevens-girls-who-code-2026.devpost.com",
+      "hackathon_devpost_id": 29751
+    },
+    {
+      "devpost_software_id": "1249656",
+      "title": "StudyTracker/SafetyExit",
+      "tagline": "A discreet app (disguised as a to-do list) that helps survivors document incidents, locate shelters, and create safety exit plans. It is designed for women with limited phone privacy.",
+      "project_url": "https://devpost.com/software/studytracker-safetyexit",
+      "hackathon_title": "JPS Girls Who Code 2026",
+      "hackathon_url": "https://jpstevens-girls-who-code-2026.devpost.com",
+      "hackathon_devpost_id": 29751
+    },
+    {
+      "devpost_software_id": "1248220",
+      "title": "GWC Hackathon 2026",
+      "tagline": "AccessPark is a simple tool that helps people with disabilities find accessible parking faster. It shows parking spots on a map and lets users see if they’re available or occupied in real time.",
+      "project_url": "https://devpost.com/software/gwc-hackathon-2026-784tcz",
+      "hackathon_title": "JPS Girls Who Code 2026",
+      "hackathon_url": "https://jpstevens-girls-who-code-2026.devpost.com",
+      "hackathon_devpost_id": 29751
+    },
+    {
+      "devpost_software_id": "1250874",
+      "title": "Peak Team Physical Submission",
+      "tagline": "We created a mountain style trophy that allows you to track your progress through a competition by using a slider and when the slider reaches the top of all of the checkpoints, a flag comes out.",
+      "project_url": "https://devpost.com/software/peak-team-physical-submission",
+      "hackathon_title": "Designer's Edge",
+      "hackathon_url": "https://designersedge.devpost.com",
+      "hackathon_devpost_id": 29343
+    },
+    {
+      "devpost_software_id": "1248941",
+      "title": "Falling Up",
+      "tagline": "An artful insight into human nature, it's struggle against time, and it's quest to reach the summit.",
+      "project_url": "https://devpost.com/software/falling-up",
+      "hackathon_title": "Designer's Edge",
+      "hackathon_url": "https://designersedge.devpost.com",
+      "hackathon_devpost_id": 29343
+    },
+    {
+      "devpost_software_id": "1250989",
+      "title": "ts is so peak",
+      "tagline": "We climb, we claw, we troll, and we will make it to the top! (maybe with all of us alive)",
+      "project_url": "https://devpost.com/software/ts-is-so-peak",
+      "hackathon_title": "Designer's Edge",
+      "hackathon_url": "https://designersedge.devpost.com",
+      "hackathon_devpost_id": 29343
+    },
+    {
+      "devpost_software_id": "1251156",
+      "title": "Tally",
+      "tagline": "Tally turns your to-do list into a plan. Brain dump your tasks, break it into steps, sort by priority, and block your time in 10-minute increments, so you always know exactly what to work on next.",
+      "project_url": "https://devpost.com/software/tally-sov2a1",
+      "hackathon_title": "Designer's Edge",
+      "hackathon_url": "https://designersedge.devpost.com",
+      "hackathon_devpost_id": 29343
+    },
+    {
+      "devpost_software_id": "1234989",
+      "title": "Hay-Go",
+      "tagline": "A pollen tracker that helps you route the optimal exercise path for minimal pollen exposure.",
+      "project_url": "https://devpost.com/software/hay-go",
+      "hackathon_title": "Equinox Vancouver Hackathon",
+      "hackathon_url": "https://equinoxvancouver26.devpost.com",
+      "hackathon_devpost_id": 29140
+    },
+    {
+      "devpost_software_id": "1234980",
+      "title": "Swarmed",
+      "tagline": "We are The Beehive, for this spring Hackathon, we built the cure for spring break boredom! Play as the Queen Bee, spawn bees, defeat wasps, collect pollen, upgrade, and survive endless waves!",
+      "project_url": "https://devpost.com/software/swarmed",
+      "hackathon_title": "Equinox Vancouver Hackathon",
+      "hackathon_url": "https://equinoxvancouver26.devpost.com",
+      "hackathon_devpost_id": 29140
+    },
+    {
+      "devpost_software_id": "1234976",
+      "title": "Blossom",
+      "tagline": "Focus mode extension for chromium-based browsers. Plant cherry blossom trees and unlock fire and glowberry trees (😱) and expand your garden",
+      "project_url": "https://devpost.com/software/blossom-36q7tu",
+      "hackathon_title": "Equinox Vancouver Hackathon",
+      "hackathon_url": "https://equinoxvancouver26.devpost.com",
+      "hackathon_devpost_id": 29140
+    },
+    {
+      "devpost_software_id": "1237140",
+      "title": "Handoff AI (Middlebury College)",
+      "tagline": "N/A",
+      "project_url": "https://devpost.com/software/handoff-ai-middlebury-college",
+      "hackathon_title": "UVMHacks",
+      "hackathon_url": "https://uvmhacks.devpost.com",
+      "hackathon_devpost_id": 28644
+    },
+    {
+      "devpost_software_id": "1242013",
+      "title": "sustAIn",
+      "tagline": "sustAIn makes AI more sustainable by compressing prompts without hurting quality, reducing token usage, costs, and the water and energy needed to power AI.",
+      "project_url": "https://devpost.com/software/sustain-43qrf8",
+      "hackathon_title": "HackNova 2026 (TEST)",
+      "hackathon_url": "https://hacknova-2026.devpost.com",
+      "hackathon_devpost_id": 29576
+    },
+    {
+      "devpost_software_id": "937395",
+      "title": "Tailored Labs",
+      "tagline": "AI-powered video timeline editor that lets creators build professional edits through natural language commands, perfectly analyze raw video, and outputs end to end \"one-shot\" video generation.",
+      "project_url": "https://devpost.com/software/civilink",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "983682",
+      "title": "Weight Coach",
+      "tagline": "AI-powered meal planner with voice cooking assistant. Turns your inventory into personalized recipes, smart grocery lists, and hands-free cooking guidance to reduce waste and simplify healthy eating",
+      "project_url": "https://devpost.com/software/weight-coach",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "991833",
+      "title": "KeyHaven",
+      "tagline": "KeyHaven is a secure platform for developers and teams to store, rotate, and monitor API keys with encryption, alerts, and analytics",
+      "project_url": "https://devpost.com/software/keyhaven",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "975305",
+      "title": "Klinva – Ultimate CRM SaaS for Commercial Cleaning Companies",
+      "tagline": "Klinva is an AI-powered SaaS CRM built exclusively for commercial cleaning companies — streamlining operations, boosting efficiency, and enabling smarter growth from day one.",
+      "project_url": "https://devpost.com/software/klinva-ultimate-crm-saas-for-commercial-cleaning-companies",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "988211",
+      "title": "Ecobolt",
+      "tagline": "A comprehensive IoT monitoring system for agricultural environments",
+      "project_url": "https://devpost.com/software/ecobolt",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "1001456",
+      "title": "CallVance",
+      "tagline": "CallVance automates AI-powered voice calls to confirm appointments, update statuses in real time, and reduce no-shows. Complete with dashboard, CSV upload, and call tracking.",
+      "project_url": "https://devpost.com/software/callvance",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "1000615",
+      "title": "ModelMash: Find the Perfect LLM",
+      "tagline": "Easily test hundreds of different LLMs to find the best one for your specific task. Create tests, prompts, and success criteria ModelMash will find the perfect model for you.",
+      "project_url": "https://devpost.com/software/modelmash-find-the-perfect-llm",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "999234",
+      "title": "Legion",
+      "tagline": "Because men aren’t meant to fight alone.",
+      "project_url": "https://devpost.com/software/legion-ym9uef",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "1002332",
+      "title": "Bored? Opposite!",
+      "tagline": "At Bored?Opposite! we turn boring math into fun, relatable stories — from treehouses to slime factories. In the AI era, math is your edge. Is math boring? Opposite. It unlocks the future.",
+      "project_url": "https://devpost.com/software/bored-opposite",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "972567",
+      "title": "HealthPlan AI",
+      "tagline": "A web app with an AI voice agent that helps users understand and find the right health insurance plan for them, using real-time data from the federal marketplace.",
+      "project_url": "https://devpost.com/software/healthplan-ai",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "936772",
+      "title": "123policy",
+      "tagline": "A survey website that informs and collects the opinions of Americans based on federal government action that are summarized in a digestible way.",
+      "project_url": "https://devpost.com/software/123policy",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "989986",
+      "title": "VoiceZero",
+      "tagline": "We build websites by conversation",
+      "project_url": "https://devpost.com/software/voicezero",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "1002024",
+      "title": "MacSim.Store",
+      "tagline": "An old App Store where anyone can vibe code to create retro apps on a simulated MacOS GUI! WYSIWYG...",
+      "project_url": "https://devpost.com/software/macsim-store",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "967081",
+      "title": "Bubble Trouble",
+      "tagline": "Cat Shower: You've got to be kitten me.",
+      "project_url": "https://devpost.com/software/bubble-trouble",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "990897",
+      "title": "MZAP – Mainframe Zero-Agent Ops Platform",
+      "tagline": "MZAP: The AI-powered, zero-agent platform modernizing mainframe operations with intelligent automation, real-time insights, and no host-side installation.",
+      "project_url": "https://devpost.com/software/mzap-mainframe-zero-agent-ops-platform",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "986676",
+      "title": "BoltWire",
+      "tagline": "Have you ever struggled with the time-consuming process of creating mobile app wireframes? Introducing BoltWire, an AI-powered tool that helps mobile app prototyping on infinite canvas.",
+      "project_url": "https://devpost.com/software/boltwire",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "1001354",
+      "title": "SolarScope",
+      "tagline": "Design Solar Smarter — From Satellite to System in Minutes.\r\nAI-powered solar design: analyze rooftops remotely, generate reports, and optimize systems—no site visit needed.",
+      "project_url": "https://devpost.com/software/solarscope",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "1000913",
+      "title": "unknown ⋅ Music Discovery Reimagined",
+      "tagline": "Skip the top charts. Dive into the unknown. Discover music without bias - no names, no hype, just sound and emotion. Let the music speak first - get to know the artist only if the music moves you.",
+      "project_url": "https://devpost.com/software/unknown-music-discovery-reimagined",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "976910",
+      "title": "Roots",
+      "tagline": "Roots is an open-source school management platform designed to replace Madrid’s outdated Raíces system. Roots empowers teachers, parents, and students with a intuitive mobile-friendly experience.",
+      "project_url": "https://devpost.com/software/roots-wpsx9u",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "962138",
+      "title": "HotDog Training App",
+      "tagline": "Less Chaos, More Progress.",
+      "project_url": "https://devpost.com/software/hotdog-training-app",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "992267",
+      "title": "Loafie",
+      "tagline": "Loafie is your emotional support bread: comforting affirmations, gentle reminders, and mood boosts whenever you need a break. Rest, recharge, and feel seen - one slice at a time.",
+      "project_url": "https://devpost.com/software/loafie",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "974024",
+      "title": "BaseballHub",
+      "tagline": "Built with Bolt.new, Baseball Hub went from idea to App Store in a week—an AI-powered app that helps youth coaches manage teams, lineups, and schedules fast",
+      "project_url": "https://devpost.com/software/baseballhub",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "948801",
+      "title": "AccessPath",
+      "tagline": "Find truly accessible places.\r\n\r\nGo beyond generic accessibility symbols. Get detailed photos, videos, and community reviews tailored to your specific accessibility needs.",
+      "project_url": "https://devpost.com/software/accesspath-c04mf6",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "995029",
+      "title": "startsnap.fun",
+      "tagline": "Startsnap.fun is a platform for the #buildinpublic movement, where vibe coders can showcase their projects, document their journey, and connect with a real, onchain creator economy powered by Algorand",
+      "project_url": "https://devpost.com/software/startsnap-fun",
+      "hackathon_title": "World’s Largest Hackathon presented by Bolt",
+      "hackathon_url": "https://worldslargesthackathon.devpost.com",
+      "hackathon_devpost_id": 24786
+    },
+    {
+      "devpost_software_id": "1025766",
+      "title": "Payout",
+      "tagline": "Discover brands that owe you money through class action settlements. Find the ones you qualify for and get paid what's rightfully yours. The easiest way to make money online with no proof required*",
+      "project_url": "https://devpost.com/software/payout-cwdniv",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1023388",
+      "title": "Gurwi - Learn anything",
+      "tagline": "Gurwi makes mastering complex topics simple and engaging. Learn anything through our unique format of visual, interactive, and multilingual bite-sized lessons.",
+      "project_url": "https://devpost.com/software/gurwi-learn-anything",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1036245",
+      "title": "Echo Reminder",
+      "tagline": "A voice-based reminder app with smart features for future-tasks, including web-search, research, and drafting emails.",
+      "project_url": "https://devpost.com/software/echo-bedpzr",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1023421",
+      "title": "Tomo Japan",
+      "tagline": "Discover Japan with Tomo (\"Tomodachi\", or friend in Japanese) — your pocket travel friend. Visit destinations in Japan like never before with curated destination information and inspiring itineraries.",
+      "project_url": "https://devpost.com/software/tomo-japan",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1040290",
+      "title": "Cooked This: Cooking Diary and Tracker",
+      "tagline": "A fitness tracker for your cooking. Log meals, track new recipes, and watch your kitchen skills level up one dish at a time.",
+      "project_url": "https://devpost.com/software/cooked-this",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1060123",
+      "title": "Voicetree - AI Meeting Notes for Work & Study",
+      "tagline": "Smartest AI-powered meeting assistant for students and professionals that helps them take high-quality notes automatically.",
+      "project_url": "https://devpost.com/software/voicetree",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1050308",
+      "title": "Friendy+",
+      "tagline": "Never forget a weak tie again. Friendy+ helps you capture details, recall conversations, and turn fleeting contacts into lasting connections.",
+      "project_url": "https://devpost.com/software/friendtimeline",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1041242",
+      "title": "Studient",
+      "tagline": "Studient transforms any document into AI-powered flashcards, quizzes & spoken explanations. Built with Gemini & ElevenLabs, featuring Study-to-Earn rewards. Making premium education accessible to all.",
+      "project_url": "https://devpost.com/software/studient",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1035340",
+      "title": "Camp Notes",
+      "tagline": "Remember the best campsites, avoid the worst ones, and share experiences.",
+      "project_url": "https://devpost.com/software/camp-notes",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1027237",
+      "title": "Momental: Meditate, Sleep, Focus",
+      "tagline": "Escape the noise. Momental helps you find your moment — whether it's to meditate, sleep or focus. One page. One tap. Nothing more.",
+      "project_url": "https://devpost.com/software/momental",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1023868",
+      "title": "Posturely",
+      "tagline": "Posturely keeps your spine aligned with smart slouch detection via phone, AirPods, or laptop—plus exercises, scans & progress tracking to build pain-free posture habits.",
+      "project_url": "https://devpost.com/software/posturely-sit-straight",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1031514",
+      "title": "Steps Share",
+      "tagline": "Steps tracker with Social: friend groups, weekly leaderboards/challenges\r\n\r\nGamified: streaks & badges \r\n\r\nKMP: shared UI",
+      "project_url": "https://devpost.com/software/steps-share",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1070965",
+      "title": "DrawIt - A Multiplatform Draw & Guess Game",
+      "tagline": "Real-time Draw & Guess game. Create rooms, invite friends, sketch fast, guess smarter. Crisp design, animations, punchy SFX. Built with Compose Multiplatform for iOS, Android & Desktop too",
+      "project_url": "https://devpost.com/software/drawit-a-mutiplatform-draw-guess-game",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1073501",
+      "title": "ClipUGC",
+      "tagline": "AI Influencer-Style Video Generator",
+      "project_url": "https://devpost.com/software/clipugc",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1047859",
+      "title": "ReadHim",
+      "tagline": "Is he playing you? Know for sure. (6M+ views, $1100 MRR)",
+      "project_url": "https://devpost.com/software/readhim",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1059257",
+      "title": "Shutter Declutter: Photo Cleaner",
+      "tagline": "Shutter Declutter helps you save space in your camera roll. It\r\ns like Tinder, but for your photos. View photos taken on this day and swipe away the ones you don't want. Perfect as a daily routine!",
+      "project_url": "https://devpost.com/software/shutter-declutter",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1073122",
+      "title": "MemoLune",
+      "tagline": "\"Capture ideas instantly — with voice or text.\"\r\nVoice Input × OCR for Quick Notes.\r\nRecord your everyday moments with voice or text, and keep them safe.",
+      "project_url": "https://devpost.com/software/memolune",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1030651",
+      "title": "Vector Guard",
+      "tagline": "Tick & Mosquito Disease Education & Prevention",
+      "project_url": "https://devpost.com/software/vector-gaurd",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1073485",
+      "title": "Napkinmatic AI3D",
+      "tagline": "Turns your napkin sketch automatically into something AI magical - from masterpiece paintings to 3D models and beyond!",
+      "project_url": "https://devpost.com/software/napkinmatic-ai3d",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1030013",
+      "title": "Kigaru Talks",
+      "tagline": "Kigaru Talks is the app that gets you speaking Japanese with confidence. It’s a safe space to practice, chat freely, and build your skills without pressure.",
+      "project_url": "https://devpost.com/software/kigaru-talks",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1023399",
+      "title": "Dayloop: Everyday Timelapse",
+      "tagline": "Create your life's timelapse: daily selfies, workout progress, pregnancy, or even your growing pet. Travel through time with a playful slider. Export stunning videos with automatic portrait alignment.",
+      "project_url": "https://devpost.com/software/dayloop-everyday-timelapse",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1040088",
+      "title": "SkillMe",
+      "tagline": "Learn literally ANY SKILL by getting daily challenges, tailored to you current skill level.",
+      "project_url": "https://devpost.com/software/skillme",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1023497",
+      "title": "PitchLab - Professional-Grade Baseball Pitch Tracking",
+      "tagline": "PitchLab is an innovative computer vision application for baseball pitchers. We use deep learning models to match the accuracy of radar based ball flight tracking technology for 1/100th the price.",
+      "project_url": "https://devpost.com/software/pitchlab",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1051468",
+      "title": "Heartbeat Hero",
+      "tagline": "Heartbeat Hero turns iPhone and iPad into a CPR coach. Learn the theory, practise rhythm and depth, simulate a 999 or 911 call, and find real AEDs. Works offline. Students get full access free.",
+      "project_url": "https://devpost.com/software/heartbeat-hero",
+      "hackathon_title": "RevenueCat Shipaton 2025",
+      "hackathon_url": "https://revenuecat-shipaton-2025.devpost.com",
+      "hackathon_devpost_id": 24901
+    },
+    {
+      "devpost_software_id": "1156703",
+      "title": "Globot",
+      "tagline": "Multi-Agents. 2M-token compliance analysis. Satellite imagery risk detection. Globot turns sudden supply chain chaos into confident decisions in 60 seconds.",
+      "project_url": "https://devpost.com/software/globot-341w9q",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1187800",
+      "title": "Aegis: Autonomous Multi-Agent Crisis Command",
+      "tagline": "An autonomous multi-agent command center that prevents 911 collapse by triaging thousands of distress signals instantly using Google Gemini 3.",
+      "project_url": "https://devpost.com/software/aegis-autonomous-multi-agent-crisis-command",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1187761",
+      "title": "Netra: Empowering the Visually Impaired",
+      "tagline": "Restoring independence through AI. Netra provides the visually impaired with a high-speed vision system that reads text, recognizes faces, and describes surroundings in real-time.",
+      "project_url": "https://devpost.com/software/netra-empowering-the-visually-impaired",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1185630",
+      "title": "Proofy.AI",
+      "tagline": "An explainable, Gemini-powered verification platform built to restore trust in digital media.",
+      "project_url": "https://devpost.com/software/fakey-ai",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1173309",
+      "title": "Agent-weaver",
+      "tagline": "Turn Gemini into a coordinated team of 5 specialized AI agents with shared memory, human-verified annotations, and real-time collaboration between teams and their agents.",
+      "project_url": "https://devpost.com/software/agent-weaver",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1189749",
+      "title": "Orphafold",
+      "tagline": "OrphaFold orchestrates specialized Gemini 3 agents to bridge Orphanet, UniProt, Pubmed and AlphaFold data. Our AI Agents automates rare disease research to discover hidden therapeutic connections.",
+      "project_url": "https://devpost.com/software/orphafold",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1161565",
+      "title": "Orbital Assets",
+      "tagline": "The first Investment Bank for the solar system. Orbital Assets, powered by Gemini 3 Reasoning, turns raw NASA asteroid data into rigorous, physics-based financial valuations.",
+      "project_url": "https://devpost.com/software/orbital-assets",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1150748",
+      "title": "Logic Lift",
+      "tagline": "Logic Lift uses Gemini 3 to perform 'Logic Archaeology'—autonomously recovering critical financial business logic from legacy COBOL and verifying it into cloud-native Python with 100% parity.",
+      "project_url": "https://devpost.com/software/the-bunny-ear-adventure",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1145230",
+      "title": "AgentGuard: The Semantic Firewall for the Agentic Web",
+      "tagline": "The SSL for AI Agents. A Semantic Firewall that uses Gemini 3.0 to distinguish helpful shoppers from malicious scrapers in real-time.",
+      "project_url": "https://devpost.com/software/agentguard-the-semantic-firewall-for-the-agentic-web",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1183526",
+      "title": "PROCSee",
+      "tagline": "PROCSee turns your system into a crime scene — and autonomously investigates every process",
+      "project_url": "https://devpost.com/software/procsee",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1159843",
+      "title": "BatteryForgeAI",
+      "tagline": "Multi-agent battery intelligence. Specialized AI for vision-based defect detection, charging optimization, and fleet safety to maximize battery lifecycle and performance.",
+      "project_url": "https://devpost.com/software/batteryforgeai",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1173738",
+      "title": "Gemini GeoFlow",
+      "tagline": "Fusing Text and Terrain: An LLM-Powered Pipeline for Preparing Archaeological Datasets",
+      "project_url": "https://devpost.com/software/gemini-geoflow",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "1167552",
+      "title": "CineStream: A2A Mesh & Cinematic Learning",
+      "tagline": "A2A Intelligence Mesh & Academy: Eliminating 'Knowledge Friction' via strategic executive synthesis and high-fidelity cinematic pedagogy for all.",
+      "project_url": "https://devpost.com/software/cinestream-a2a-mesh-cinematic-learning",
+      "hackathon_title": "Gemini 3 Hackathon",
+      "hackathon_url": "https://gemini3.devpost.com",
+      "hackathon_devpost_id": 27555
+    },
+    {
+      "devpost_software_id": "260208",
+      "title": "Computationally Accelerated Reverse Vaccinology",
+      "tagline": "Accelerating process of reverse vaccination by predicting virus mutation and advancing modeling of protein to protein interaction",
+      "project_url": "https://devpost.com/software/computationally-accelerated-reverse-vaccinology",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257426",
+      "title": "3D Printed PAPR Mask",
+      "tagline": "For ~$30, I'm converting a full face snorkel mask into a reusable PAPR mask with interchangeable air filters. PAPR masks are more protective than N95 masks.",
+      "project_url": "https://devpost.com/software/3d-printed-capr-mask-more-effective-than-n95",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257513",
+      "title": "Frontlinehelper.org",
+      "tagline": "Connect donors, volunteers, restaurants and child/elder care workers with those on the front line of COVID-19, who need help with food deliveries, child/elder care, etc. Keeps restaurants in biz too!",
+      "project_url": "https://devpost.com/software/frontlinehelper-org",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "256911",
+      "title": "Sequoia",
+      "tagline": "An SMS-based platform made to help hospitals handle the burden of exponential patient influx by remotely connecting users to healthcare providers for triage",
+      "project_url": "https://devpost.com/software/sequoia-tgnryh",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "252803",
+      "title": "LiliusMed",
+      "tagline": "Intuitive decision making platform where government agencies, hospitals, and suppliers can quickly and accurately gauge current supply, anticipate future case burden, and forecast upcoming needs.",
+      "project_url": "https://devpost.com/software/liliusmed",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "254074",
+      "title": "Oracle's Crisis Supplies Exchange",
+      "tagline": "Web & Mobile App/Portal to help manage donations, loans, and available supply of PPE and other supplies supply in critical need through geo-spatial and needs matching",
+      "project_url": "https://devpost.com/software/crisis-supplies-exchange",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257101",
+      "title": "Collabovid",
+      "tagline": "Simplify exploring preprint publications regarding the coronavirus.",
+      "project_url": "https://devpost.com/software/covid-19-publications",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257070",
+      "title": "Corona-Spy",
+      "tagline": "A smartphone app aimed at tracking the spread of COVID-19 among its users by forming links among them as they come in close contact with each other.",
+      "project_url": "https://devpost.com/software/corona-spy",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "254398",
+      "title": "Learners",
+      "tagline": "Empowering global knowledge through remote mentoring",
+      "project_url": "https://devpost.com/software/learners",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257265",
+      "title": "#ThinkLogically",
+      "tagline": "Enabling users of news websites and open/closed social networks to request fact-checks directly from their browser or mobile app",
+      "project_url": "https://devpost.com/software/thinklogically",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257127",
+      "title": "Reach4Help",
+      "tagline": "Unifying help worldwide by connecting people in need to volunteer networks.",
+      "project_url": "https://devpost.com/software/reach4help",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257193",
+      "title": "Pokeguide",
+      "tagline": "FIRST EVER public transportation navigation app that guides people not to get on / off the bus stations or transit at stations where have Covid-19 cases nearby, so reduces the chances of infection",
+      "project_url": "https://devpost.com/software/pokeguide",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "256401",
+      "title": "COVID-19 California Benefits Finder",
+      "tagline": "Use this tool you discover which government benefits you're eligible for if you have been impacted by COVID-19.",
+      "project_url": "https://devpost.com/software/covid-19-benefits-tool",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "255631",
+      "title": "FavourFavour",
+      "tagline": "A platform that allows people to help-out each other however they can while also providing an incentive to do so.",
+      "project_url": "https://devpost.com/software/favourfavour",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257462",
+      "title": "Contribute Now",
+      "tagline": "Help the poor living in your area by donating money or working as volunteers on the food hubs. Poor people will get food on door step without worrying about money.",
+      "project_url": "https://devpost.com/software/contribute-now",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257473",
+      "title": "CoronaConnect",
+      "tagline": "CoronaConnect is an innovative approach for citizens to make a difference in their community and to stay informed on the virus. Citizens who have extra supplies now have an easy way to donate.",
+      "project_url": "https://devpost.com/software/reliefnet-pk98md",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "256586",
+      "title": "Covidtestingnear.me",
+      "tagline": "A website to see the map of all the COVID-19 testing sites in the US, and find the nearest location to the user.",
+      "project_url": "https://devpost.com/software/covid-19-test-centers-map-data",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "255610",
+      "title": "Flex-in, a flexible employment Platform 自由薪，灵活用工平台",
+      "tagline": "The platform aims to help enterprises overcome the difficulties in recruitment and people find jobs after the COVID-19 outbreak.解决疫情发生后，企业用工难和大量失业者就业难的问题。",
+      "project_url": "https://devpost.com/software/project-oysw6p4jinmc",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257021",
+      "title": "The Kindness Project",
+      "tagline": "Request or offer help to those in your community affected by the pandemic ❤️ We're on a mission to help the most vulnerable amongst us get support during the current crisis.",
+      "project_url": "https://devpost.com/software/the-kindness-project",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "255091",
+      "title": "Trova.do",
+      "tagline": "Optimise your supermarket & pharmacy visit during the COVID-19 quarantine. Find everything you need and reduce unnecessary movements to risk areas.",
+      "project_url": "https://devpost.com/software/trovify-charcuterio",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "251236",
+      "title": "040_medizinischesPersonal_1_040_qme",
+      "tagline": "Our realtime queue system managers that people arrive just-in-time at the doctor",
+      "project_url": "https://devpost.com/software/1_040_c_b-waitingqueue",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "255616",
+      "title": "Nashmi service",
+      "tagline": "Volunteer services for neighbourhood",
+      "project_url": "https://devpost.com/software/nashmi-service",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "257371",
+      "title": "GameTogether",
+      "tagline": "An app that allows any web based game to be played together as a multiplayer game in a group video call.",
+      "project_url": "https://devpost.com/software/gametogether",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "256654",
+      "title": "Stop The Spread",
+      "tagline": "With the ongoing COVID-19 situation in Nigeria in mind, Stop the Spread is a web application the serves the purpose of linking people with volunteer medics, report symptoms, easily access information",
+      "project_url": "https://devpost.com/software/stop-the-spread-wvfhqm",
+      "hackathon_title": "COVID-19 Global Hackathon 1.0",
+      "hackathon_url": "https://covid-global-hackathon.devpost.com",
+      "hackathon_devpost_id": 9722
+    },
+    {
+      "devpost_software_id": "655120",
+      "title": "Nested",
+      "tagline": "Nested: Move to a new city with ease, assisted by tailored suggestions based on your lifestyle and Google Maps history—find nearby grocery stores, gyms, museums, and more!",
+      "project_url": "https://devpost.com/software/nested",
+      "hackathon_title": "Google AI Hackathon",
+      "hackathon_url": "https://googleai.devpost.com",
+      "hackathon_devpost_id": 19496
+    },
+    {
+      "devpost_software_id": "637857",
+      "title": "Gemini Movie Detectives",
+      "tagline": "A gateway to AI-driven educational content in schools and universities with Gemini and RAG! Challenge your inner movie nerd and discover possibilities of creating educational game experiences with AI.",
+      "project_url": "https://devpost.com/software/gemini-movie-detectives",
+      "hackathon_title": "Google AI Hackathon",
+      "hackathon_url": "https://googleai.devpost.com",
+      "hackathon_devpost_id": 19496
+    },
+    {
+      "devpost_software_id": "637705",
+      "title": "Tube Uni",
+      "tagline": "Create a personal podcast on any topic, with a customized duration. Do something useful with your commute, dummy!",
+      "project_url": "https://devpost.com/software/tube-uni",
+      "hackathon_title": "Google AI Hackathon",
+      "hackathon_url": "https://googleai.devpost.com",
+      "hackathon_devpost_id": 19496
+    },
+    {
+      "devpost_software_id": "645596",
+      "title": "Leadseeker",
+      "tagline": "Find better leads with AI.",
+      "project_url": "https://devpost.com/software/leadseeker",
+      "hackathon_title": "Google AI Hackathon",
+      "hackathon_url": "https://googleai.devpost.com",
+      "hackathon_devpost_id": 19496
+    },
+    {
+      "devpost_software_id": "646074",
+      "title": "Pixtale",
+      "tagline": "From trip pics to narrated videos in minutes. Share travel stories with AI magic.",
+      "project_url": "https://devpost.com/software/pixtale",
+      "hackathon_title": "Google AI Hackathon",
+      "hackathon_url": "https://googleai.devpost.com",
+      "hackathon_devpost_id": 19496
+    },
+    {
+      "devpost_software_id": "646141",
+      "title": "Image Describer",
+      "tagline": "A Chrome Extension that uses Gemini Vision APIs to describe content on the web for blind people.",
+      "project_url": "https://devpost.com/software/image-describer",
+      "hackathon_title": "Google AI Hackathon",
+      "hackathon_url": "https://googleai.devpost.com",
+      "hackathon_devpost_id": 19496
+    },
+    {
+      "devpost_software_id": "655631",
+      "title": "Vodo AI",
+      "tagline": "Building on Vodo Drive and earlier AI experiments, a way to talk with your spreadsheets.\r\nGoing beyond just asking questions of your data - letting you update your data.",
+      "project_url": "https://devpost.com/software/vodo-ai-jwb1l2",
+      "hackathon_title": "Google AI Hackathon",
+      "hackathon_url": "https://googleai.devpost.com",
+      "hackathon_devpost_id": 19496
+    },
+    {
+      "devpost_software_id": "655050",
+      "title": "SparkAI",
+      "tagline": "The content Creators market is booming but are the influencers able to create quality content with minimal effort yet? Spark AI builds Content with References and posts on the platform with one click.",
+      "project_url": "https://devpost.com/software/ideaspark-ho0eqd",
+      "hackathon_title": "Google AI Hackathon",
+      "hackathon_url": "https://googleai.devpost.com",
+      "hackathon_devpost_id": 19496
+    },
+    {
+      "devpost_software_id": "1101626",
+      "title": "Nutshell: Hands-Free Web Access for Everyone",
+      "tagline": "Empowers users with motor disabilities to browse the web completely hands-free using just their head and mouth movements, powered by Chrome's private, on-device AI.",
+      "project_url": "https://devpost.com/software/nutshell-auftp2",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1079996",
+      "title": "Phonaify",
+      "tagline": "An AI-Powered English Pronunciation Chrome extension that detects pronunciation errors and provides real-time phonetic feedback as users read online.",
+      "project_url": "https://devpost.com/software/phonaify",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1098699",
+      "title": "Mentelo - An Interactive Chrome Extension You Can Talk To",
+      "tagline": "Struggling with confusing websites or complicated tax forms? Call Mindy!  She offers instant on-page tech support to answer your questions, along with 10 other essential everyday features.",
+      "project_url": "https://devpost.com/software/mentelo-interactive-chrome-extension-you-can-talk-to",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1100798",
+      "title": "AAC Board AI",
+      "tagline": "AAC Board AI helps people who can’t speak express themselves more naturally, using Chrome’s Built-in AI to proofread, rephrase, and translate messages instantly, privately and offline.",
+      "project_url": "https://devpost.com/software/aac-board-ai",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1102227",
+      "title": "Pet Shelter App",
+      "tagline": "Helping under-resourced shelters find forever homes for more pets, powered by free, private, client-side AI.",
+      "project_url": "https://devpost.com/software/pet-shelter-app",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1091998",
+      "title": "Trail",
+      "tagline": "A hybrid, multimodal web application that acts as your offline trail companion - plan, navigate, and explore with confidence, even without internet.",
+      "project_url": "https://devpost.com/software/trail-2ia5xw",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1081467",
+      "title": "The Turing Werewolf",
+      "tagline": "The Turing Werewolf turns the classic social deduction game Werewolf into a solo experience powered. Each player you meet is a Chrome Prompt API that debates, and deceives, all running locally.",
+      "project_url": "https://devpost.com/software/the-turing-werewolf",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1052147",
+      "title": "Helix AI",
+      "tagline": "Free AI Sidebar Chatbot in any site to prompt, talk to your site, attach images comes with built-in browser AI.",
+      "project_url": "https://devpost.com/software/helix-ai-zw1vfs",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1098758",
+      "title": "BrowseBack",
+      "tagline": "BrowseBack gives your browser a photographic memory powered by Chrome’s built-in AI. Search by content, not URLs. Fully private. Google organizes the world’s info, BrowseBack helps you rediscover it.",
+      "project_url": "https://devpost.com/software/browseback",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1099533",
+      "title": "EduAdapt",
+      "tagline": "Chrome extension that uses on-device Gemini Nano to turn any web page into a neurodivergent-friendly reading experience tailored for ADHD and Dyslexia students in seconds.",
+      "project_url": "https://devpost.com/software/eduadapt",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1065328",
+      "title": "Marionette - The On-Device Multimodal Al Agent",
+      "tagline": "Marionette is a Chrome extension that automates the web entirely offline using Gemini Nano and Chrome’s built-in AI APIs — Prompt, Summarizer, Rewriter, and Writer.",
+      "project_url": "https://devpost.com/software/marionette-the-on-device-multimodal-ai-agent",
+      "hackathon_title": "Google Chrome Built-in AI Challenge 2025",
+      "hackathon_url": "https://googlechromeai2025.devpost.com",
+      "hackathon_devpost_id": 25987
+    },
+    {
+      "devpost_software_id": "1208588",
+      "title": "BackstageCommercials",
+      "tagline": "AI-integrated ads seamlessly embedded into the background.",
+      "project_url": "https://devpost.com/software/backstagecommercials",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1226016",
+      "title": "Oracus AI",
+      "tagline": "AI-powered focus group that predicts how your target market will react to any business decision, before you spend a dollar. 100s of personas, 14 market metrics, strategic playbook, under 2 minutes.",
+      "project_url": "https://devpost.com/software/oracus-ai",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1226415",
+      "title": "Sai — Your Computer Can Finally See",
+      "tagline": "A voice-native OS agent that sees your screen. Powered by Amazon Nova Lite for routing and Nova Pro for visual reasoning, Sai turns any app on your Mac into a voice-controlled interface. No DOM needed",
+      "project_url": "https://devpost.com/software/sai-m2wl0p",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1216634",
+      "title": "Project Memoria: The Dementia Assistant",
+      "tagline": "Project Memoria helps dementia patients recall conversations, find lost objects, and get grounded answers with an Amazon Nova-powered agentic memory system.",
+      "project_url": "https://devpost.com/software/project-memoria-the-dementia-assistant",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1209717",
+      "title": "Title AI",
+      "tagline": "Title AI is the first platform that can autonomously search any US county recorder website and produce a complete title commitment report disrupting $3.6 trillion real estate industry.",
+      "project_url": "https://devpost.com/software/title-ai",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1206243",
+      "title": "flare",
+      "tagline": "Flare detects AWS anomalies with AI, calls the on-call engineer with a root cause analysis, and stays on the line as a voice triage assistant to pull live infrastructure data on demand.",
+      "project_url": "https://devpost.com/software/flare-gdyebn",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1204917",
+      "title": "SpatialMath AI",
+      "tagline": "Your personal 3D math tutor — flat questions become explorable scenes",
+      "project_url": "https://devpost.com/software/spatial-math",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1210866",
+      "title": "Interview Edge",
+      "tagline": "Interview Edge – Your personal AI interview coach",
+      "project_url": "https://devpost.com/software/interview-edge",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1212485",
+      "title": "Restaurant IQ",
+      "tagline": "Restaurant AI that doesn't just recommend — it executes. One click to sync pricing across DoorDash, UberEats & more. Built on Amazon Nova. By a non-coder who learned to build with AI.",
+      "project_url": "https://devpost.com/software/restaurant-os",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1222366",
+      "title": "Video-MCP-RAG",
+      "tagline": "Ask anything. Find any moment. Understand every video.",
+      "project_url": "https://devpost.com/software/video-mcp-rag",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1214372",
+      "title": "Blabber Coach",
+      "tagline": "Full-voice mock interview coach. Upload a resume, choose a domain and difficulty, speak your answers BlabberCoach listens, pushes back, then tells you exactly what to fix.",
+      "project_url": "https://devpost.com/software/vernix",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1218805",
+      "title": "Kisan-Mitra AI",
+      "tagline": "Built on AWS and powered by Amazon Nova Pro, the platform eliminates the literacy barrier with a voice-first interface supporting 15+ regional dialects. By leveraging Amazon Bedrock.",
+      "project_url": "https://devpost.com/software/kisan-mitra-ai",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1224617",
+      "title": "RoleReady",
+      "tagline": "AI-powered resume tailor that scores your fit and rewrites your resume for any job, powered by Amazon Nova on AWS Bedrock.",
+      "project_url": "https://devpost.com/software/roleready",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1225144",
+      "title": "SpeakSmartEngineer",
+      "tagline": "SpeakSmart is AI communication coach powered by that helps engineers translate tech jargon into business impact — with real-time voice coaching, 7-dimension analysis, and actionable feedback.",
+      "project_url": "https://devpost.com/software/speaksmartengineer",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1181996",
+      "title": "NovaSupport — When AI Agents Take Over Customer Support",
+      "tagline": "Customer support is broken. Companies spend billions on support teams, yet customers still wait hours for responses. Agents are overwhelmed with repetitive tickets & critical issues get lost in noise.",
+      "project_url": "https://devpost.com/software/dvsd",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1225856",
+      "title": "Dear-Care",
+      "tagline": "AI-powered voice healthcare assistant for rural India. Runs on edge, speaks 7 languages, measures vitals, scans prescriptions, generates clinical notes via Amazon Nova 2 Lite — works offline.",
+      "project_url": "https://devpost.com/software/dear-care",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1212201",
+      "title": "CivicSync",
+      "tagline": "Empower your neighborhood with CivicSync. We use Amazon Nova to translate dense planning notices and provide a Voice AI coach for public meetings. Turn bureaucratic jargon into civic action.",
+      "project_url": "https://devpost.com/software/civicsync-pos2nx",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1190543",
+      "title": "SafeNaija: Community-Led Security",
+      "tagline": "AI-powered crime reporting for Nigeria. Voice, photo, and text evidence captured, analysed, and dispatched to your community in real time.",
+      "project_url": "https://devpost.com/software/safenaija-community-led-security-through-voice-ai",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1212158",
+      "title": "ReelAudit",
+      "tagline": "ReelAudit uses Amazon Nova to detect policy violations in videos, localize risky frames, suggest minimal edits, and help create market-safe versions for India, UAE, Germany, and more.",
+      "project_url": "https://devpost.com/software/reelaudit",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1211422",
+      "title": "NovaOps",
+      "tagline": "Incidents are not a big deal",
+      "project_url": "https://devpost.com/software/amazon-nova-5lpxz3",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1224616",
+      "title": "Citadelle Cortex",
+      "tagline": "An autonomous AI swarm powered by Amazon Nova Act that navigates legal & financial databases (SEC, Oyez, CourtListener) to synthesize exportable Master Dossiers.",
+      "project_url": "https://devpost.com/software/citadelle-cortex",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1183852",
+      "title": "SonicServe",
+      "tagline": "SonicServe is a highly natural conversational AI voice agent that manages restaurant calls, orders, reservations, and customer queries while seamlessly communicating with management.",
+      "project_url": "https://devpost.com/software/novadine",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1210868",
+      "title": "Protocol Zero",
+      "tagline": "Protocol Zero: Bridging AI intelligence with on-chain trust. Our agent uses ERC-8004 to prove behavior, earn reputation, and safely manage capital.",
+      "project_url": "https://devpost.com/software/protocol-zero-k2uzty",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
+    },
+    {
+      "devpost_software_id": "1225021",
+      "title": "AI Anime Studio",
+      "tagline": "Generating cute chibis and animated chibis with prompt and cinematic posters and manga styled pages with description",
+      "project_url": "https://devpost.com/software/ai-anime-studio",
+      "hackathon_title": "Amazon Nova AI Hackathon",
+      "hackathon_url": "https://amazon-nova.devpost.com",
+      "hackathon_devpost_id": 25719
     }
   ]
 }
