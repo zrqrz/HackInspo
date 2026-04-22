@@ -58,6 +58,17 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
+      - name: Publish detection summary
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.from_stage == '1' || github.event.inputs.from_stage == '' }}
+        run: |
+          {
+            echo "## Pipeline detection result"
+            echo ""
+            echo "- winners_checked: ${{ steps.detect.outputs.winners_count }}"
+            echo "- new_projects: ${{ steps.detect.outputs.new_projects_count }}"
+            echo "- has_new_projects: ${{ steps.detect.outputs.has_new_projects }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Run Stage 3-4 (only when new projects exist)
         if: ${{ (github.event_name == 'schedule' || github.event.inputs.from_stage == '1' || github.event.inputs.from_stage == '') && steps.detect.outputs.has_new_projects == 'true' }}
         run: |
