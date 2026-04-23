@@ -60,7 +60,6 @@ export async function getTrackWithProjects(
 
   if (!track) return null;
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const projects: ProjectCard[] = track.projects.map(({ project: p }: any) => ({
     id: p.id,
     slug: p.slug ?? `project-${p.id}`,

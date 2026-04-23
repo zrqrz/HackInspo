@@ -1,6 +1,43 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { prisma } from "@/lib/prisma";
-import type { ProjectCard, ProjectDetail, ProjectFilters, Paginated } from "@/lib/types";
+import type {
+  ProjectCard,
+  ProjectDetail,
+  ProjectFilters,
+  Paginated,
+  ProjectSection,
+} from "@/lib/types";
+
+function parseDescriptionSections(raw: unknown): ProjectSection[] | null {
+  if (raw == null) return null;
+
+  let data: unknown = raw;
+  if (typeof data === "string") {
+    const t = data.trim();
+    if (!t || t === "null") return null;
+    try {
+      data = JSON.parse(t) as unknown;
+    } catch {
+      return null;
+    }
+  }
+
+  if (!Array.isArray(data)) return null;
+
+  const out: ProjectSection[] = [];
+  for (const item of data) {
+    if (!item || typeof item !== "object") continue;
+    const rec = item as Record<string, unknown>;
+    const htmlRaw = rec.html ?? rec.HTML;
+    const html = typeof htmlRaw === "string" ? htmlRaw : "";
+    if (!html.trim()) continue;
+    const titleRaw = rec.title ?? rec.Title;
+    const title =
+      titleRaw == null || titleRaw === "" ? null : String(titleRaw);
+    out.push({ title, html });
+  }
+  return out.length > 0 ? out : null;
+}
 
 // ── Shared select shapes ──────────────────────────────────────────────────────
 
@@ -22,7 +59,6 @@ const projectCardSelect = {
 
 // ── Mappers ───────────────────────────────────────────────────────────────────
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function mapProjectCard(p: any): ProjectCard {
   return {
     id: p.id,
@@ -100,6 +136,7 @@ export async function getProjectBySlug(slug: string): Promise<ProjectDetail | nu
     select: {
       ...projectCardSelect,
       description: true,
+      descriptionSections: true,
       teamMembers: true,
       hackathon: {
         select: {
@@ -137,6 +174,7 @@ export async function getProjectBySlug(slug: string): Promise<ProjectDetail | nu
     title: p.title,
     tagline: p.tagline,
     description: p.description,
+    descriptionSections: parseDescriptionSections(p.descriptionSections),
     teamSize: p.teamSize,
     teamMembers: p.teamMembers,
     demoUrl: p.demoUrl,

@@ -120,18 +120,24 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
     team_members = p.get("team_members", [])
     team_size = len(team_members) if team_members else None
 
+    raw_sections = p.get("description_sections")
+    if not raw_sections:
+        description_sections_db = None
+    else:
+        description_sections_db = psycopg2.extras.Json(raw_sections)
+
     cur.execute(
         """
         INSERT INTO "Project" (
             "devpostSoftwareId", "devpostUrl", "title", "tagline",
-            "description", "demoUrl", "repoUrl",
+            "description", "descriptionSections", "demoUrl", "repoUrl",
             "otherLinks", "teamMembers", "teamSize",
             "thumbnailUrl", "videoUrl", "screenshotUrls", "screenshotCaptions",
             "classificationStatus", "hackathonId",
             "updatedAt"
         ) VALUES (
             %(software_id)s, %(devpost_url)s, %(title)s, %(tagline)s,
-            %(description)s, %(demo_url)s, %(repo_url)s,
+            %(description)s, %(description_sections)s, %(demo_url)s, %(repo_url)s,
             %(other_links)s, %(team_members)s, %(team_size)s,
             %(thumbnail_url)s, %(video_url)s, %(screenshot_urls)s, %(screenshot_captions)s,
             'PENDING', %(hackathon_id)s,
@@ -141,6 +147,7 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
             "title"       = EXCLUDED."title",
             "tagline"     = EXCLUDED."tagline",
             "description" = EXCLUDED."description",
+            "descriptionSections" = EXCLUDED."descriptionSections",
             "demoUrl"     = EXCLUDED."demoUrl",
             "repoUrl"     = EXCLUDED."repoUrl",
             "otherLinks"  = EXCLUDED."otherLinks",
@@ -158,7 +165,8 @@ def upsert_project(cur, p: dict, hackathon_id: int) -> int:
             "devpost_url":   p["project_url"],
             "title":         p.get("title", "").strip() or "Untitled",
             "tagline":       p.get("tagline") or None,
-            "description":   p.get("full_desc") or None,
+            "description":            p.get("full_desc") or None,
+            "description_sections": description_sections_db,
             "demo_url":      p.get("demo_url") or None,
             "repo_url":      p.get("repo_url") or None,
             "other_links":   p.get("other_links", []),

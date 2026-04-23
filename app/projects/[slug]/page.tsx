@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { getProjectBySlug } from "@/lib/db/projects";
+import { ProjectStorySections } from "@/components/project-story-sections";
 import type { Metadata } from "next";
 
 // Next.js 16: params is a Promise
@@ -93,18 +94,11 @@ export default async function ProjectDetailPage({ params }: Props) {
 
             <Separator className="mb-10" />
 
-            {/* Full description */}
-            {project.description ? (
-              <div className="prose prose-gray max-w-none">
-                {project.description.split("\n\n").map((para, i) => (
-                  <p key={i} className="mb-5 text-gray-700 leading-relaxed">
-                    {para}
-                  </p>
-                ))}
-              </div>
-            ) : (
-              <p className="text-gray-400 italic">No description available.</p>
-            )}
+            {/* Full description: structured sections + TOC (desktop), else plain text */}
+            <ProjectStorySections
+              sections={project.descriptionSections}
+              plainDescription={project.description}
+            />
           </div>
 
           {/* Sidebar */}

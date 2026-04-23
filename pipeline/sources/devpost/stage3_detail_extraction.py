@@ -161,6 +161,91 @@ def extract_screenshots(soup: BeautifulSoup, base_url: str) -> tuple[list[str], 
     return dedup_urls, dedup_captions
 
 
+def _sanitize_story_html(html: str) -> str:
+    """Strip dangerous tags from Devpost story HTML (best-effort, pipeline-side)."""
+    if not html or not html.strip():
+        return ""
+    frag = BeautifulSoup(html, "html.parser")
+    for node in frag.find_all(["script", "style", "iframe"]):
+        node.decompose()
+    return str(frag)
+
+
+def _is_only_single_root_h1(html: str) -> bool:
+    """True if fragment is a single top-level h1 (decorative duplicate of page title)."""
+    if not html or not html.strip():
+        return False
+    frag = BeautifulSoup(html, "html.parser")
+    tags = [c for c in frag.children if getattr(c, "name", None)]
+    return len(tags) == 1 and tags[0].name == "h1"
+
+
+def extract_description_sections(story_div) -> list[dict]:
+    """
+    Ordered story blocks: ``[{"title": str | null, "html": str}, ...]``.
+
+    Section boundaries are **h2 only** (Devpost's standard story sections).
+    ``h1`` and ``h3``–``h6`` stay in the current section's ``html`` so a leading
+    decorative ``h1`` (often the project name, empty before ``h2``) does not
+    become a duplicate sidebar entry; subsections stay nested like the DOM.
+
+    ``title`` is null for content before the first ``h2`` or when the whole
+    body has no ``h2`` (single untitled block). Devpost gallery is excluded
+    (caller passes only the story div).
+    """
+    if not story_div:
+        return []
+
+    sections: list[dict] = []
+    pending_title: str | None = None
+    buffer: list = []
+
+    def flush() -> None:
+        nonlocal buffer, pending_title
+        raw = "".join(str(x) for x in buffer).strip()
+        html = _sanitize_story_html(raw).strip()
+        buffer = []
+        if not html:
+            return
+        sections.append({"title": pending_title, "html": html})
+
+    has_heading = False
+    for child in story_div.children:
+        name = getattr(child, "name", None)
+        if name is None:
+            continue
+        if name in ("nav", "script", "style"):
+            continue
+        if name == "h2":
+            has_heading = True
+            flush()
+            text = child.get_text(" ", strip=True)
+            pending_title = text if text else None
+            continue
+        if name in ("h1", "h3", "h4", "h5", "h6"):
+            has_heading = True
+        buffer.append(child)
+
+    flush()
+
+    sections = [s for s in sections if (s.get("html") or "").strip()]
+    while (
+        sections
+        and sections[0].get("title") is None
+        and _is_only_single_root_h1(sections[0].get("html") or "")
+    ):
+        sections.pop(0)
+
+    if not sections and not has_heading:
+        inner = story_div.decode_contents()
+        html = _sanitize_story_html(inner).strip()
+        if html:
+            return [{"title": None, "html": html}]
+        return []
+
+    return sections
+
+
 def extract_awards(soup: BeautifulSoup) -> tuple[list[str], list[str]]:
     """
     Extract raw award labels and normalized tiers from submissions sidebar.
@@ -190,11 +275,14 @@ def scrape_project_detail(url: str) -> dict | None:
     tagline_el = soup.select_one(".app-tagline, p.large")
     tagline = tagline_el.get_text(strip=True) if tagline_el else ""
 
-    # Description — second div inside #app-details-left
+    # Description — second div inside #app-details-left (gallery is first div)
     full_desc = ""
+    description_sections: list[dict] = []
     desc_divs = soup.select("#app-details-left > div")
     if len(desc_divs) >= 2:
-        full_desc = desc_divs[1].get_text(separator="\n", strip=True)
+        story = desc_divs[1]
+        description_sections = extract_description_sections(story)
+        full_desc = story.get_text(separator="\n", strip=True)
 
     # Built with (tech stack)
     built_with_els = soup.select(".built-with a, #built-with span.cp-tag, a.cp-tag")
@@ -236,6 +324,7 @@ def scrape_project_detail(url: str) -> dict | None:
         "title": title,
         "tagline": tagline,
         "full_desc": full_desc,
+        "description_sections": description_sections,
         "built_with": built_with,
         "thumbnail_url": thumbnail_url,
         "video_url": video_url,

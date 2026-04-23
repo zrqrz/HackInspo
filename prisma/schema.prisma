@@ -80,7 +80,8 @@ model Project {
   devpostUrl           String               @unique
   title                String
   tagline              String?
-  description          String?              @db.Text
+  description          String?              @db.Text // plain text fallback / search (full_desc)
+  descriptionSections Json?               // [{ title, html }] from Devpost story body; NULL if empty
   demoUrl              String?
   repoUrl              String?
   otherLinks           String[]             // any additional links on the project page

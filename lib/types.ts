@@ -37,6 +37,12 @@ export interface HackathonDTO {
 
 // ── Project shapes ────────────────────────────────────────────────────────────
 
+/** One block of Devpost story HTML under an optional heading */
+export interface ProjectSection {
+  title: string | null;
+  html: string;
+}
+
 /** Compact shape used in card grids and lists */
 export interface ProjectCard {
   id: number;
@@ -55,6 +61,8 @@ export interface ProjectCard {
 /** Full shape used on the detail page */
 export interface ProjectDetail extends ProjectCard {
   description: string | null;
+  /** Story body blocks; null if absent or empty (stored as DB NULL) */
+  descriptionSections: ProjectSection[] | null;
   teamMembers: string[];
   hackathon: HackathonDTO;
   similarProjects: ProjectCard[];
