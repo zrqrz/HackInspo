@@ -122,7 +122,8 @@
 |------|------|----------------|
 | `title` | 作品标题 | `#app-title` |
 | `tagline` | 一句话介绍 | `.app-tagline` 或 `p.large` |
-| `full_desc` | 长描述正文 | `#app-details-left > div` 中**第二个**子 `div` 的文本（`\n` 连接） |
+| `full_desc` | 长描述纯文本（降级 / 搜索） | 同上第二个子 `div` 的 `get_text`，`\n` 分隔 |
+| `description_sections` | 有序小节数组（入库为 `descriptionSections` JSONB；空则 DB `NULL`） | 每项 `{"title": string \| null, "html": string}`：`title` 为顶层 `h1`/`h2`/`h3` 文本，无标题块为 `null`；`html` 为该段 inner HTML（已去 script/style/iframe） |
 | `built_with` | 技术栈标签列表 | `.built-with a`、`#built-with span.cp-tag`、`a.cp-tag` 的文本集合 |
 | `thumbnail_url` | 项目封面图 URL 或 `null` | 按回退顺序：`meta[property='og:image']` → `meta[name='twitter:image']` → `meta[itemprop='image']` → `meta[itemprop='screenshot']` → 首张截图 |
 | `video_url` | 主视频链接或 `null` | `#gallery iframe.video-embed`，若无则回退 `#gallery iframe[src*='youtube'/'vimeo']` |
@@ -157,7 +158,7 @@
 ## 与下游的关系（简述）
 
 - `run_pipeline.py` 在 Stage 4 调用 `pipeline.db.ingest`，读取 **`hackathons.json`** 与 **`projects.json`**，将数据写入 PostgreSQL（与 Prisma schema 对应）。
-- Stage 4 当前已将 `thumbnail_url` 映射到 `Project.thumbnailUrl`。
+- Stage 4 当前已将 `thumbnail_url` 映射到 `Project.thumbnailUrl`；`full_desc` → `Project.description`；`description_sections`（非空数组）→ `Project.descriptionSections`（JSONB），空数组或缺失 → `NULL`。
 - Stage 4 奖项写入为双轨：优先使用 `award_labels_raw` + `award_tiers_normalized`；若缺失则回退写入默认 `Winner / WINNER`。
 - **Track / ProjectTrack** 不由上述 Devpost 阶段填充；设计上是后续 **AI classification** 的职责。
 - Stage 1 中的 `prize_cash_count`、`prize_other_count` 等若未在 `ingest.py` 中映射，则可能仅存在于 JSON，而不进入数据库（以 `ingest.py` 实际 SQL 为准）。
