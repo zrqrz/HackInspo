@@ -1,32 +1,13 @@
-import DOMPurify from "isomorphic-dompurify";
-
-/** Devpost-sourced story HTML: keep structure, drop scripts and dangerous URLs. */
+/**
+ * Devpost HTML is already pipeline-sanitized.
+ * Keep a lightweight runtime defense without DOM libraries to avoid
+ * Node ESM/CJS incompatibilities in server runtime.
+ */
 export function sanitizeProjectDescriptionHtml(html: string): string {
-  return DOMPurify.sanitize(html, {
-    ALLOWED_TAGS: [
-      "h1",
-      "h2",
-      "h3",
-      "h4",
-      "p",
-      "img",
-      "ul",
-      "ol",
-      "li",
-      "strong",
-      "em",
-      "b",
-      "i",
-      "a",
-      "br",
-      "blockquote",
-      "code",
-      "pre",
-      "span",
-      "div",
-      "sub",
-      "sup",
-    ],
-    ALLOWED_ATTR: ["href", "title", "target", "rel", "class", "src", "alt", "width", "height", "loading"],
-  });
+  if (!html) return "";
+  return html
+    .replace(/<\s*(script|style|iframe)\b[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, "")
+    .replace(/\son\w+\s*=\s*(["']).*?\1/gi, "")
+    .replace(/\son\w+\s*=\s*[^\s>]+/gi, "")
+    .replace(/\s(href|src)\s*=\s*(["'])\s*javascript:[\s\S]*?\2/gi, ' $1="#"');
 }
