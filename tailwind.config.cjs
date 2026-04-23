@@ -4,6 +4,7 @@
  *
  * @see https://tailwindcss.com/docs/functions-and-directives#config-directive
  */
+/* eslint-disable @typescript-eslint/no-require-imports */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [

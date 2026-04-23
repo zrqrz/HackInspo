@@ -59,7 +59,6 @@ const projectCardSelect = {
 
 // ── Mappers ───────────────────────────────────────────────────────────────────
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function mapProjectCard(p: any): ProjectCard {
   return {
     id: p.id,
