@@ -8,13 +8,7 @@ Use environment variables only. Do not commit real connection strings.
 
 Required:
 
-- `DATABASE_URL`
-
-Recommended setup:
-
-- Local: set in `.env.local`
-- Vercel: set in Project Settings -> Environment Variables
-- Team onboarding: copy `.env.example` and fill real values locally
+- `DATABASE_URL`: PostgreSQL connection URL
 
 ## Local Development
 
@@ -22,6 +16,22 @@ Install dependencies:
 
 ```bash
 npm install
+```
+
+Create local environment file:
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` and set `DATABASE_URL` to your PostgreSQL database URL.
+
+Prepare the database:
+
+```bash
+npx prisma migrate deploy
+npx prisma generate
+python -m pipeline.db.ingest
 ```
 
 Start dev server:
