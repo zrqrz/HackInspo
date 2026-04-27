@@ -2,18 +2,23 @@ export const dynamic = "force-dynamic";
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, ExternalLink, GitBranch, Trophy, Users, Calendar, MapPin } from "lucide-react";
+import {
+  ArrowLeft,
+  ExternalLink,
+  GitBranch,
+  Trophy,
+  Calendar,
+  MapPin,
+  Users,
+} from "lucide-react";
 import { Header } from "@/components/header";
 import { ProjectCard } from "@/components/project-card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+import { PageFadeIn } from "@/components/page-fade-in";
 import { getProjectBySlug } from "@/lib/db/projects";
 import { ProjectStorySections } from "@/components/project-story-sections";
 import { ProjectStoryToc } from "@/components/project-story-toc";
 import type { Metadata } from "next";
 
-// Next.js 16: params is a Promise
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -40,83 +45,82 @@ export default async function ProjectDetailPage({ params }: Props) {
     : null;
 
   return (
-    <div className="min-h-screen bg-white">
+    <PageFadeIn>
+    <div className="bg-black min-h-screen text-white">
       <Header />
 
-      {/* Back nav */}
-      <div className="border-b border-gray-100 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 py-3">
-          <Link href="/projects">
-            <Button variant="ghost" size="sm" className="gap-1.5 text-gray-600">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Projects
-            </Button>
-          </Link>
-        </div>
-      </div>
+      <div className="max-w-6xl mx-auto px-6 pt-32 pb-20">
+        {/* Back */}
+        <Link
+          href="/projects"
+          className="flex items-center gap-2 text-white/40 hover:text-white transition-colors mb-12 uppercase tracking-widest text-xs font-medium"
+        >
+          <ArrowLeft size={16} />
+          Back to Projects
+        </Link>
 
-      <div className="max-w-7xl mx-auto px-6 py-14">
-        <div className="grid lg:grid-cols-3 gap-14">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main content */}
-          <div className="lg:col-span-2">
-            {/* Award */}
-            {project.award && (
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-200 text-amber-800 text-sm font-semibold mb-6">
-                <Trophy className="w-4 h-4" />
-                {project.award.name}
-              </div>
-            )}
-
-            <h1 className="text-5xl font-bold mb-5 leading-tight">{project.title}</h1>
-
-            {project.tagline && (
-              <p className="text-2xl text-gray-600 mb-10 leading-relaxed">
-                {project.tagline}
-              </p>
-            )}
+          <div className="lg:col-span-2 space-y-12">
+            <div>
+              {project.award && (
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 text-sm font-semibold mb-6">
+                  <Trophy size={16} />
+                  {project.award.name}
+                </div>
+              )}
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                {project.title}
+              </h1>
+              {project.tagline && (
+                <p className="text-xl md:text-2xl text-white/60 font-medium leading-relaxed">
+                  {project.tagline}
+                </p>
+              )}
+            </div>
 
             {/* Tags / Tracks */}
             {(project.tags.length > 0 || project.tracks.length > 0) && (
-              <div className="flex flex-wrap gap-2 mb-10">
+              <div className="flex flex-wrap gap-3">
                 {project.tracks.map((track) => (
                   <Link key={track.id} href={`/tracks/${track.slug}`}>
-                    <Badge variant="default" className="text-xs">
+                    <span className="px-4 py-2 rounded-xl bg-white/10 text-white text-sm font-medium tracking-wider hover:bg-white/15 transition-colors">
                       {track.name}
-                    </Badge>
+                    </span>
                   </Link>
                 ))}
                 {project.tags.map((tag) => (
-                  <Badge key={tag.id} variant="secondary" className="text-xs font-mono">
+                  <span
+                    key={tag.id}
+                    className="px-4 py-2 rounded-xl bg-white/5 text-white/60 text-sm font-mono tracking-wider"
+                  >
                     {tag.name}
-                  </Badge>
+                  </span>
                 ))}
               </div>
             )}
 
-            <Separator className="mb-10" />
-
-            {/* Full description: structured sections (TOC lives in sidebar) */}
-            <ProjectStorySections
-              sections={project.descriptionSections}
-              plainDescription={project.description}
-            />
+            <div className="border-t border-white/5 pt-12">
+              <ProjectStorySections
+                sections={project.descriptionSections}
+                plainDescription={project.description}
+              />
+            </div>
           </div>
 
           {/* Sidebar */}
           <aside className="space-y-8">
-            {/* Links */}
-            <div className="space-y-3">
+            {/* CTA links */}
+            <div className="flex flex-col gap-4">
               {project.demoUrl && (
                 <a
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 w-full"
+                  className="w-full flex items-center justify-center gap-2 bg-white text-black font-bold py-4 rounded-2xl hover:bg-white/90 transition-all"
                 >
-                  <Button className="w-full gap-2" size="lg">
-                    <ExternalLink className="w-4 h-4" />
-                    View Demo
-                  </Button>
+                  <ExternalLink size={20} />
+                  View Demo
                 </a>
               )}
               {project.repoUrl && (
@@ -124,86 +128,92 @@ export default async function ProjectDetailPage({ params }: Props) {
                   href={project.repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 w-full"
+                  className="w-full flex items-center justify-center gap-2 liquid-glass text-white font-bold py-4 rounded-2xl hover:bg-white/5 transition-all"
                 >
-                  <Button variant="outline" className="w-full gap-2" size="lg">
-                    <GitBranch className="w-4 h-4" />
-                    View Repo
-                  </Button>
+                  <GitBranch size={20} />
+                  View Repo
                 </a>
               )}
             </div>
 
             {/* Hackathon info */}
-            <div className="border border-gray-200 p-5 space-y-3">
-              <h3 className="font-semibold text-sm text-gray-500 uppercase tracking-wide">
-                Hackathon
-              </h3>
-              <a
-                href={project.hackathon.devpostUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold hover:underline block"
-              >
-                {project.hackathon.title}
-              </a>
-              {project.hackathon.organization && (
-                <p className="text-sm text-gray-600">{project.hackathon.organization}</p>
-              )}
-              <div className="text-sm text-gray-500 space-y-1.5 pt-1">
-                {submissionDate && (
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-3.5 h-3.5" />
-                    {submissionDate}
-                  </div>
+            <div className="liquid-glass rounded-3xl p-8 space-y-8">
+              <div>
+                <span className="text-white/30 text-[10px] uppercase tracking-[0.3em] font-bold block mb-4">
+                  Hackathon
+                </span>
+                <a
+                  href={project.hackathon.devpostUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl font-bold hover:text-white/80 transition-colors block mb-1"
+                >
+                  {project.hackathon.title}
+                </a>
+                {project.hackathon.organization && (
+                  <p className="text-white/40 text-sm mb-6">{project.hackathon.organization}</p>
                 )}
-                {project.hackathon.location && (
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-3.5 h-3.5" />
-                    {project.hackathon.location}
-                  </div>
-                )}
-                {project.hackathon.registrationsCount && (
-                  <div className="flex items-center gap-2">
-                    <Users className="w-3.5 h-3.5" />
-                    {project.hackathon.registrationsCount.toLocaleString()} participants
-                  </div>
-                )}
+                <div className="space-y-4">
+                  {submissionDate && (
+                    <div className="flex items-center gap-3 text-white/60 text-sm">
+                      <Calendar size={18} className="text-white/30 shrink-0" />
+                      <span>{submissionDate}</span>
+                    </div>
+                  )}
+                  {project.hackathon.location && (
+                    <div className="flex items-center gap-3 text-white/60 text-sm">
+                      <MapPin size={18} className="text-white/30 shrink-0" />
+                      <span>{project.hackathon.location}</span>
+                    </div>
+                  )}
+                  {project.hackathon.registrationsCount && (
+                    <div className="flex items-center gap-3 text-white/60 text-sm">
+                      <Users size={18} className="text-white/30 shrink-0" />
+                      <span>
+                        {project.hackathon.registrationsCount.toLocaleString()} participants
+                      </span>
+                    </div>
+                  )}
+                </div>
               </div>
+
               {project.hackathon.themes.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 pt-1">
+                <div className="flex flex-wrap gap-2">
                   {project.hackathon.themes.map((theme) => (
-                    <span key={theme} className="text-xs px-2 py-0.5 bg-gray-100 text-gray-600">
+                    <span
+                      key={theme}
+                      className="px-3 py-1 rounded-md bg-white/5 text-white/40 text-[10px] font-bold"
+                    >
                       {theme}
                     </span>
                   ))}
                 </div>
               )}
+
+              {project.teamMembers.length > 0 && (
+                <div className="pt-8 border-t border-white/5">
+                  <span className="text-white/30 text-[10px] uppercase tracking-[0.3em] font-bold block mb-4">
+                    Team ({project.teamMembers.length})
+                  </span>
+                  <div className="space-y-2">
+                    {project.teamMembers.map((member) => (
+                      <p key={member} className="text-white text-sm font-medium">
+                        {member}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
-            {/* Team */}
-            {project.teamMembers.length > 0 && (
-              <div className="border border-gray-200 p-5 space-y-3">
-                <h3 className="font-semibold text-sm text-gray-500 uppercase tracking-wide">
-                  Team ({project.teamMembers.length})
-                </h3>
-                <div className="space-y-1">
-                  {project.teamMembers.map((member) => (
-                    <div key={member} className="text-sm text-gray-700">
-                      {member}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
+            {/* TOC */}
             <ProjectStoryToc sections={project.descriptionSections} />
           </aside>
         </div>
 
         {/* Similar projects */}
         {project.similarProjects.length > 0 && (
-          <div className="mt-20 pt-10 border-t border-gray-200">
+          <div className="mt-20 pt-10 border-t border-white/5">
             <h2 className="text-2xl font-bold mb-8">Similar Projects</h2>
             <div className="grid md:grid-cols-3 gap-6">
               {project.similarProjects.map((p) => (
@@ -214,5 +224,6 @@ export default async function ProjectDetailPage({ params }: Props) {
         )}
       </div>
     </div>
+    </PageFadeIn>
   );
 }
