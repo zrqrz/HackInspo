@@ -3,7 +3,6 @@
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useTransition } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 interface Props {
   currentPage: number;
@@ -24,57 +23,65 @@ export function Pagination({ currentPage, totalPages }: Props) {
     startTransition(() => router.push(`${pathname}?${params.toString()}`));
   }
 
-  // Show at most 5 page buttons centered on the current page
   const delta = 2;
   const pages: (number | "…")[] = [];
   for (let i = 1; i <= totalPages; i++) {
-    if (i === 1 || i === totalPages || (i >= currentPage - delta && i <= currentPage + delta)) {
+    if (
+      i === 1 ||
+      i === totalPages ||
+      (i >= currentPage - delta && i <= currentPage + delta)
+    ) {
       pages.push(i);
     } else if (pages[pages.length - 1] !== "…") {
       pages.push("…");
     }
   }
 
+  const navBtn =
+    "flex items-center gap-1 liquid-glass rounded-full px-4 py-2 text-white/60 hover:text-white text-sm font-medium transition-colors disabled:opacity-30 disabled:cursor-not-allowed";
+
   return (
-    <div className={`flex items-center justify-center gap-1 ${isPending ? "opacity-60" : ""}`}>
-      <Button
-        variant="outline"
-        size="sm"
+    <div className={`flex items-center justify-center gap-2 ${isPending ? "opacity-60" : ""}`}>
+      <button
         onClick={() => goTo(currentPage - 1)}
         disabled={currentPage === 1 || isPending}
-        className="gap-1"
+        className={navBtn}
       >
-        <ChevronLeft className="w-4 h-4" />
+        <ChevronLeft size={16} />
         Prev
-      </Button>
+      </button>
 
-      {pages.map((p, i) =>
-        p === "…" ? (
-          <span key={`ellipsis-${i}`} className="px-2 text-gray-400 text-sm">…</span>
-        ) : (
-          <Button
-            key={p}
-            variant={p === currentPage ? "default" : "outline"}
-            size="sm"
-            onClick={() => goTo(p as number)}
-            disabled={isPending}
-            className="w-9"
-          >
-            {p}
-          </Button>
-        )
-      )}
+      <div className="flex items-center gap-1 mx-2">
+        {pages.map((p, i) =>
+          p === "…" ? (
+            <span key={`ellipsis-${i}`} className="px-2 text-white/20 text-sm">
+              …
+            </span>
+          ) : (
+            <button
+              key={p}
+              onClick={() => goTo(p as number)}
+              disabled={isPending}
+              className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                p === currentPage
+                  ? "bg-white text-black"
+                  : "text-white/40 hover:text-white hover:bg-white/5"
+              }`}
+            >
+              {p}
+            </button>
+          )
+        )}
+      </div>
 
-      <Button
-        variant="outline"
-        size="sm"
+      <button
         onClick={() => goTo(currentPage + 1)}
         disabled={currentPage === totalPages || isPending}
-        className="gap-1"
+        className={navBtn}
       >
         Next
-        <ChevronRight className="w-4 h-4" />
-      </Button>
+        <ChevronRight size={16} />
+      </button>
     </div>
   );
 }
